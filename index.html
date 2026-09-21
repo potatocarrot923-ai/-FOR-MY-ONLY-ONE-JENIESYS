@@ -1,369 +1,364 @@
-<!DOCTYPE html>
+<!-- =========================
+     1 YEAR ANNIVERSARY SECTION
+========================= -->
 
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#f7b5cd">
+<section class="anniversary">
 
-<title>For Jeniesys ❤️</title>
+```
+<div class="anniversary-stars"></div>
+
+<div class="anniversary-badge">
+    ✦ ONE YEAR ✦
+</div>
+
+<div class="anniversary-number">
+    1
+</div>
+
+<h2>
+    One Year With You
+</h2>
+
+<p class="anniversary-date">
+    365 days • countless memories • one very special person
+</p>
+
+<div class="anniversary-divider">
+    <span>♡</span>
+</div>
+
+<div class="anniversary-letter">
+
+    <p class="letter-greeting">
+        My dearest Jeniesys,
+    </p>
+
+    <p>
+        One year.
+    </p>
+
+    <p>
+        When I think about that, it honestly feels strange how
+        something that can be measured by a number can hold
+        <strong>so many memories.</strong>
+    </p>
+
+    <p>
+        There were happy days, random moments, little arguments,
+        silly conversations, unexpected laughs, and countless
+        moments that probably seemed ordinary at the time.
+    </p>
+
+    <p>
+        But looking back now, I realize something:
+        <strong>
+            those ordinary moments became some of my favorite memories.
+        </strong>
+    </p>
+
+    <p>
+        Thank you for being part of this year of my life.
+        Thank you for the smiles, the patience, the memories,
+        and even the moments that weren't perfect.
+    </p>
+
+    <p>
+        I don't want to pretend that everything will always be
+        perfect. Life isn't like that.
+    </p>
+
+    <p>
+        What I do hope is that whenever life gets difficult,
+        we remember why we started, why we stayed, and why
+        these little moments matter.
+    </p>
+
+    <p class="heart-line">
+        Because if one year can create this many memories...
+    </p>
+
+    <p class="future-line">
+        I can only imagine how beautiful the memories ahead
+        of us could be.
+    </p>
+
+    <p>
+        So here's to the days we've already shared,
+        the lessons we've learned, the laughter we've had,
+        and every little moment that brought us here.
+    </p>
+
+    <p class="big-message">
+        Happy 1st Anniversary, Jeniesys.
+    </p>
+
+    <p>
+        Thank you for being one of the most meaningful parts
+        of my year.
+    </p>
+
+    <p class="final-love">
+        And if I could choose one place to be again,
+        I wouldn't choose a perfect place.
+    </p>
+
+    <p class="final-love">
+        I'd choose another ordinary day with you.
+        ❤️
+    </p>
+
+</div>
+
+<!-- =========================
+     MEMORY CARDS
+========================= -->
+
+<div class="memory-title">
+    <span>✦</span>
+    A year in little moments
+    <span>✦</span>
+</div>
+
+<div class="memory-grid">
+
+    <div class="memory-card">
+        <div class="memory-icon">🌱</div>
+        <h3>Then</h3>
+        <p>
+            The beginning of something we didn't know
+            would become this meaningful.
+        </p>
+    </div>
+
+    <div class="memory-card">
+        <div class="memory-icon">🌷</div>
+        <h3>Along the way</h3>
+        <p>
+            The laughs, the random moments,
+            the memories we collected without noticing.
+        </p>
+    </div>
+
+    <div class="memory-card">
+        <div class="memory-icon">🌙</div>
+        <h3>Now</h3>
+        <p>
+            One year later, we're here —
+            with another chapter waiting to be written.
+        </p>
+    </div>
+
+</div>
+
+<!-- =========================
+     FINAL REVEAL
+========================= -->
+
+<div class="anniversary-final">
+
+    <div class="orbit-heart">
+        ❤️
+    </div>
+
+    <p class="small-final">
+        365 days ago, this story began.
+    </p>
+
+    <h3>
+        Today, I just want to say...
+    </h3>
+
+    <div class="final-word">
+        Thank you.
+    </div>
+
+    <p>
+        For being you.
+    </p>
+
+    <p>
+        Happy 1st Anniversary, Jeniesys.
+    </p>
+
+    <div class="signature">
+        — With all my heart ❤️
+    </div>
+
+</div>
+
+<button
+    type="button"
+    class="anniversary-button"
+    id="anniversaryButton"
+>
+    ✨ Celebrate Our Year
+</button>
+```
+
+</section>
 
 <style>
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-:root {
-    --pink: #c94f79;
-    --deep-pink: #a93661;
-    --soft-pink: #ffe5ef;
-    --cream: #fffafc;
-    --text: #53323e;
-    --muted: #99727f;
-    --glass: rgba(255,255,255,.76);
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    overflow-x: hidden;
-
-    font-family: Georgia, "Times New Roman", serif;
-    color: var(--text);
-
-    background:
-        radial-gradient(circle at 10% 10%, rgba(255,255,255,.9), transparent 25%),
-        radial-gradient(circle at 90% 80%, rgba(255,153,194,.35), transparent 28%),
-        linear-gradient(135deg,#f8c9dc,#fff0f5 45%,#f6b3cf);
-
-    display: flex;
-    justify-content: center;
-    padding: 25px 12px 50px;
-}
 
 /* =========================
-   OPENING SCREEN
+   ANNIVERSARY SECTION
 ========================= */
 
-.intro {
-    position: fixed;
-    inset: 0;
-    z-index: 100;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background:
-        radial-gradient(circle at center, #fff4f8, #efb1ca);
-
-    transition:
-        opacity 1s ease,
-        visibility 1s ease;
-}
-
-.intro.hide {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-.intro-content {
-    text-align: center;
-    padding: 30px;
-    animation: introIn 1.4s ease;
-}
-
-.intro-heart {
-    font-size: 60px;
-    animation: heartbeat 1.5s infinite;
-}
-
-.intro h2 {
-    margin: 18px 0 8px;
-    color: var(--deep-pink);
-    font-size: clamp(2rem,8vw,3.5rem);
-}
-
-.intro p {
-    color: #875b6b;
-    margin-bottom: 25px;
-}
-
-.enter-button {
-    border: 0;
-    padding: 14px 30px;
-    border-radius: 999px;
-
-    background: linear-gradient(135deg,#d85f88,#ad3763);
-    color: white;
-
-    font: inherit;
-    cursor: pointer;
-
-    box-shadow: 0 12px 30px rgba(170,55,99,.28);
-    transition: .3s ease;
-}
-
-.enter-button:hover {
-    transform: translateY(-3px) scale(1.03);
-}
-
-@keyframes introIn {
-    from {
-        opacity: 0;
-        transform: translateY(25px) scale(.96);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-/* =========================
-   BACKGROUND EFFECTS
-========================= */
-
-.glow {
-    position: fixed;
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    filter: blur(70px);
-    pointer-events: none;
-    z-index: 0;
-}
-
-.glow.one {
-    background: rgba(255,255,255,.8);
-    top: -100px;
-    left: -90px;
-}
-
-.glow.two {
-    background: rgba(255,111,168,.3);
-    right: -100px;
-    bottom: -100px;
-}
-
-.sparkle {
-    position: fixed;
-    pointer-events: none;
-    z-index: 1;
-    animation: sparkleFloat linear forwards;
-}
-
-@keyframes sparkleFloat {
-    0% {
-        opacity: 0;
-        transform: translateY(20px) scale(.5) rotate(0);
-    }
-    15% {
-        opacity: .8;
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-100vh) scale(1.2) rotate(180deg);
-    }
-}
-
-/* =========================
-   MAIN CARD
-========================= */
-
-.container {
+.anniversary {
     position: relative;
-    z-index: 3;
 
-    width: min(620px,96vw);
+    margin-top: 45px;
+    padding: 45px 22px 35px;
 
-    margin-top: 15px;
+    overflow: hidden;
 
-    padding: 38px 30px 30px;
+    border-radius: 30px;
 
-    background: var(--glass);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    background:
+        radial-gradient(
+            circle at 50% 10%,
+            rgba(255,255,255,.95),
+            rgba(255,226,239,.82)
+        );
 
-    border: 1px solid rgba(255,255,255,.9);
-    border-radius: 32px;
+    border: 1px solid rgba(255,255,255,.95);
 
     box-shadow:
-        0 30px 80px rgba(145,45,87,.20),
-        0 5px 20px rgba(145,45,87,.08);
-
-    text-align: center;
-
-    animation: cardIn 1.2s ease;
-}
-
-@keyframes cardIn {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+        0 20px 55px rgba(150,55,95,.15);
 }
 
 /* =========================
-   HEADER
+   BADGE
 ========================= */
 
-.small-heart {
-    font-size: 30px;
-    animation: heartbeat 1.7s infinite;
-}
+.anniversary-badge {
+    display: inline-block;
 
-h1 {
-    margin: 8px 0;
+    padding: 8px 17px;
 
-    font-size: clamp(2.2rem,8vw,3.5rem);
-    line-height: 1.1;
-
-    color: var(--pink);
-
-    text-shadow:
-        0 4px 18px rgba(201,79,121,.16);
-}
-
-.subtitle {
-    color: var(--muted);
-    font-style: italic;
-    margin-bottom: 25px;
-}
-
-/* =========================
-   PHOTO
-========================= */
-
-.photo-frame {
-    position: relative;
-
-    width: min(360px,92%);
-    height: 330px;
-
-    margin: 25px auto;
-
-    padding: 8px;
-
-    border-radius: 26px;
+    border-radius: 999px;
 
     background:
         linear-gradient(
             135deg,
-            #f2a1bd,
-            white,
-            #e67fa3,
-            white
+            #e9a5bd,
+            #c34f76
         );
 
-    background-size: 300% 300%;
-    animation:
-        photoFloat 4s ease-in-out infinite,
-        gradientMove 6s ease infinite;
+    color: white;
+
+    font-size: .75rem;
+    letter-spacing: 3px;
 
     box-shadow:
-        0 20px 45px rgba(180,65,108,.25),
-        0 0 45px rgba(245,166,194,.35);
-}
-
-.photo-inner {
-    width: 100%;
-    height: 100%;
-
-    overflow: hidden;
-    border-radius: 20px;
-
-    background: #fff0f5;
-}
-
-.photo-inner img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-    transition: transform 1s ease;
-}
-
-.photo-frame:hover img {
-    transform: scale(1.07);
-}
-
-@keyframes photoFloat {
-    0%,100% {
-        transform: translateY(0) rotate(-.4deg);
-    }
-    50% {
-        transform: translateY(-7px) rotate(.4deg);
-    }
-}
-
-@keyframes gradientMove {
-    0%,100% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
+        0 8px 20px rgba(195,79,118,.2);
 }
 
 /* =========================
-   MEMORY COUNTER
+   BIG ONE
 ========================= */
 
-.memory-counter {
-    margin: 18px auto 8px;
+.anniversary-number {
+    margin-top: 15px;
 
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 
-    padding: 9px 15px;
+    font-size: clamp(5rem,20vw,9rem);
 
-    border-radius: 999px;
+    line-height: .9;
 
-    background: rgba(255,238,245,.8);
-    border: 1px solid #f3c4d5;
+    background:
+        linear-gradient(
+            135deg,
+            #d9678c,
+            #a93460,
+            #e99ab6
+        );
 
-    color: var(--pink);
-    font-size: .86rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+
+    text-shadow:
+        0 10px 35px rgba(174,48,94,.15);
+
+    animation:
+        anniversaryPulse
+        3s ease-in-out infinite;
+}
+
+@keyframes anniversaryPulse {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+
+}
+
+.anniversary h2 {
+    margin: 10px 0 5px;
+
+    color: #bd476f;
+
+    font-size:
+        clamp(
+            1.8rem,
+            6vw,
+            2.7rem
+        );
+}
+
+.anniversary-date {
+    color: #96707d;
+    font-size: .9rem;
 }
 
 /* =========================
    DIVIDER
 ========================= */
 
-.divider {
+.anniversary-divider {
     display: flex;
     align-items: center;
+
     gap: 12px;
-    margin: 30px 0;
+
+    margin: 28px 0;
 }
 
-.divider::before,
-.divider::after {
+.anniversary-divider::before,
+.anniversary-divider::after {
     content: "";
-    height: 1px;
+
     flex: 1;
-    background: linear-gradient(to right,transparent,#dfa0b5);
+    height: 1px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            #dda0b7
+        );
 }
 
-.divider::after {
-    background: linear-gradient(to left,transparent,#dfa0b5);
+.anniversary-divider::after {
+    background:
+        linear-gradient(
+            to left,
+            transparent,
+            #dda0b7
+        );
 }
 
-.divider span {
-    color: var(--pink);
+.anniversary-divider span {
+    color: #cc5a7d;
     font-size: 20px;
 }
 
@@ -371,846 +366,439 @@ h1 {
    LETTER
 ========================= */
 
-.letter {
-    font-size: 1.08rem;
+.anniversary-letter {
+    text-align: left;
+
+    max-width: 540px;
+
+    margin: auto;
+
+    color: #563640;
+
+    font-size: 1.05rem;
     line-height: 1.85;
-    color: var(--text);
 }
 
-.letter .opening {
-    font-size: 1.35rem;
-    color: var(--pink);
+.anniversary-letter p {
+    margin: 20px 0;
+}
+
+.letter-greeting {
+    color: #c24d76;
+
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
-.letter p {
-    margin: 18px 0;
+.anniversary-letter strong {
+    color: #bc456d;
 }
 
-.highlight {
-    color: var(--pink);
+.heart-line {
+    text-align: center;
+
+    color: #c14c74;
+
+    font-style: italic;
+
+    margin-top: 30px !important;
+}
+
+.future-line {
+    text-align: center;
+
+    font-size: 1.15rem;
+
+    color: #b33f68;
+
     font-weight: bold;
 }
 
-.forever {
-    color: var(--pink);
+.big-message {
+    text-align: center;
+
+    color: #c04770;
+
+    font-size: 1.55rem;
+
     font-weight: bold;
-    font-size: 1.25rem;
+
+    margin-top: 35px !important;
+}
+
+.final-love {
+    text-align: center;
+
+    font-size: 1.08rem;
+}
+
+.memory-title {
+    margin: 45px 0 18px;
+
+    color: #bd4a71;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.memory-title span {
+    margin: 0 8px;
+    opacity: .65;
 }
 
 /* =========================
-   TYPING MESSAGE
+   MEMORY CARDS
 ========================= */
 
-.typewriter-box {
-    min-height: 72px;
+.memory-grid {
+    display: grid;
 
-    margin: 25px 0;
-    padding: 20px;
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+.memory-card {
+    padding: 20px 12px;
 
     border-radius: 20px;
 
     background:
-        linear-gradient(
-            135deg,
-            rgba(255,239,246,.95),
-            rgba(255,255,255,.8)
-        );
+        rgba(255,255,255,.7);
 
-    border: 1px solid #f2c3d2;
-
-    color: var(--pink);
-    font-style: italic;
-}
-
-.cursor {
-    display: inline-block;
-    width: 2px;
-    height: 1em;
-    margin-left: 3px;
-
-    background: var(--pink);
-
-    animation: blink .8s infinite;
-    vertical-align: middle;
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
-
-/* =========================
-   INTERACTIVE BUTTONS
-========================= */
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-
-    margin-top: 25px;
-}
-
-.action-button {
-    border: 0;
-    border-radius: 999px;
-
-    padding: 12px 20px;
-
-    background: linear-gradient(135deg,#d45b83,#b33c68);
-
-    color: white;
-
-    font-family: Georgia,serif;
-    font-size: .95rem;
-
-    cursor: pointer;
-
-    box-shadow: 0 8px 20px rgba(179,60,104,.22);
-
-    transition: .3s ease;
-}
-
-.action-button:hover {
-    transform: translateY(-3px);
-}
-
-.action-button.secondary {
-    background: rgba(255,255,255,.8);
-    color: var(--pink);
-    border: 1px solid #efbfd0;
-}
-
-/* =========================
-   SECRET MESSAGE
-========================= */
-
-.secret {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
+    border:
+        1px solid #f0c5d4;
 
     transition:
-        max-height .9s ease,
-        opacity .7s ease,
-        margin .7s ease;
+        transform .35s ease,
+        box-shadow .35s ease;
 }
 
-.secret.show {
-    max-height: 400px;
-    opacity: 1;
-    margin-top: 20px;
+.memory-card:hover {
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 15px 30px rgba(172,55,98,.13);
 }
 
-.secret-content {
-    padding: 23px;
-
-    border-radius: 22px;
-
-    background: linear-gradient(
-        135deg,
-        #fff1f7,
-        #ffffff
-    );
-
-    border: 1px solid #f1bfd0;
-
-    line-height: 1.75;
+.memory-icon {
+    font-size: 30px;
 }
 
-/* =========================
-   MUSIC
-========================= */
+.memory-card h3 {
+    margin: 9px 0 7px;
 
-.music-player {
-    margin-top: 32px;
-    padding: 23px 18px;
-
-    border-radius: 24px;
-
-    background: rgba(255,239,246,.7);
-    border: 1px solid #f1c2d2;
+    color: #bc476e;
 }
 
-.music-title {
-    color: var(--pink);
-    font-weight: bold;
-    margin-bottom: 5px;
-}
+.memory-card p {
+    margin: 0;
 
-.music-song {
-    color: #89616f;
-    font-size: .86rem;
-    margin-bottom: 14px;
-}
+    font-size: .82rem;
+    line-height: 1.55;
 
-audio {
-    width: 100%;
-    max-width: 390px;
-    height: 42px;
-}
-
-.music-note {
-    color: #a27b87;
-    font-size: .76rem;
-    margin-top: 9px;
+    color: #896672;
 }
 
 /* =========================
    FINAL REVEAL
 ========================= */
 
-.final-reveal {
-    margin-top: 28px;
-    padding: 24px 18px;
+.anniversary-final {
+    position: relative;
 
-    border-radius: 24px;
+    margin-top: 35px;
+    padding: 30px 18px;
+
+    border-radius: 25px;
 
     background:
-        radial-gradient(
-            circle at center,
-            rgba(255,255,255,.9),
-            rgba(255,229,239,.75)
+        linear-gradient(
+            135deg,
+            #fff,
+            #ffe8f1
         );
 
-    border: 1px solid #f2c1d2;
+    border: 1px solid #efbfd0;
+
+    overflow: hidden;
 }
 
-.final-reveal h2 {
-    color: var(--pink);
-    margin-top: 0;
+.orbit-heart {
+    font-size: 40px;
+
+    animation:
+        anniversaryHeart
+        2s ease-in-out infinite;
 }
 
-.final-heart {
-    font-size: 38px;
-    animation: heartbeat 1.6s infinite;
+@keyframes anniversaryHeart {
+
+    0%,100% {
+        transform:
+            scale(1)
+            rotate(-4deg);
+    }
+
+    50% {
+        transform:
+            scale(1.2)
+            rotate(4deg);
+    }
+
+}
+
+.small-final {
+    margin-top: 15px;
+
+    color: #9b7280;
+    font-size: .85rem;
+}
+
+.anniversary-final h3 {
+    color: #c34e76;
+    margin: 8px 0 15px;
+}
+
+.final-word {
+    font-size: 2.2rem;
+
+    color: #b63e69;
+
+    font-weight: bold;
+}
+
+.anniversary-final p {
+    color: #69434f;
+}
+
+.signature {
+    margin-top: 22px;
+
+    color: #c24b73;
+
+    font-style: italic;
 }
 
 /* =========================
-   FOOTER
+   BUTTON
 ========================= */
 
-.footer {
-    margin-top: 30px;
+.anniversary-button {
+    margin-top: 25px;
 
-    color: #a47783;
-    font-size: .8rem;
+    border: 0;
+
+    border-radius: 999px;
+
+    padding: 14px 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d45d84,
+            #a93460
+        );
+
+    color: white;
+
+    font-family: Georgia, serif;
+    font-size: .95rem;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px rgba(169,52,96,.25);
+
+    transition: .3s ease;
 }
 
-@keyframes heartbeat {
-    0%,100% {
-        transform: scale(1);
-    }
-    15% {
-        transform: scale(1.18);
-    }
-    30% {
-        transform: scale(1);
-    }
-    45% {
-        transform: scale(1.1);
-    }
+.anniversary-button:hover {
+    transform:
+        translateY(-3px)
+        scale(1.03);
+}
+
+/* =========================
+   CELEBRATION PARTICLES
+========================= */
+
+.anniversary-particle {
+    position: fixed;
+
+    pointer-events: none;
+
+    z-index: 999;
+
+    font-size: 20px;
 }
 
 /* =========================
    MOBILE
 ========================= */
 
-@media(max-width:520px) {
+@media(max-width:600px) {
 
-    body {
-        padding: 10px 8px 35px;
+    .anniversary {
+        padding: 35px 17px 28px;
     }
 
-    .container {
-        padding: 28px 18px 24px;
-        border-radius: 26px;
-    }
-
-    .photo-frame {
-        height: 285px;
-    }
-
-    .letter {
+    .anniversary-letter {
         font-size: 1rem;
         line-height: 1.75;
     }
 
-    h1 {
-        font-size: 2.35rem;
+    .memory-grid {
+        grid-template-columns: 1fr;
     }
 
-    .action-button {
-        width: 100%;
+    .memory-card {
+        padding: 17px;
     }
+
 }
 
-/* Respect reduced-motion preferences */
-@media(prefers-reduced-motion:reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: .01ms !important;
-    }
-}
 </style>
 
-</head>
-
-<body>
-
-<!-- =========================
-     INTRO
-========================= -->
-
-<div class="intro" id="intro">
-
-```
-<div class="intro-content">
-
-    <div class="intro-heart">❤️</div>
-
-    <h2>For Jeniesys</h2>
-
-    <p>
-        Some memories deserve their own little world.
-    </p>
-
-    <button
-        class="enter-button"
-        id="enterButton"
-        type="button"
-    >
-        ✨ Open This
-    </button>
-
-</div>
-```
-
-</div>
-
-<div class="glow one"></div>
-<div class="glow two"></div>
-
-<main class="container">
-
-```
-<!-- HEADER -->
-
-<div class="small-heart">❤️</div>
-
-<h1>For Jeniesys</h1>
-
-<div class="subtitle">
-    A little universe made from memories, words, and music.
-</div>
-
-<!-- PHOTO -->
-
-<div class="photo-frame">
-
-    <div class="photo-inner">
-
-        <img
-            src="./f545c7b6-19e5-45b8-897e-a42b3bdd5465.jpg"
-            alt="A beautiful memory"
-            loading="eager"
-        >
-
-    </div>
-
-</div>
-
-<div class="memory-counter">
-    ♡ <span id="memoryCount">0</span> little reasons to smile
-</div>
-
-<div class="divider">
-    <span>♡</span>
-</div>
-
-<!-- LETTER -->
-
-<section class="letter">
-
-    <p class="opening">
-        Dearest Jeniesys,
-    </p>
-
-    <p>
-        I don't think there are enough words in the world
-        to completely explain how much you mean to me.
-    </p>
-
-    <p>
-        Somehow, you became one of the most beautiful parts
-        of my days. Your presence can make ordinary moments
-        feel special, and simply knowing that you're there
-        can make everything feel a little brighter.
-    </p>
-
-    <p>
-        Thank you for every smile, every memory, every little
-        moment, and every reason you have given me to be happy.
-        <span class="highlight">
-            You are someone I will always treasure.
-        </span>
-    </p>
-
-    <p>
-        If I could give you one thing, I would give you the
-        ability to see yourself through my eyes — just for a
-        moment — so you could understand how incredibly
-        special you are.
-    </p>
-
-    <p>
-        No matter where life takes us, I hope you always
-        remember that you have a special place in my heart.
-    </p>
-
-    <p class="forever">
-        Forever and always. ❤️
-    </p>
-
-</section>
-
-<!-- TYPING MESSAGE -->
-
-<div class="typewriter-box">
-
-    <span id="typewriter"></span>
-    <span class="cursor"></span>
-
-</div>
-
-<!-- BUTTONS -->
-
-<div class="buttons">
-
-    <button
-        class="action-button"
-        id="secretButton"
-        type="button"
-    >
-        💌 One More Thing...
-    </button>
-
-    <button
-        class="action-button secondary"
-        id="heartButton"
-        type="button"
-    >
-        💗 Make a Wish
-    </button>
-
-</div>
-
-<!-- SECRET -->
-
-<div
-    class="secret"
-    id="secret"
->
-
-    <div class="secret-content">
-
-        Jeniesys, this little page may only be made of
-        pictures, words, animations, and music.
-
-        <br><br>
-
-        But behind every part of it is something simple:
-
-        <br><br>
-
-        <strong>
-            You are appreciated.
-            You are cared for.
-            You are remembered.
-            And you are incredibly special. ❤️
-        </strong>
-
-        <br><br>
-
-        I hope whenever you see this page,
-        it reminds you that someone took the time
-        to create something beautiful just to make
-        you smile.
-
-    </div>
-
-</div>
-
-<!-- MUSIC -->
-
-<div class="music-player">
-
-    <div class="music-title">
-        🎵 Our little soundtrack
-    </div>
-
-    <div class="music-song">
-        Sympre Ikaw Lang — Wellie
-    </div>
-
-    <audio
-        id="music"
-        controls
-        loop
-        preload="metadata"
-    >
-
-        <!-- Put your legally obtained/local MP3 beside index.html -->
-        <source
-            src="./Sympre Ikaw Lang - Wellie.mp3"
-            type="audio/mpeg"
-        >
-
-        Your browser does not support audio.
-
-    </audio>
-
-    <div class="music-note">
-        Press play after opening the page. ❤️
-    </div>
-
-</div>
-
-<!-- FINAL -->
-
-<section class="final-reveal">
-
-    <div class="final-heart">
-        ❤️
-    </div>
-
-    <h2>And if you ever forget...</h2>
-
-    <p>
-        Come back here.
-    </p>
-
-    <p>
-        Read the words again.
-        Look at the picture again.
-        Listen to the song again.
-    </p>
-
-    <p>
-        And remember that this little page
-        was made especially for you.
-    </p>
-
-</section>
-
-<div class="footer">
-    Made with ❤️ for Jeniesys
-    <br>
-    <span id="year"></span>
-</div>
-```
-
-</main>
-
 <script>
-document.addEventListener("DOMContentLoaded", () => {
 
-    const intro = document.getElementById("intro");
-    const enterButton = document.getElementById("enterButton");
-    const music = document.getElementById("music");
+/* =========================
+   ANNIVERSARY CELEBRATION
+========================= */
 
-    const secretButton = document.getElementById("secretButton");
-    const secret = document.getElementById("secret");
+(function () {
 
-    const heartButton = document.getElementById("heartButton");
+    const button =
+        document.getElementById(
+            "anniversaryButton"
+        );
 
-    const typewriter = document.getElementById("typewriter");
-    const memoryCount = document.getElementById("memoryCount");
-    const year = document.getElementById("year");
+    if (!button) return;
 
-    /* =========================
-       YEAR
-    ========================= */
+    button.addEventListener(
+        "click",
+        celebrate
+    );
 
-    year.textContent =
-        "Created with a little bit of magic • " +
-        new Date().getFullYear();
-
-    /* =========================
-       OPEN EXPERIENCE
-    ========================= */
-
-    enterButton.addEventListener("click", () => {
-
-        intro.classList.add("hide");
-
-        /*
-         * Browsers allow media playback more reliably
-         * after a user interaction.
-         */
-        music.play().catch(() => {
-            /*
-             * If autoplay is blocked, the normal
-             * audio controls remain available.
-             */
-        });
-
-        startTypewriter();
-        createSparkleBurst();
-
-    });
-
-    /* =========================
-       SECRET MESSAGE
-    ========================= */
-
-    secretButton.addEventListener("click", () => {
-
-        const opened =
-            secret.classList.toggle("show");
-
-        secretButton.textContent =
-            opened
-                ? "💗 Hide the message"
-                : "💌 One More Thing...";
-
-        if (opened) {
-            createSparkleBurst();
-        }
-
-    });
-
-    /* =========================
-       HEART / WISH BUTTON
-    ========================= */
-
-    heartButton.addEventListener("click", () => {
-
-        createHeartBurst();
-
-        heartButton.textContent = "✨ Wish sent";
-
-        setTimeout(() => {
-            heartButton.textContent = "💗 Make a Wish";
-        }, 1800);
-
-    });
-
-    /* =========================
-       TYPEWRITER
-    ========================= */
-
-    const message =
-        "Some people become memories. Some become reasons to smile.";
-
-    let typeStarted = false;
-
-    function startTypewriter() {
-
-        if (typeStarted) {
-            return;
-        }
-
-        typeStarted = true;
-
-        let index = 0;
-
-        function type() {
-
-            if (index < message.length) {
-
-                typewriter.textContent +=
-                    message.charAt(index);
-
-                index++;
-
-                setTimeout(type, 48);
-
-            }
-
-        }
-
-        type();
-    }
-
-    /* =========================
-       MEMORY COUNTER
-    ========================= */
-
-    let count = 0;
-
-    const target = 100;
-
-    const counterTimer = setInterval(() => {
-
-        count += 2;
-
-        if (count >= target) {
-
-            count = target;
-            clearInterval(counterTimer);
-
-        }
-
-        memoryCount.textContent = count;
-
-    }, 35);
-
-    /* =========================
-       FLOATING SPARKLES
-    ========================= */
-
-    function createSparkle() {
-
-        const sparkle =
-            document.createElement("div");
-
-        sparkle.className = "sparkle";
+    function celebrate() {
 
         const symbols = [
+            "❤️",
+            "💗",
+            "💕",
+            "✨",
             "♡",
-            "✦",
-            "♥",
-            "✧",
-            "·"
+            "🌸"
         ];
 
-        sparkle.textContent =
-            symbols[
-                Math.floor(
-                    Math.random() * symbols.length
-                )
-            ];
+        for (
+            let i = 0;
+            i < 45;
+            i++
+        ) {
 
-        sparkle.style.left =
-            Math.random() * 100 + "vw";
+            setTimeout(() => {
 
-        sparkle.style.bottom =
-            "-20px";
+                const particle =
+                    document.createElement("div");
 
-        sparkle.style.fontSize =
-            (10 + Math.random() * 18) + "px";
+                particle.className =
+                    "anniversary-particle";
 
-        sparkle.style.animationDuration =
-            (5 + Math.random() * 5) + "s";
+                particle.textContent =
+                    symbols[
+                        Math.floor(
+                            Math.random() *
+                            symbols.length
+                        )
+                    ];
 
-        document.body.appendChild(sparkle);
+                particle.style.left =
+                    (35 + Math.random() * 30) +
+                    "vw";
+
+                particle.style.top =
+                    (45 + Math.random() * 15) +
+                    "vh";
+
+                document.body.appendChild(
+                    particle
+                );
+
+                const angle =
+                    Math.random() *
+                    Math.PI *
+                    2;
+
+                const distance =
+                    80 +
+                    Math.random() *
+                    280;
+
+                const x =
+                    Math.cos(angle) *
+                    distance;
+
+                const y =
+                    Math.sin(angle) *
+                    distance;
+
+                particle.animate(
+                    [
+                        {
+                            transform:
+                                "translate(-50%,-50%) scale(.3)",
+                            opacity: 0
+                        },
+                        {
+                            transform:
+                                "translate(-50%,-50%) scale(1)",
+                            opacity: 1,
+                            offset: .15
+                        },
+                        {
+                            transform:
+                                `translate(
+                                    calc(-50% + ${x}px),
+                                    calc(-50% + ${y}px)
+                                )
+                                rotate(${Math.random()*360}deg)
+                                scale(.7)`,
+                            opacity: 0
+                        }
+                    ],
+                    {
+                        duration:
+                            1300 +
+                            Math.random() * 1000,
+
+                        easing:
+                            "cubic-bezier(.15,.75,.3,1)"
+                    }
+                );
+
+                setTimeout(() => {
+                    particle.remove();
+                }, 2500);
+
+            }, i * 25);
+
+        }
+
+        button.textContent =
+            "❤️ One beautiful year";
 
         setTimeout(() => {
-            sparkle.remove();
-        }, 10000);
-    }
 
-    setInterval(createSparkle, 850);
+            button.textContent =
+                "✨ Celebrate Our Year";
 
-    /* =========================
-       SPARKLE BURST
-    ========================= */
-
-    function createSparkleBurst() {
-
-        for (let i = 0; i < 22; i++) {
-
-            setTimeout(() => {
-                createSparkle();
-            }, i * 35);
-
-        }
+        }, 3000);
 
     }
 
-    /* =========================
-       HEART BURST
-    ========================= */
+})();
 
-    function createHeartBurst() {
-
-        const hearts = [
-            "❤️",
-            "💕",
-            "💗",
-            "♡",
-            "💖"
-        ];
-
-        for (let i = 0; i < 18; i++) {
-
-            const heart =
-                document.createElement("div");
-
-            heart.textContent =
-                hearts[
-                    Math.floor(
-                        Math.random() * hearts.length
-                    )
-                ];
-
-            heart.style.position = "fixed";
-            heart.style.left = "50%";
-            heart.style.top = "50%";
-            heart.style.zIndex = "50";
-            heart.style.pointerEvents = "none";
-            heart.style.fontSize =
-                (15 + Math.random() * 20) + "px";
-
-            const angle =
-                Math.random() * Math.PI * 2;
-
-            const distance =
-                80 + Math.random() * 220;
-
-            const x =
-                Math.cos(angle) * distance;
-
-            const y =
-                Math.sin(angle) * distance;
-
-            heart.animate(
-                [
-                    {
-                        transform:
-                            "translate(-50%,-50%) scale(.4)",
-                        opacity: 0
-                    },
-                    {
-                        transform:
-                            "translate(-50%,-50%) scale(1)",
-                        opacity: 1,
-                        offset: .15
-                    },
-                    {
-                        transform:
-                            `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) scale(.8)`,
-                        opacity: 0
-                    }
-                ],
-                {
-                    duration:
-                        1200 + Math.random() * 700,
-                    easing: "cubic-bezier(.2,.8,.3,1)"
-                }
-            );
-
-            document.body.appendChild(heart);
-
-            setTimeout(() => {
-                heart.remove();
-            }, 2200);
-
-        }
-
-    }
-
-});
 </script>
-
-</body>
-</html>
