@@ -1,661 +1,484 @@
 <!-- =========================
-     1 YEAR ANNIVERSARY SECTION
+     CREATIVE DREAM-SKY BACKGROUND
 ========================= -->
 
-<section class="anniversary">
+<div class="dream-background" aria-hidden="true">
 
 ```
-<div class="anniversary-stars"></div>
-
-<div class="anniversary-badge">
-    ✦ ONE YEAR ✦
+<div class="moon">
+    <div class="moon-glow"></div>
 </div>
 
-<div class="anniversary-number">
-    1
-</div>
+<div class="aurora aurora-one"></div>
+<div class="aurora aurora-two"></div>
+<div class="aurora aurora-three"></div>
 
-<h2>
-    One Year With You
-</h2>
+<div class="stars" id="stars"></div>
 
-<p class="anniversary-date">
-    365 days • countless memories • one very special person
-</p>
+<div class="cloud cloud-one"></div>
+<div class="cloud cloud-two"></div>
 
-<div class="anniversary-divider">
-    <span>♡</span>
-</div>
-
-<div class="anniversary-letter">
-
-    <p class="letter-greeting">
-        My dearest Jeniesys,
-    </p>
-
-    <p>
-        One year.
-    </p>
-
-    <p>
-        When I think about that, it honestly feels strange how
-        something that can be measured by a number can hold
-        <strong>so many memories.</strong>
-    </p>
-
-    <p>
-        There were happy days, random moments, little arguments,
-        silly conversations, unexpected laughs, and countless
-        moments that probably seemed ordinary at the time.
-    </p>
-
-    <p>
-        But looking back now, I realize something:
-        <strong>
-            those ordinary moments became some of my favorite memories.
-        </strong>
-    </p>
-
-    <p>
-        Thank you for being part of this year of my life.
-        Thank you for the smiles, the patience, the memories,
-        and even the moments that weren't perfect.
-    </p>
-
-    <p>
-        I don't want to pretend that everything will always be
-        perfect. Life isn't like that.
-    </p>
-
-    <p>
-        What I do hope is that whenever life gets difficult,
-        we remember why we started, why we stayed, and why
-        these little moments matter.
-    </p>
-
-    <p class="heart-line">
-        Because if one year can create this many memories...
-    </p>
-
-    <p class="future-line">
-        I can only imagine how beautiful the memories ahead
-        of us could be.
-    </p>
-
-    <p>
-        So here's to the days we've already shared,
-        the lessons we've learned, the laughter we've had,
-        and every little moment that brought us here.
-    </p>
-
-    <p class="big-message">
-        Happy 1st Anniversary, Jeniesys.
-    </p>
-
-    <p>
-        Thank you for being one of the most meaningful parts
-        of my year.
-    </p>
-
-    <p class="final-love">
-        And if I could choose one place to be again,
-        I wouldn't choose a perfect place.
-    </p>
-
-    <p class="final-love">
-        I'd choose another ordinary day with you.
-        ❤️
-    </p>
-
-</div>
-
-<!-- =========================
-     MEMORY CARDS
-========================= -->
-
-<div class="memory-title">
-    <span>✦</span>
-    A year in little moments
-    <span>✦</span>
-</div>
-
-<div class="memory-grid">
-
-    <div class="memory-card">
-        <div class="memory-icon">🌱</div>
-        <h3>Then</h3>
-        <p>
-            The beginning of something we didn't know
-            would become this meaningful.
-        </p>
-    </div>
-
-    <div class="memory-card">
-        <div class="memory-icon">🌷</div>
-        <h3>Along the way</h3>
-        <p>
-            The laughs, the random moments,
-            the memories we collected without noticing.
-        </p>
-    </div>
-
-    <div class="memory-card">
-        <div class="memory-icon">🌙</div>
-        <h3>Now</h3>
-        <p>
-            One year later, we're here —
-            with another chapter waiting to be written.
-        </p>
-    </div>
-
-</div>
-
-<!-- =========================
-     FINAL REVEAL
-========================= -->
-
-<div class="anniversary-final">
-
-    <div class="orbit-heart">
-        ❤️
-    </div>
-
-    <p class="small-final">
-        365 days ago, this story began.
-    </p>
-
-    <h3>
-        Today, I just want to say...
-    </h3>
-
-    <div class="final-word">
-        Thank you.
-    </div>
-
-    <p>
-        For being you.
-    </p>
-
-    <p>
-        Happy 1st Anniversary, Jeniesys.
-    </p>
-
-    <div class="signature">
-        — With all my heart ❤️
-    </div>
-
-</div>
-
-<button
-    type="button"
-    class="anniversary-button"
-    id="anniversaryButton"
->
-    ✨ Celebrate Our Year
-</button>
+<div class="petals" id="petals"></div>
 ```
 
-</section>
+</div>
 
 <style>
 
 /* =========================
-   ANNIVERSARY SECTION
+   DREAM BACKGROUND
 ========================= */
 
-.anniversary {
+body {
+    background: #090914;
+    color: #fff;
     position: relative;
+}
 
-    margin-top: 45px;
-    padding: 45px 22px 35px;
+/* Full background layer */
 
+.dream-background {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
     overflow: hidden;
-
-    border-radius: 30px;
+    pointer-events: none;
 
     background:
         radial-gradient(
-            circle at 50% 10%,
-            rgba(255,255,255,.95),
-            rgba(255,226,239,.82)
+            circle at 50% 15%,
+            rgba(126, 72, 145, .35),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 10% 80%,
+            rgba(220, 73, 137, .22),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 70%,
+            rgba(83, 101, 194, .25),
+            transparent 32%
+        ),
+        linear-gradient(
+            180deg,
+            #080814 0%,
+            #111027 45%,
+            #24142d 100%
         );
-
-    border: 1px solid rgba(255,255,255,.95);
-
-    box-shadow:
-        0 20px 55px rgba(150,55,95,.15);
 }
 
 /* =========================
-   BADGE
+   MOON
 ========================= */
 
-.anniversary-badge {
-    display: inline-block;
+.moon {
+    position: absolute;
 
-    padding: 8px 17px;
+    width: 110px;
+    height: 110px;
 
-    border-radius: 999px;
+    top: 9%;
+    right: 11%;
+
+    border-radius: 50%;
 
     background:
-        linear-gradient(
-            135deg,
-            #e9a5bd,
-            #c34f76
+        radial-gradient(
+            circle at 35% 30%,
+            #ffffff,
+            #ffeaf4 55%,
+            #eab6cf 100%
         );
-
-    color: white;
-
-    font-size: .75rem;
-    letter-spacing: 3px;
 
     box-shadow:
-        0 8px 20px rgba(195,79,118,.2);
+        0 0 25px rgba(255,235,246,.8),
+        0 0 70px rgba(255,192,220,.45),
+        0 0 140px rgba(255,130,187,.2);
+
+    animation: moonFloat 7s ease-in-out infinite;
 }
 
-/* =========================
-   BIG ONE
-========================= */
-
-.anniversary-number {
-    margin-top: 15px;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: clamp(5rem,20vw,9rem);
-
-    line-height: .9;
-
-    background:
-        linear-gradient(
-            135deg,
-            #d9678c,
-            #a93460,
-            #e99ab6
-        );
-
-    -webkit-background-clip: text;
-    background-clip: text;
-
-    color: transparent;
-
-    text-shadow:
-        0 10px 35px rgba(174,48,94,.15);
-
-    animation:
-        anniversaryPulse
-        3s ease-in-out infinite;
+.moon::before,
+.moon::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(194,142,165,.18);
 }
 
-@keyframes anniversaryPulse {
+.moon::before {
+    width: 18px;
+    height: 18px;
+    left: 23px;
+    top: 28px;
+}
+
+.moon::after {
+    width: 11px;
+    height: 11px;
+    right: 22px;
+    bottom: 27px;
+}
+
+@keyframes moonFloat {
 
     0%,100% {
-        transform: scale(1);
+        transform: translateY(0);
     }
 
     50% {
-        transform: scale(1.04);
+        transform: translateY(-12px);
     }
 
 }
 
-.anniversary h2 {
-    margin: 10px 0 5px;
+/* Moon halo */
 
-    color: #bd476f;
+.moon-glow {
+    position: absolute;
+    inset: -45px;
 
-    font-size:
-        clamp(
-            1.8rem,
-            6vw,
-            2.7rem
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,201,225,.22),
+            transparent 65%
         );
-}
 
-.anniversary-date {
-    color: #96707d;
-    font-size: .9rem;
+    filter: blur(10px);
 }
 
 /* =========================
-   DIVIDER
+   AURORA
 ========================= */
 
-.anniversary-divider {
-    display: flex;
-    align-items: center;
+.aurora {
+    position: absolute;
 
-    gap: 12px;
+    width: 90%;
+    height: 35%;
 
-    margin: 28px 0;
+    left: 5%;
+
+    border-radius: 50%;
+
+    filter: blur(35px);
+
+    opacity: .45;
+
+    transform: rotate(-8deg);
+
+    mix-blend-mode: screen;
 }
 
-.anniversary-divider::before,
-.anniversary-divider::after {
-    content: "";
-
-    flex: 1;
-    height: 1px;
+.aurora-one {
+    top: 18%;
 
     background:
         linear-gradient(
-            to right,
+            90deg,
             transparent,
-            #dda0b7
+            rgba(226,87,167,.55),
+            rgba(112,94,211,.45),
+            transparent
         );
+
+    animation: auroraMove 10s ease-in-out infinite;
 }
 
-.anniversary-divider::after {
+.aurora-two {
+    top: 29%;
+
     background:
         linear-gradient(
-            to left,
+            90deg,
             transparent,
-            #dda0b7
+            rgba(83,185,206,.25),
+            rgba(210,92,185,.45),
+            transparent
         );
+
+    transform: rotate(8deg);
+
+    animation:
+        auroraMoveReverse
+        13s ease-in-out infinite;
 }
 
-.anniversary-divider span {
-    color: #cc5a7d;
-    font-size: 20px;
-}
-
-/* =========================
-   LETTER
-========================= */
-
-.anniversary-letter {
-    text-align: left;
-
-    max-width: 540px;
-
-    margin: auto;
-
-    color: #563640;
-
-    font-size: 1.05rem;
-    line-height: 1.85;
-}
-
-.anniversary-letter p {
-    margin: 20px 0;
-}
-
-.letter-greeting {
-    color: #c24d76;
-
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.anniversary-letter strong {
-    color: #bc456d;
-}
-
-.heart-line {
-    text-align: center;
-
-    color: #c14c74;
-
-    font-style: italic;
-
-    margin-top: 30px !important;
-}
-
-.future-line {
-    text-align: center;
-
-    font-size: 1.15rem;
-
-    color: #b33f68;
-
-    font-weight: bold;
-}
-
-.big-message {
-    text-align: center;
-
-    color: #c04770;
-
-    font-size: 1.55rem;
-
-    font-weight: bold;
-
-    margin-top: 35px !important;
-}
-
-.final-love {
-    text-align: center;
-
-    font-size: 1.08rem;
-}
-
-.memory-title {
-    margin: 45px 0 18px;
-
-    color: #bd4a71;
-
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.memory-title span {
-    margin: 0 8px;
-    opacity: .65;
-}
-
-/* =========================
-   MEMORY CARDS
-========================= */
-
-.memory-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 12px;
-}
-
-.memory-card {
-    padding: 20px 12px;
-
-    border-radius: 20px;
+.aurora-three {
+    top: 42%;
 
     background:
-        rgba(255,255,255,.7);
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,130,188,.25),
+            rgba(116,95,205,.35),
+            transparent
+        );
+
+    animation:
+        auroraMove
+        16s ease-in-out infinite;
+}
+
+@keyframes auroraMove {
+
+    0%,100% {
+        transform:
+            translateX(-8%)
+            rotate(-8deg)
+            scale(1);
+    }
+
+    50% {
+        transform:
+            translateX(8%)
+            rotate(-3deg)
+            scale(1.15);
+    }
+
+}
+
+@keyframes auroraMoveReverse {
+
+    0%,100% {
+        transform:
+            translateX(8%)
+            rotate(8deg)
+            scale(1.1);
+    }
+
+    50% {
+        transform:
+            translateX(-8%)
+            rotate(3deg)
+            scale(1);
+    }
+
+}
+
+/* =========================
+   STARS
+========================= */
+
+.stars {
+    position: absolute;
+    inset: 0;
+}
+
+.star {
+    position: absolute;
+
+    width: 2px;
+    height: 2px;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    box-shadow:
+        0 0 6px #fff,
+        0 0 12px rgba(255,190,220,.8);
+
+    animation: twinkle var(--duration) ease-in-out infinite;
+}
+
+@keyframes twinkle {
+
+    0%,100% {
+        opacity: .2;
+        transform: scale(.7);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.7);
+    }
+
+}
+
+/* =========================
+   CLOUDS
+========================= */
+
+.cloud {
+    position: absolute;
+
+    width: 350px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,185,215,.055);
+
+    filter: blur(20px);
+
+    animation: cloudMove linear infinite;
+}
+
+.cloud-one {
+    top: 35%;
+    left: -400px;
+    animation-duration: 45s;
+}
+
+.cloud-two {
+    top: 65%;
+    left: -500px;
+    animation-duration: 60s;
+    animation-delay: 10s;
+}
+
+@keyframes cloudMove {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(150vw);
+    }
+
+}
+
+/* =========================
+   FLOATING PETALS
+========================= */
+
+.petals {
+    position: absolute;
+    inset: 0;
+}
+
+.petal {
+    position: absolute;
+
+    width: 9px;
+    height: 15px;
+
+    border-radius:
+        80% 20% 80% 20%;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,178,211,.85),
+            rgba(214,83,139,.35)
+        );
+
+    filter: blur(.2px);
+
+    animation:
+        petalFall
+        var(--fall)
+        linear infinite;
+
+    opacity: 0;
+}
+
+@keyframes petalFall {
+
+    0% {
+        opacity: 0;
+        transform:
+            translateY(-30px)
+            translateX(0)
+            rotate(0deg);
+    }
+
+    10% {
+        opacity: .8;
+    }
+
+    50% {
+        transform:
+            translateY(50vh)
+            translateX(80px)
+            rotate(180deg);
+    }
+
+    90% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 0;
+        transform:
+            translateY(110vh)
+            translateX(-80px)
+            rotate(360deg);
+    }
+
+}
+
+/* =========================
+   CONTENT LAYER
+========================= */
+
+.container {
+    position: relative;
+    z-index: 10;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.90),
+            rgba(255,240,247,.78)
+        );
+
+    color: #53323e;
+
+    box-shadow:
+        0 30px 100px rgba(0,0,0,.35),
+        0 0 60px rgba(255,125,181,.10);
 
     border:
-        1px solid #f0c5d4;
+        1px solid rgba(255,255,255,.75);
 
-    transition:
-        transform .35s ease,
-        box-shadow .35s ease;
-}
-
-.memory-card:hover {
-    transform:
-        translateY(-7px);
-
-    box-shadow:
-        0 15px 30px rgba(172,55,98,.13);
-}
-
-.memory-icon {
-    font-size: 30px;
-}
-
-.memory-card h3 {
-    margin: 9px 0 7px;
-
-    color: #bc476e;
-}
-
-.memory-card p {
-    margin: 0;
-
-    font-size: .82rem;
-    line-height: 1.55;
-
-    color: #896672;
-}
-
-/* =========================
-   FINAL REVEAL
-========================= */
-
-.anniversary-final {
-    position: relative;
-
-    margin-top: 35px;
-    padding: 30px 18px;
-
-    border-radius: 25px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #fff,
-            #ffe8f1
-        );
-
-    border: 1px solid #efbfd0;
-
-    overflow: hidden;
-}
-
-.orbit-heart {
-    font-size: 40px;
-
-    animation:
-        anniversaryHeart
-        2s ease-in-out infinite;
-}
-
-@keyframes anniversaryHeart {
-
-    0%,100% {
-        transform:
-            scale(1)
-            rotate(-4deg);
-    }
-
-    50% {
-        transform:
-            scale(1.2)
-            rotate(4deg);
-    }
-
-}
-
-.small-final {
-    margin-top: 15px;
-
-    color: #9b7280;
-    font-size: .85rem;
-}
-
-.anniversary-final h3 {
-    color: #c34e76;
-    margin: 8px 0 15px;
-}
-
-.final-word {
-    font-size: 2.2rem;
-
-    color: #b63e69;
-
-    font-weight: bold;
-}
-
-.anniversary-final p {
-    color: #69434f;
-}
-
-.signature {
-    margin-top: 22px;
-
-    color: #c24b73;
-
-    font-style: italic;
-}
-
-/* =========================
-   BUTTON
-========================= */
-
-.anniversary-button {
-    margin-top: 25px;
-
-    border: 0;
-
-    border-radius: 999px;
-
-    padding: 14px 25px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #d45d84,
-            #a93460
-        );
-
-    color: white;
-
-    font-family: Georgia, serif;
-    font-size: .95rem;
-
-    cursor: pointer;
-
-    box-shadow:
-        0 10px 25px rgba(169,52,96,.25);
-
-    transition: .3s ease;
-}
-
-.anniversary-button:hover {
-    transform:
-        translateY(-3px)
-        scale(1.03);
-}
-
-/* =========================
-   CELEBRATION PARTICLES
-========================= */
-
-.anniversary-particle {
-    position: fixed;
-
-    pointer-events: none;
-
-    z-index: 999;
-
-    font-size: 20px;
 }
 
 /* =========================
    MOBILE
 ========================= */
 
-@media(max-width:600px) {
+@media (max-width:600px) {
 
-    .anniversary {
-        padding: 35px 17px 28px;
+    .moon {
+        width: 70px;
+        height: 70px;
+
+        top: 6%;
+        right: 7%;
     }
 
-    .anniversary-letter {
-        font-size: 1rem;
-        line-height: 1.75;
+    .aurora {
+        width: 140%;
+        left: -20%;
     }
 
-    .memory-grid {
-        grid-template-columns: 1fr;
+    .cloud {
+        opacity: .5;
     }
 
-    .memory-card {
-        padding: 17px;
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .moon,
+    .aurora,
+    .cloud,
+    .star,
+    .petal {
+        animation: none !important;
     }
 
 }
@@ -665,137 +488,90 @@
 <script>
 
 /* =========================
-   ANNIVERSARY CELEBRATION
+   GENERATE STARS
 ========================= */
 
-(function () {
+(function createStars() {
 
-    const button =
-        document.getElementById(
-            "anniversaryButton"
+    const container =
+        document.getElementById("stars");
+
+    if (!container) return;
+
+    const amount =
+        window.innerWidth < 600 ? 55 : 110;
+
+    for (let i = 0; i < amount; i++) {
+
+        const star =
+            document.createElement("span");
+
+        star.className = "star";
+
+        star.style.left =
+            Math.random() * 100 + "%";
+
+        star.style.top =
+            Math.random() * 100 + "%";
+
+        star.style.setProperty(
+            "--duration",
+            (2 + Math.random() * 4) + "s"
         );
 
-    if (!button) return;
+        star.style.animationDelay =
+            Math.random() * 5 + "s";
 
-    button.addEventListener(
-        "click",
-        celebrate
-    );
+        const size =
+            Math.random() < .15
+                ? 3
+                : 1 + Math.random() * 1.5;
 
-    function celebrate() {
+        star.style.width = size + "px";
+        star.style.height = size + "px";
 
-        const symbols = [
-            "❤️",
-            "💗",
-            "💕",
-            "✨",
-            "♡",
-            "🌸"
-        ];
+        container.appendChild(star);
 
-        for (
-            let i = 0;
-            i < 45;
-            i++
-        ) {
+    }
 
-            setTimeout(() => {
+})();
 
-                const particle =
-                    document.createElement("div");
+/* =========================
+   GENERATE PETALS
+========================= */
 
-                particle.className =
-                    "anniversary-particle";
+(function createPetals() {
 
-                particle.textContent =
-                    symbols[
-                        Math.floor(
-                            Math.random() *
-                            symbols.length
-                        )
-                    ];
+    const container =
+        document.getElementById("petals");
 
-                particle.style.left =
-                    (35 + Math.random() * 30) +
-                    "vw";
+    if (!container) return;
 
-                particle.style.top =
-                    (45 + Math.random() * 15) +
-                    "vh";
+    const amount =
+        window.innerWidth < 600 ? 12 : 20;
 
-                document.body.appendChild(
-                    particle
-                );
+    for (let i = 0; i < amount; i++) {
 
-                const angle =
-                    Math.random() *
-                    Math.PI *
-                    2;
+        const petal =
+            document.createElement("span");
 
-                const distance =
-                    80 +
-                    Math.random() *
-                    280;
+        petal.className = "petal";
 
-                const x =
-                    Math.cos(angle) *
-                    distance;
+        petal.style.left =
+            Math.random() * 100 + "%";
 
-                const y =
-                    Math.sin(angle) *
-                    distance;
+        petal.style.setProperty(
+            "--fall",
+            (8 + Math.random() * 10) + "s"
+        );
 
-                particle.animate(
-                    [
-                        {
-                            transform:
-                                "translate(-50%,-50%) scale(.3)",
-                            opacity: 0
-                        },
-                        {
-                            transform:
-                                "translate(-50%,-50%) scale(1)",
-                            opacity: 1,
-                            offset: .15
-                        },
-                        {
-                            transform:
-                                `translate(
-                                    calc(-50% + ${x}px),
-                                    calc(-50% + ${y}px)
-                                )
-                                rotate(${Math.random()*360}deg)
-                                scale(.7)`,
-                            opacity: 0
-                        }
-                    ],
-                    {
-                        duration:
-                            1300 +
-                            Math.random() * 1000,
+        petal.style.animationDelay =
+            Math.random() * 12 + "s";
 
-                        easing:
-                            "cubic-bezier(.15,.75,.3,1)"
-                    }
-                );
+        petal.style.transform =
+            `scale(${.5 + Math.random()})`;
 
-                setTimeout(() => {
-                    particle.remove();
-                }, 2500);
-
-            }, i * 25);
-
-        }
-
-        button.textContent =
-            "❤️ One beautiful year";
-
-        setTimeout(() => {
-
-            button.textContent =
-                "✨ Celebrate Our Year";
-
-        }, 3000);
+        container.appendChild(petal);
 
     }
 
