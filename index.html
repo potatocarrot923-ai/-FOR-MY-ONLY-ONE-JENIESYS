@@ -1,804 +1,1994 @@
-<!-- =========================
-     1 YEAR ANNIVERSARY SECTION
-========================= -->
-
-<section class="anniversary">
-
-```
-<div class="anniversary-stars"></div>
-
-<div class="anniversary-badge">
-    ✦ ONE YEAR ✦
-</div>
-
-<div class="anniversary-number">
-    1
-</div>
-
-<h2>
-    One Year With You
-</h2>
-
-<p class="anniversary-date">
-    365 days • countless memories • one very special person
-</p>
-
-<div class="anniversary-divider">
-    <span>♡</span>
-</div>
-
-<div class="anniversary-letter">
-
-    <p class="letter-greeting">
-        My dearest Jeniesys,
-    </p>
-
-    <p>
-        One year.
-    </p>
-
-    <p>
-        When I think about that, it honestly feels strange how
-        something that can be measured by a number can hold
-        <strong>so many memories.</strong>
-    </p>
-
-    <p>
-        There were happy days, random moments, little arguments,
-        silly conversations, unexpected laughs, and countless
-        moments that probably seemed ordinary at the time.
-    </p>
-
-    <p>
-        But looking back now, I realize something:
-        <strong>
-            those ordinary moments became some of my favorite memories.
-        </strong>
-    </p>
-
-    <p>
-        Thank you for being part of this year of my life.
-        Thank you for the smiles, the patience, the memories,
-        and even the moments that weren't perfect.
-    </p>
-
-    <p>
-        I don't want to pretend that everything will always be
-        perfect. Life isn't like that.
-    </p>
-
-    <p>
-        What I do hope is that whenever life gets difficult,
-        we remember why we started, why we stayed, and why
-        these little moments matter.
-    </p>
-
-    <p class="heart-line">
-        Because if one year can create this many memories...
-    </p>
-
-    <p class="future-line">
-        I can only imagine how beautiful the memories ahead
-        of us could be.
-    </p>
-
-    <p>
-        So here's to the days we've already shared,
-        the lessons we've learned, the laughter we've had,
-        and every little moment that brought us here.
-    </p>
-
-    <p class="big-message">
-        Happy 1st Anniversary, Jeniesys.
-    </p>
-
-    <p>
-        Thank you for being one of the most meaningful parts
-        of my year.
-    </p>
-
-    <p class="final-love">
-        And if I could choose one place to be again,
-        I wouldn't choose a perfect place.
-    </p>
-
-    <p class="final-love">
-        I'd choose another ordinary day with you.
-        ❤️
-    </p>
-
-</div>
-
-<!-- =========================
-     MEMORY CARDS
-========================= -->
-
-<div class="memory-title">
-    <span>✦</span>
-    A year in little moments
-    <span>✦</span>
-</div>
-
-<div class="memory-grid">
-
-    <div class="memory-card">
-        <div class="memory-icon">🌱</div>
-        <h3>Then</h3>
-        <p>
-            The beginning of something we didn't know
-            would become this meaningful.
-        </p>
-    </div>
-
-    <div class="memory-card">
-        <div class="memory-icon">🌷</div>
-        <h3>Along the way</h3>
-        <p>
-            The laughs, the random moments,
-            the memories we collected without noticing.
-        </p>
-    </div>
-
-    <div class="memory-card">
-        <div class="memory-icon">🌙</div>
-        <h3>Now</h3>
-        <p>
-            One year later, we're here —
-            with another chapter waiting to be written.
-        </p>
-    </div>
-
-</div>
-
-<!-- =========================
-     FINAL REVEAL
-========================= -->
-
-<div class="anniversary-final">
-
-    <div class="orbit-heart">
-        ❤️
-    </div>
-
-    <p class="small-final">
-        365 days ago, this story began.
-    </p>
-
-    <h3>
-        Today, I just want to say...
-    </h3>
-
-    <div class="final-word">
-        Thank you.
-    </div>
-
-    <p>
-        For being you.
-    </p>
-
-    <p>
-        Happy 1st Anniversary, Jeniesys.
-    </p>
-
-    <div class="signature">
-        — With all my heart ❤️
-    </div>
-
-</div>
-
-<button
-    type="button"
-    class="anniversary-button"
-    id="anniversaryButton"
->
-    ✨ Celebrate Our Year
-</button>
-```
-
-</section>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#130b1f">
+<title>For Jeniesys ❤️</title>
 
 <style>
+/* =========================================================
+   RESET
+========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* =========================
-   ANNIVERSARY SECTION
-========================= */
+html {
+    scroll-behavior: smooth;
+}
 
-.anniversary {
-    position: relative;
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    color: #fff;
+    background:
+        radial-gradient(circle at 50% 15%, rgba(255, 116, 190, .16), transparent 28%),
+        radial-gradient(circle at 15% 75%, rgba(121, 78, 255, .13), transparent 30%),
+        radial-gradient(circle at 85% 65%, rgba(255, 180, 92, .08), transparent 28%),
+        #090712;
+}
 
-    margin-top: 45px;
-    padding: 45px 22px 35px;
-
+/* =========================================================
+   BACKGROUND
+========================================================= */
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -20;
     overflow: hidden;
+    background:
+        linear-gradient(
+            180deg,
+            #070611 0%,
+            #100a1d 42%,
+            #180d22 70%,
+            #0b0712 100%
+        );
+}
 
-    border-radius: 30px;
+.stars,
+.petals,
+.clouds,
+.aurora {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
 
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: white;
+    opacity: .45;
+    animation: twinkle var(--duration) ease-in-out infinite;
+    animation-delay: var(--delay);
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: .15;
+        transform: scale(.7);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+
+.moon {
+    position: absolute;
+    top: 7%;
+    right: 9%;
+    width: clamp(85px, 13vw, 170px);
+    aspect-ratio: 1;
+    border-radius: 50%;
     background:
         radial-gradient(
-            circle at 50% 10%,
-            rgba(255,255,255,.95),
-            rgba(255,226,239,.82)
+            circle at 35% 30%,
+            #fff,
+            #ffeef8 45%,
+            #ffc7df 72%,
+            #ef9ec6
         );
-
-    border: 1px solid rgba(255,255,255,.95);
-
     box-shadow:
-        0 20px 55px rgba(150,55,95,.15);
+        0 0 25px rgba(255, 215, 239, .5),
+        0 0 80px rgba(255, 130, 203, .22),
+        0 0 160px rgba(255, 90, 180, .1);
+    opacity: .9;
 }
 
-/* =========================
-   BADGE
-========================= */
+.moon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background:
+        radial-gradient(circle at 28% 38%, rgba(190, 105, 160, .18) 0 7%, transparent 8%),
+        radial-gradient(circle at 62% 62%, rgba(190, 105, 160, .12) 0 10%, transparent 11%),
+        radial-gradient(circle at 70% 28%, rgba(190, 105, 160, .12) 0 5%, transparent 6%);
+}
 
-.anniversary-badge {
-    display: inline-block;
+.aurora::before,
+.aurora::after {
+    content: "";
+    position: absolute;
+    left: -20%;
+    width: 140%;
+    height: 30%;
+    filter: blur(35px);
+    opacity: .17;
+    border-radius: 50%;
+    transform: rotate(-8deg);
+}
 
-    padding: 8px 17px;
-
-    border-radius: 999px;
-
+.aurora::before {
+    top: 20%;
     background:
         linear-gradient(
-            135deg,
-            #e9a5bd,
-            #c34f76
+            90deg,
+            transparent,
+            #ff63b6,
+            #8b5cff,
+            transparent
         );
-
-    color: white;
-
-    font-size: .75rem;
-    letter-spacing: 3px;
-
-    box-shadow:
-        0 8px 20px rgba(195,79,118,.2);
+    animation: auroraMove 13s ease-in-out infinite alternate;
 }
 
-/* =========================
-   BIG ONE
-========================= */
-
-.anniversary-number {
-    margin-top: 15px;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: clamp(5rem,20vw,9rem);
-
-    line-height: .9;
-
+.aurora::after {
+    top: 38%;
     background:
         linear-gradient(
-            135deg,
-            #d9678c,
-            #a93460,
-            #e99ab6
+            90deg,
+            transparent,
+            #ffae67,
+            #b66aff,
+            transparent
         );
-
-    -webkit-background-clip: text;
-    background-clip: text;
-
-    color: transparent;
-
-    text-shadow:
-        0 10px 35px rgba(174,48,94,.15);
-
-    animation:
-        anniversaryPulse
-        3s ease-in-out infinite;
+    animation: auroraMove 17s ease-in-out infinite alternate-reverse;
 }
 
-@keyframes anniversaryPulse {
-
-    0%,100% {
-        transform: scale(1);
+@keyframes auroraMove {
+    from {
+        transform: translateX(-8%) rotate(-8deg) scaleY(.8);
     }
-
-    50% {
-        transform: scale(1.04);
+    to {
+        transform: translateX(8%) rotate(-2deg) scaleY(1.1);
     }
-
 }
 
-.anniversary h2 {
-    margin: 10px 0 5px;
-
-    color: #bd476f;
-
-    font-size:
-        clamp(
-            1.8rem,
-            6vw,
-            2.7rem
-        );
+.cloud {
+    position: absolute;
+    width: 260px;
+    height: 70px;
+    border-radius: 100px;
+    background: rgba(255,255,255,.025);
+    filter: blur(16px);
+    animation: cloudMove linear infinite;
 }
 
-.anniversary-date {
-    color: #96707d;
-    font-size: .9rem;
+.cloud:nth-child(1) {
+    top: 30%;
+    left: -300px;
+    animation-duration: 42s;
 }
 
-/* =========================
-   DIVIDER
-========================= */
+.cloud:nth-child(2) {
+    top: 57%;
+    left: -400px;
+    animation-duration: 55s;
+    animation-delay: -15s;
+    transform: scale(1.4);
+}
 
-.anniversary-divider {
+@keyframes cloudMove {
+    to {
+        transform: translateX(calc(100vw + 600px));
+    }
+}
+
+/* =========================================================
+   PETALS
+========================================================= */
+.petal {
+    position: absolute;
+    top: -30px;
+    width: 8px;
+    height: 12px;
+    border-radius: 80% 20% 80% 20%;
+    background: linear-gradient(135deg, #ffd1e8, #ff6eaf);
+    opacity: .6;
+    filter: blur(.2px);
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translate3d(0, -20px, 0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: .7;
+    }
+    100% {
+        transform:
+            translate3d(
+                calc(var(--drift) * 1px),
+                110vh,
+                0
+            )
+            rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* =========================================================
+   PAGE
+========================================================= */
+.page {
+    width: min(1120px, calc(100% - 30px));
+    margin: auto;
+    padding: 25px 0 70px;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+.intro {
+    min-height: 100svh;
     display: flex;
     align-items: center;
-
-    gap: 12px;
-
-    margin: 28px 0;
-}
-
-.anniversary-divider::before,
-.anniversary-divider::after {
-    content: "";
-
-    flex: 1;
-    height: 1px;
-
-    background:
-        linear-gradient(
-            to right,
-            transparent,
-            #dda0b7
-        );
-}
-
-.anniversary-divider::after {
-    background:
-        linear-gradient(
-            to left,
-            transparent,
-            #dda0b7
-        );
-}
-
-.anniversary-divider span {
-    color: #cc5a7d;
-    font-size: 20px;
-}
-
-/* =========================
-   LETTER
-========================= */
-
-.anniversary-letter {
-    text-align: left;
-
-    max-width: 540px;
-
-    margin: auto;
-
-    color: #563640;
-
-    font-size: 1.05rem;
-    line-height: 1.85;
-}
-
-.anniversary-letter p {
-    margin: 20px 0;
-}
-
-.letter-greeting {
-    color: #c24d76;
-
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.anniversary-letter strong {
-    color: #bc456d;
-}
-
-.heart-line {
-    text-align: center;
-
-    color: #c14c74;
-
-    font-style: italic;
-
-    margin-top: 30px !important;
-}
-
-.future-line {
-    text-align: center;
-
-    font-size: 1.15rem;
-
-    color: #b33f68;
-
-    font-weight: bold;
-}
-
-.big-message {
-    text-align: center;
-
-    color: #c04770;
-
-    font-size: 1.55rem;
-
-    font-weight: bold;
-
-    margin-top: 35px !important;
-}
-
-.final-love {
-    text-align: center;
-
-    font-size: 1.08rem;
-}
-
-.memory-title {
-    margin: 45px 0 18px;
-
-    color: #bd4a71;
-
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.memory-title span {
-    margin: 0 8px;
-    opacity: .65;
-}
-
-/* =========================
-   MEMORY CARDS
-========================= */
-
-.memory-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 12px;
-}
-
-.memory-card {
-    padding: 20px 12px;
-
-    border-radius: 20px;
-
-    background:
-        rgba(255,255,255,.7);
-
-    border:
-        1px solid #f0c5d4;
-
-    transition:
-        transform .35s ease,
-        box-shadow .35s ease;
-}
-
-.memory-card:hover {
-    transform:
-        translateY(-7px);
-
-    box-shadow:
-        0 15px 30px rgba(172,55,98,.13);
-}
-
-.memory-icon {
-    font-size: 30px;
-}
-
-.memory-card h3 {
-    margin: 9px 0 7px;
-
-    color: #bc476e;
-}
-
-.memory-card p {
-    margin: 0;
-
-    font-size: .82rem;
-    line-height: 1.55;
-
-    color: #896672;
-}
-
-/* =========================
-   FINAL REVEAL
-========================= */
-
-.anniversary-final {
+    justify-content: center;
     position: relative;
+}
 
-    margin-top: 35px;
-    padding: 30px 18px;
+.intro-content {
+    text-align: center;
+    max-width: 760px;
+    padding: 30px 20px;
+}
 
-    border-radius: 25px;
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border: 1px solid rgba(255,255,255,.13);
+    border-radius: 999px;
+    background: rgba(255,255,255,.055);
+    backdrop-filter: blur(12px);
+    color: #ffc9e5;
+    font-size: .78rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
 
+.intro h1 {
+    font-size: clamp(3.3rem, 10vw, 8rem);
+    line-height: .9;
+    letter-spacing: -.07em;
+    font-weight: 800;
     background:
         linear-gradient(
             135deg,
             #fff,
-            #ffe8f1
+            #ffc6e5 35%,
+            #ff78bb 70%,
+            #dba8ff
         );
-
-    border: 1px solid #efbfd0;
-
-    overflow: hidden;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 50px rgba(255, 120, 190, .13);
 }
 
-.orbit-heart {
-    font-size: 40px;
-
-    animation:
-        anniversaryHeart
-        2s ease-in-out infinite;
+.intro p {
+    margin: 25px auto 30px;
+    max-width: 560px;
+    color: rgba(255,255,255,.68);
+    line-height: 1.8;
+    font-size: 1rem;
 }
 
-@keyframes anniversaryHeart {
-
-    0%,100% {
-        transform:
-            scale(1)
-            rotate(-4deg);
-    }
-
-    50% {
-        transform:
-            scale(1.2)
-            rotate(4deg);
-    }
-
-}
-
-.small-final {
-    margin-top: 15px;
-
-    color: #9b7280;
-    font-size: .85rem;
-}
-
-.anniversary-final h3 {
-    color: #c34e76;
-    margin: 8px 0 15px;
-}
-
-.final-word {
-    font-size: 2.2rem;
-
-    color: #b63e69;
-
-    font-weight: bold;
-}
-
-.anniversary-final p {
-    color: #69434f;
-}
-
-.signature {
-    margin-top: 22px;
-
-    color: #c24b73;
-
-    font-style: italic;
-}
-
-/* =========================
-   BUTTON
-========================= */
-
-.anniversary-button {
-    margin-top: 25px;
-
+.open-btn {
     border: 0;
-
+    padding: 15px 25px;
     border-radius: 999px;
-
-    padding: 14px 25px;
-
+    color: white;
+    font-weight: 700;
+    font-size: .95rem;
+    cursor: pointer;
     background:
         linear-gradient(
             135deg,
-            #d45d84,
-            #a93460
+            #ff5fae,
+            #a768ff
         );
-
-    color: white;
-
-    font-family: Georgia, serif;
-    font-size: .95rem;
-
-    cursor: pointer;
-
     box-shadow:
-        0 10px 25px rgba(169,52,96,.25);
-
+        0 10px 40px rgba(255, 87, 172, .22),
+        inset 0 1px 0 rgba(255,255,255,.25);
     transition: .3s ease;
 }
 
-.anniversary-button:hover {
-    transform:
-        translateY(-3px)
-        scale(1.03);
+.open-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow:
+        0 15px 50px rgba(255, 87, 172, .32),
+        inset 0 1px 0 rgba(255,255,255,.25);
 }
 
-/* =========================
+.open-btn:active {
+    transform: scale(.97);
+}
+
+/* =========================================================
+   MAIN
+========================================================= */
+#mainContent {
+    display: none;
+    animation: pageIn 1.2s ease forwards;
+}
+
+@keyframes pageIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+.glass {
+    border: 1px solid rgba(255,255,255,.1);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.085),
+            rgba(255,255,255,.025)
+        );
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 30px;
+    box-shadow:
+        0 30px 100px rgba(0,0,0,.28),
+        inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+/* =========================================================
+   ANNIVERSARY HERO
+========================================================= */
+.anniversary {
+    position: relative;
+    padding: clamp(30px, 6vw, 70px);
+    text-align: center;
+    overflow: hidden;
+}
+
+.anniversary::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(255, 86, 174, .07);
+    filter: blur(80px);
+}
+
+.one-year {
+    position: relative;
+    color: #ffc4e2;
+    font-size: .75rem;
+    letter-spacing: .28em;
+    font-weight: 700;
+}
+
+.big-one {
+    position: relative;
+    margin: 15px 0 -15px;
+    font-size: clamp(7rem, 25vw, 18rem);
+    line-height: .75;
+    font-weight: 900;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.95),
+            rgba(255,121,188,.2)
+        );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: .8;
+}
+
+.anniversary h2 {
+    position: relative;
+    font-size: clamp(2rem, 5vw, 4rem);
+    letter-spacing: -.04em;
+    margin-bottom: 14px;
+}
+
+.subtitle {
+    position: relative;
+    color: rgba(255,255,255,.58);
+    font-size: .9rem;
+    letter-spacing: .08em;
+}
+
+/* =========================================================
+   PHOTO
+========================================================= */
+.photo-section {
+    display: grid;
+    grid-template-columns: minmax(260px, .9fr) minmax(300px, 1.1fr);
+    gap: 35px;
+    align-items: center;
+}
+
+.photo-frame {
+    position: relative;
+    padding: 12px;
+    border-radius: 28px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.18),
+            rgba(255,255,255,.03)
+        );
+    box-shadow:
+        0 30px 70px rgba(0,0,0,.35),
+        0 0 70px rgba(255,84,174,.08);
+    transform: rotate(-2deg);
+    transition: .5s ease;
+}
+
+.photo-frame:hover {
+    transform: rotate(0deg) translateY(-5px);
+}
+
+.photo-frame img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.photo-caption {
+    padding: 15px 10px 5px;
+    text-align: center;
+    color: rgba(255,255,255,.65);
+    font-size: .85rem;
+}
+
+/* =========================================================
+   LETTER
+========================================================= */
+.letter {
+    padding: clamp(25px, 5vw, 50px);
+}
+
+.small-title {
+    color: #ff9ac9;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .7rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.letter h2 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.letter p {
+    color: rgba(255,255,255,.7);
+    line-height: 1.9;
+    margin-bottom: 18px;
+    font-size: .97rem;
+}
+
+.signature {
+    margin-top: 30px;
+    color: #ffc0df;
+    font-size: 1.05rem;
+}
+
+/* =========================================================
+   MEMORY CARDS
+========================================================= */
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.memory {
+    padding: 25px;
+    min-height: 190px;
+    position: relative;
+    overflow: hidden;
+}
+
+.memory-number {
+    color: rgba(255,255,255,.2);
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.memory h3 {
+    margin: 12px 0;
+    font-size: 1.15rem;
+}
+
+.memory p {
+    color: rgba(255,255,255,.55);
+    line-height: 1.7;
+    font-size: .88rem;
+}
+
+.memory::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -40px;
+    bottom: -40px;
+    border-radius: 50%;
+    background: rgba(255,100,180,.08);
+    filter: blur(10px);
+}
+
+/* =========================================================
+   MUSIC
+========================================================= */
+.music-section {
+    padding: 28px;
+}
+
+.music-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.music-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: rgba(255,255,255,.55);
+    font-size: .78rem;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ff72b6;
+    box-shadow: 0 0 14px #ff72b6;
+}
+
+.music-card {
+    padding: 22px;
+    border-radius: 22px;
+    background: rgba(255,255,255,.045);
+    border: 1px solid rgba(255,255,255,.07);
+}
+
+.music-title {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.music-description {
+    color: rgba(255,255,255,.48);
+    font-size: .82rem;
+    margin-bottom: 18px;
+}
+
+.music-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.music-btn {
+    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(255,255,255,.06);
+    color: white;
+    border-radius: 999px;
+    padding: 11px 16px;
+    cursor: pointer;
+    transition: .25s ease;
+    font-weight: 600;
+}
+
+.music-btn:hover {
+    background: rgba(255,255,255,.11);
+    transform: translateY(-2px);
+}
+
+.music-btn.primary {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,89,171,.9),
+            rgba(142,91,255,.9)
+        );
+    border-color: transparent;
+}
+
+.music-note {
+    margin-top: 16px;
+    color: rgba(255,255,255,.4);
+    font-size: .74rem;
+    line-height: 1.6;
+}
+
+/* Equalizer */
+.equalizer {
+    display: flex;
+    align-items: end;
+    gap: 3px;
+    height: 22px;
+}
+
+.equalizer span {
+    width: 3px;
+    height: 5px;
+    border-radius: 4px;
+    background: #ff79b9;
+}
+
+.equalizer.playing span {
+    animation: eq .65s ease-in-out infinite alternate;
+}
+
+.equalizer span:nth-child(2) {
+    animation-delay: -.2s;
+}
+
+.equalizer span:nth-child(3) {
+    animation-delay: -.4s;
+}
+
+.equalizer span:nth-child(4) {
+    animation-delay: -.1s;
+}
+
+@keyframes eq {
+    to {
+        height: 20px;
+    }
+}
+
+/* =========================================================
+   FINAL REVEAL
+========================================================= */
+.reveal {
+    text-align: center;
+    padding: clamp(40px, 7vw, 80px) 25px;
+}
+
+.reveal h2 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    margin-bottom: 15px;
+}
+
+.reveal p {
+    max-width: 620px;
+    margin: auto;
+    color: rgba(255,255,255,.6);
+    line-height: 1.8;
+}
+
+.celebrate-btn {
+    margin-top: 28px;
+    border: 0;
+    border-radius: 999px;
+    padding: 15px 24px;
+    color: white;
+    background:
+        linear-gradient(
+            135deg,
+            #ff61ad,
+            #9564ff
+        );
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 15px 45px rgba(255,90,175,.2);
+    transition: .3s ease;
+}
+
+.celebrate-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+}
+
+/* =========================================================
    CELEBRATION PARTICLES
-========================= */
-
-.anniversary-particle {
+========================================================= */
+.celebration {
     position: fixed;
-
+    inset: 0;
     pointer-events: none;
-
-    z-index: 999;
-
-    font-size: 20px;
+    z-index: 100;
 }
 
-/* =========================
-   MOBILE
-========================= */
+.celebration-heart {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    font-size: 22px;
+    animation: celebrate 2s cubic-bezier(.15,.8,.25,1) forwards;
+}
 
-@media(max-width:600px) {
-
-    .anniversary {
-        padding: 35px 17px 28px;
+@keyframes celebrate {
+    0% {
+        transform:
+            translate(-50%, -50%)
+            scale(.3)
+            rotate(0);
+        opacity: 0;
     }
 
-    .anniversary-letter {
-        font-size: 1rem;
-        line-height: 1.75;
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translate(
+                calc(-50% + var(--x)),
+                calc(-50% + var(--y))
+            )
+            scale(var(--scale))
+            rotate(var(--rotate));
+        opacity: 0;
+    }
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+footer {
+    text-align: center;
+    padding: 25px 10px 0;
+    color: rgba(255,255,255,.32);
+    font-size: .75rem;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+@media (max-width: 760px) {
+    .page {
+        width: min(100% - 20px, 680px);
+    }
+
+    .photo-section {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-frame {
+        max-width: 430px;
+        margin: auto;
     }
 
     .memory-grid {
         grid-template-columns: 1fr;
     }
 
-    .memory-card {
-        padding: 17px;
+    .memory {
+        min-height: auto;
     }
 
+    .music-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .moon {
+        top: 8%;
+        right: 4%;
+    }
+
+    section {
+        margin-bottom: 55px;
+    }
 }
 
+@media (max-width: 480px) {
+    .page {
+        width: calc(100% - 14px);
+    }
+
+    .glass {
+        border-radius: 22px;
+    }
+
+    .anniversary {
+        padding: 35px 18px;
+    }
+
+    .letter {
+        padding: 25px 20px;
+    }
+
+    .music-section {
+        padding: 20px;
+    }
+
+    .intro h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* =========================================================
+   ACCESSIBILITY / REDUCED MOTION
+========================================================= */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+}
 </style>
+</head>
+
+<body>
+
+<!-- =======================================================
+     DREAM BACKGROUND
+======================================================== -->
+<div class="background">
+    <div class="stars" id="stars"></div>
+
+    <div class="aurora"></div>
+
+    <div class="moon"></div>
+
+    <div class="clouds">
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+    </div>
+
+    <div class="petals" id="petals"></div>
+</div>
+
+<!-- =======================================================
+     AUDIO
+======================================================== -->
+
+<!-- Background music -->
+<audio
+    id="backgroundMusic"
+    loop
+    preload="auto">
+    <source
+        src="./Sympre Ikaw Lang - Wellie.mp3"
+        type="audio/mpeg">
+</audio>
+
+<!-- Special song -->
+<audio
+    id="specialMusic"
+    preload="auto">
+    <source
+        src="./Shania Twain - You're Still The One (Lyrics).mp3"
+        type="audio/mpeg">
+</audio>
+
+<!-- =======================================================
+     INTRO
+======================================================== -->
+<div class="intro" id="intro">
+
+    <div class="intro-content">
+
+        <div class="eyebrow">
+            ✦ A little something for you ✦
+        </div>
+
+        <h1>Jeniesys</h1>
+
+        <p>
+            One year of memories deserves more than a simple
+            “Happy Anniversary.”
+            So I made this little world for you.
+        </p>
+
+        <button
+            class="open-btn"
+            id="openButton"
+            type="button">
+            Open This ❤️
+        </button>
+
+    </div>
+
+</div>
+
+<!-- =======================================================
+     MAIN CONTENT
+======================================================== -->
+<main id="mainContent">
+
+    <div class="page">
+
+        <!-- Anniversary hero -->
+        <section class="anniversary glass">
+
+            <div class="one-year">
+                ✦ OUR FIRST ANNIVERSARY ✦
+            </div>
+
+            <div class="big-one">1</div>
+
+            <h2>One Year With You</h2>
+
+            <p class="subtitle">
+                365 days • countless memories • one very special person
+            </p>
+
+        </section>
+
+        <!-- Photo + letter -->
+        <section class="photo-section">
+
+            <div class="photo-frame">
+
+                <img
+                    src="./f545c7b6-19e5-45b8-897e-a42b3bdd5465.jpg"
+                    alt="A special memory">
+
+                <div class="photo-caption">
+                    A moment I want to remember. ❤️
+                </div>
+
+            </div>
+
+            <div class="letter glass">
+
+                <div class="small-title">
+                    A letter for you
+                </div>
+
+                <h2>
+                    One year.
+                    And somehow, it still feels special.
+                </h2>
+
+                <p>
+                    Jeniesys, I don't think a year can really be
+                    measured by the number of days.
+                </p>
+
+                <p>
+                    It's measured by the little moments we collected
+                    along the way — the conversations, the laughs,
+                    the random moments, the days that felt ordinary
+                    but somehow became memories worth keeping.
+                </p>
+
+                <p>
+                    Thank you for being part of those moments.
+                    Thank you for being yourself, for staying through
+                    the good days and the not-so-perfect ones, and for
+                    becoming such a meaningful part of this year.
+                </p>
+
+                <p>
+                    If I could choose one thing for the next chapter,
+                    it wouldn't have to be anything huge.
+                    I'd simply choose more moments like these.
+                    More laughs. More memories. More ordinary days
+                    that somehow become my favorite ones.
+                </p>
+
+                <p>
+                    One year behind us.
+                    And hopefully, many more memories ahead.
+                </p>
+
+                <div class="signature">
+                    Happy 1st Anniversary, Jeniesys. ❤️
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Memory cards -->
+        <section>
+
+            <div class="small-title">
+                OUR LITTLE TIMELINE
+            </div>
+
+            <div class="memory-grid">
+
+                <div class="memory glass">
+                    <div class="memory-number">01</div>
+
+                    <h3>Then</h3>
+
+                    <p>
+                        It started with moments we probably didn't
+                        realize would become memories we'd look back on.
+                    </p>
+                </div>
+
+                <div class="memory glass">
+                    <div class="memory-number">02</div>
+
+                    <h3>Along the way</h3>
+
+                    <p>
+                        Somehow the little things became important —
+                        the conversations, jokes, smiles and everything
+                        in between.
+                    </p>
+                </div>
+
+                <div class="memory glass">
+                    <div class="memory-number">03</div>
+
+                    <h3>Now</h3>
+
+                    <p>
+                        One year later, there is a whole collection of
+                        moments that I wouldn't trade for anything.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             MUSIC SECTION
+        ================================================= -->
+        <section class="music-section glass">
+
+            <div class="music-top">
+
+                <div>
+                    <div class="small-title">
+                        OUR SOUNDTRACK
+                    </div>
+
+                    <div class="music-status">
+                        <span
+                            class="status-dot"
+                            id="statusDot">
+                        </span>
+
+                        <span id="musicStatus">
+                            Ready
+                        </span>
+                    </div>
+                </div>
+
+                <div
+                    class="equalizer"
+                    id="equalizer"
+                    aria-hidden="true">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+            <!-- Background music -->
+            <div class="music-card">
+
+                <div class="music-title">
+                    🎵 Sympre Ikaw Lang
+                </div>
+
+                <div class="music-description">
+                    This is the background soundtrack.
+                    It continues from where it stopped.
+                </div>
+
+                <div class="music-actions">
+
+                    <button
+                        class="music-btn primary"
+                        id="backgroundButton"
+                        type="button">
+                        ▶ Play Background
+                    </button>
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <!-- Special song -->
+            <div class="music-card">
+
+                <div class="music-title">
+                    💿 You're Still The One
+                </div>
+
+                <div class="music-description">
+                    Play this one when you want the special song.
+                    The background music automatically pauses.
+                </div>
+
+                <div class="music-actions">
+
+                    <button
+                        class="music-btn primary"
+                        id="specialPlayButton"
+                        type="button">
+                        ▶ Play Special Song
+                    </button>
+
+                    <button
+                        class="music-btn"
+                        id="specialPauseButton"
+                        type="button">
+                        ⏸ Pause
+                    </button>
+
+                    <button
+                        class="music-btn"
+                        id="specialStopButton"
+                        type="button">
+                        ■ Stop
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="music-note">
+                Only one song plays at a time. When the special song
+                is paused or finished, the background song continues
+                from its previous position.
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             FINAL REVEAL
+        ================================================= -->
+        <section class="reveal glass">
+
+            <div class="small-title">
+                ONE MORE THING
+            </div>
+
+            <h2>
+                If I could keep one thing from this year...
+            </h2>
+
+            <p>
+                I'd keep the memories.
+                Not because every day was perfect,
+                but because the imperfect days became part of
+                a story that made this year ours.
+            </p>
+
+            <p style="margin-top:18px;">
+                Thank you for being one of the most meaningful
+                parts of my year.
+            </p>
+
+            <button
+                class="celebrate-btn"
+                id="celebrateButton"
+                type="button">
+                Celebrate Our Year ✨
+            </button>
+
+        </section>
+
+        <footer>
+            Made with care for Jeniesys • 1st Anniversary ❤️
+        </footer>
+
+    </div>
+
+</main>
+
+<div
+    class="celebration"
+    id="celebration">
+</div>
 
 <script>
+/* =========================================================
+   ELEMENTS
+========================================================= */
 
-/* =========================
-   ANNIVERSARY CELEBRATION
-========================= */
+const intro = document.getElementById("intro");
+const mainContent = document.getElementById("mainContent");
+const openButton = document.getElementById("openButton");
 
-(function () {
+const backgroundMusic =
+    document.getElementById("backgroundMusic");
 
-    const button =
-        document.getElementById(
-            "anniversaryButton"
+const specialMusic =
+    document.getElementById("specialMusic");
+
+const backgroundButton =
+    document.getElementById("backgroundButton");
+
+const specialPlayButton =
+    document.getElementById("specialPlayButton");
+
+const specialPauseButton =
+    document.getElementById("specialPauseButton");
+
+const specialStopButton =
+    document.getElementById("specialStopButton");
+
+const musicStatus =
+    document.getElementById("musicStatus");
+
+const equalizer =
+    document.getElementById("equalizer");
+
+const celebrateButton =
+    document.getElementById("celebrateButton");
+
+const celebration =
+    document.getElementById("celebration");
+
+const stars =
+    document.getElementById("stars");
+
+const petals =
+    document.getElementById("petals");
+
+
+/* =========================================================
+   BACKGROUND STARS
+========================================================= */
+
+function createStars() {
+
+    const amount =
+        window.innerWidth < 600 ? 90 : 150;
+
+    const fragment =
+        document.createDocumentFragment();
+
+    for (let i = 0; i < amount; i++) {
+
+        const star =
+            document.createElement("span");
+
+        star.className = "star";
+
+        star.style.left =
+            Math.random() * 100 + "%";
+
+        star.style.top =
+            Math.random() * 100 + "%";
+
+        const size =
+            Math.random() * 2 + .7;
+
+        star.style.width =
+            size + "px";
+
+        star.style.height =
+            size + "px";
+
+        star.style.setProperty(
+            "--duration",
+            (2 + Math.random() * 4) + "s"
         );
 
-    if (!button) return;
+        star.style.setProperty(
+            "--delay",
+            (-Math.random() * 5) + "s"
+        );
 
-    button.addEventListener(
-        "click",
-        celebrate
+        fragment.appendChild(star);
+    }
+
+    stars.appendChild(fragment);
+}
+
+createStars();
+
+
+/* =========================================================
+   PETALS
+========================================================= */
+
+function createPetal() {
+
+    if (
+        document.hidden ||
+        document.documentElement.clientWidth < 1
+    ) {
+        return;
+    }
+
+    const petal =
+        document.createElement("span");
+
+    petal.className = "petal";
+
+    petal.style.left =
+        Math.random() * 100 + "vw";
+
+    petal.style.setProperty(
+        "--drift",
+        (Math.random() * 250 - 125).toFixed(0)
     );
 
-    function celebrate() {
+    petal.style.animationDuration =
+        (7 + Math.random() * 8) + "s";
 
-        const symbols = [
-            "❤️",
-            "💗",
-            "💕",
-            "✨",
-            "♡",
-            "🌸"
-        ];
+    petal.style.transform =
+        `scale(${.6 + Math.random() * .8})`;
 
-        for (
-            let i = 0;
-            i < 45;
-            i++
+    petals.appendChild(petal);
+
+    setTimeout(() => {
+        petal.remove();
+    }, 16000);
+}
+
+setInterval(createPetal, 900);
+
+
+/* =========================================================
+   MUSIC STATE
+========================================================= */
+
+let backgroundWasPlayingBeforeSpecial = false;
+
+
+/* =========================================================
+   MUSIC UI
+========================================================= */
+
+function updateMusicUI() {
+
+    const backgroundPlaying =
+        !backgroundMusic.paused &&
+        !backgroundMusic.ended;
+
+    const specialPlaying =
+        !specialMusic.paused &&
+        !specialMusic.ended;
+
+    if (specialPlaying) {
+
+        musicStatus.textContent =
+            "Playing: You're Still The One";
+
+        equalizer.classList.add("playing");
+
+        backgroundButton.textContent =
+            "▶ Background Paused";
+
+        specialPlayButton.textContent =
+            "♪ Playing Now";
+
+        return;
+    }
+
+    if (backgroundPlaying) {
+
+        musicStatus.textContent =
+            "Playing: Sympre Ikaw Lang";
+
+        equalizer.classList.add("playing");
+
+        backgroundButton.textContent =
+            "⏸ Pause Background";
+
+        specialPlayButton.textContent =
+            "▶ Play Special Song";
+
+        return;
+    }
+
+    musicStatus.textContent =
+        "Music paused";
+
+    equalizer.classList.remove("playing");
+
+    backgroundButton.textContent =
+        "▶ Play Background";
+
+    specialPlayButton.textContent =
+        "▶ Play Special Song";
+}
+
+
+/* =========================================================
+   SAFE PLAY
+========================================================= */
+
+async function safePlay(audio) {
+
+    if (!audio) {
+        return false;
+    }
+
+    try {
+
+        await audio.play();
+
+        return true;
+
+    } catch (error) {
+
+        console.warn(
+            "Audio could not start:",
+            error
+        );
+
+        updateMusicUI();
+
+        return false;
+    }
+}
+
+
+/* =========================================================
+   BACKGROUND PLAY
+========================================================= */
+
+backgroundButton.addEventListener(
+    "click",
+    async () => {
+
+        if (
+            !backgroundMusic.paused &&
+            !backgroundMusic.ended
         ) {
 
-            setTimeout(() => {
+            backgroundMusic.pause();
 
-                const particle =
-                    document.createElement("div");
+            updateMusicUI();
 
-                particle.className =
-                    "anniversary-particle";
+            return;
+        }
 
-                particle.textContent =
-                    symbols[
-                        Math.floor(
-                            Math.random() *
-                            symbols.length
-                        )
-                    ];
+        /*
+         * Never allow both songs to play.
+         */
+        if (!specialMusic.paused) {
+            specialMusic.pause();
+        }
 
-                particle.style.left =
-                    (35 + Math.random() * 30) +
-                    "vw";
+        await safePlay(backgroundMusic);
 
-                particle.style.top =
-                    (45 + Math.random() * 15) +
-                    "vh";
+        updateMusicUI();
+    }
+);
 
-                document.body.appendChild(
-                    particle
-                );
 
-                const angle =
-                    Math.random() *
-                    Math.PI *
-                    2;
+/* =========================================================
+   SPECIAL SONG PLAY
+========================================================= */
 
-                const distance =
-                    80 +
-                    Math.random() *
-                    280;
+specialPlayButton.addEventListener(
+    "click",
+    async () => {
 
-                const x =
-                    Math.cos(angle) *
-                    distance;
+        /*
+         * Remember whether background music was actually
+         * playing before switching to the special song.
+         */
+        backgroundWasPlayingBeforeSpecial =
+            !backgroundMusic.paused &&
+            !backgroundMusic.ended;
 
-                const y =
-                    Math.sin(angle) *
-                    distance;
+        /*
+         * Pause background immediately.
+         */
+        if (!backgroundMusic.paused) {
+            backgroundMusic.pause();
+        }
 
-                particle.animate(
-                    [
-                        {
-                            transform:
-                                "translate(-50%,-50%) scale(.3)",
-                            opacity: 0
-                        },
-                        {
-                            transform:
-                                "translate(-50%,-50%) scale(1)",
-                            opacity: 1,
-                            offset: .15
-                        },
-                        {
-                            transform:
-                                `translate(
-                                    calc(-50% + ${x}px),
-                                    calc(-50% + ${y}px)
-                                )
-                                rotate(${Math.random()*360}deg)
-                                scale(.7)`,
-                            opacity: 0
-                        }
-                    ],
-                    {
-                        duration:
-                            1300 +
-                            Math.random() * 1000,
+        /*
+         * If the special song had reached the end,
+         * start it again from the beginning.
+         */
+        if (
+            specialMusic.ended ||
+            specialMusic.currentTime >=
+            Math.max(0, specialMusic.duration - 0.1)
+        ) {
+            specialMusic.currentTime = 0;
+        }
 
-                        easing:
-                            "cubic-bezier(.15,.75,.3,1)"
-                    }
-                );
+        await safePlay(specialMusic);
 
-                setTimeout(() => {
-                    particle.remove();
-                }, 2500);
+        updateMusicUI();
+    }
+);
 
-            }, i * 25);
+
+/* =========================================================
+   SPECIAL PAUSE
+========================================================= */
+
+specialPauseButton.addEventListener(
+    "click",
+    () => {
+
+        if (!specialMusic.paused) {
+
+            specialMusic.pause();
+
+            /*
+             * Continue background from its exact
+             * previous position if it was playing.
+             */
+            if (
+                backgroundWasPlayingBeforeSpecial
+            ) {
+
+                safePlay(backgroundMusic);
+
+            }
+        }
+
+        updateMusicUI();
+    }
+);
+
+
+/* =========================================================
+   SPECIAL STOP
+========================================================= */
+
+specialStopButton.addEventListener(
+    "click",
+    () => {
+
+        if (!specialMusic.paused) {
+            specialMusic.pause();
+        }
+
+        specialMusic.currentTime = 0;
+
+        /*
+         * Resume background from its previous position.
+         */
+        if (
+            backgroundWasPlayingBeforeSpecial
+        ) {
+
+            safePlay(backgroundMusic);
+        }
+
+        updateMusicUI();
+    }
+);
+
+
+/* =========================================================
+   SPECIAL SONG EVENTS
+========================================================= */
+
+specialMusic.addEventListener(
+    "play",
+    () => {
+
+        /*
+         * Emergency protection against overlap.
+         */
+        if (!backgroundMusic.paused) {
+            backgroundMusic.pause();
+        }
+
+        updateMusicUI();
+    }
+);
+
+
+specialMusic.addEventListener(
+    "playing",
+    () => {
+
+        /*
+         * Extra overlap protection.
+         */
+        if (!backgroundMusic.paused) {
+            backgroundMusic.pause();
+        }
+
+        updateMusicUI();
+    }
+);
+
+
+specialMusic.addEventListener(
+    "pause",
+    () => {
+
+        /*
+         * Do not resume background if the special song
+         * has finished; the ended event handles that.
+         */
+        if (
+            !specialMusic.ended &&
+            backgroundWasPlayingBeforeSpecial
+        ) {
+
+            safePlay(backgroundMusic);
+        }
+
+        updateMusicUI();
+    }
+);
+
+
+specialMusic.addEventListener(
+    "ended",
+    () => {
+
+        specialMusic.currentTime = 0;
+
+        /*
+         * Resume background without restarting it.
+         */
+        if (
+            backgroundWasPlayingBeforeSpecial
+        ) {
+
+            safePlay(backgroundMusic);
+        }
+
+        backgroundWasPlayingBeforeSpecial =
+            false;
+
+        updateMusicUI();
+    }
+);
+
+
+/* =========================================================
+   BACKGROUND EVENTS
+========================================================= */
+
+backgroundMusic.addEventListener(
+    "play",
+    () => {
+
+        /*
+         * Never let background music play over
+         * the special song.
+         */
+        if (!specialMusic.paused) {
+            backgroundMusic.pause();
+            return;
+        }
+
+        updateMusicUI();
+    }
+);
+
+backgroundMusic.addEventListener(
+    "pause",
+    updateMusicUI
+);
+
+backgroundMusic.addEventListener(
+    "playing",
+    () => {
+
+        if (!specialMusic.paused) {
+            backgroundMusic.pause();
+            return;
+        }
+
+        updateMusicUI();
+    }
+);
+
+
+/* =========================================================
+   OPEN PAGE
+========================================================= */
+
+openButton.addEventListener(
+    "click",
+    async () => {
+
+        /*
+         * This click is a user gesture, so browsers are much
+         * more likely to allow the background music to start.
+         */
+        if (specialMusic.paused) {
+
+            await safePlay(backgroundMusic);
 
         }
 
-        button.textContent =
-            "❤️ One beautiful year";
+        intro.style.opacity = "0";
+        intro.style.transform =
+            "scale(1.03)";
+
+        intro.style.transition =
+            "opacity .8s ease, transform .8s ease";
 
         setTimeout(() => {
 
-            button.textContent =
-                "✨ Celebrate Our Year";
+            intro.style.display =
+                "none";
 
-        }, 3000);
+            mainContent.style.display =
+                "block";
+
+            window.scrollTo({
+                top: 0,
+                behavior: "instant"
+            });
+
+            updateMusicUI();
+
+        }, 800);
 
     }
+);
 
-})();
+
+/* =========================================================
+   CELEBRATION
+========================================================= */
+
+function celebrate() {
+
+    const symbols = [
+        "❤️",
+        "💗",
+        "💖",
+        "✨",
+        "♡",
+        "✦"
+    ];
+
+    const amount =
+        window.innerWidth < 600 ? 45 : 80;
+
+    for (let i = 0; i < amount; i++) {
+
+        const item =
+            document.createElement("span");
+
+        item.className =
+            "celebration-heart";
+
+        item.textContent =
+            symbols[
+                Math.floor(
+                    Math.random() *
+                    symbols.length
+                )
+            ];
+
+        item.style.setProperty(
+            "--x",
+            `${Math.random() * 1000 - 500}px`
+        );
+
+        item.style.setProperty(
+            "--y",
+            `${Math.random() * 800 - 400}px`
+        );
+
+        item.style.setProperty(
+            "--scale",
+            `${.5 + Math.random() * 1.6}`
+        );
+
+        item.style.setProperty(
+            "--rotate",
+            `${Math.random() * 720 - 360}deg`
+        );
+
+        item.style.animationDelay =
+            `${Math.random() * .35}s`;
+
+        celebration.appendChild(item);
+
+        setTimeout(() => {
+            item.remove();
+        }, 2600);
+    }
+}
+
+celebrateButton.addEventListener(
+    "click",
+    () => {
+
+        celebrate();
+
+        /*
+         * If the background isn't playing, try starting it.
+         * It still respects the special song.
+         */
+        if (
+            specialMusic.paused &&
+            backgroundMusic.paused
+        ) {
+
+            safePlay(backgroundMusic);
+        }
+
+    }
+);
+
+
+/* =========================================================
+   TOUCH / CLICK HEART EFFECT
+========================================================= */
+
+let lastHeartTime = 0;
+
+document.addEventListener(
+    "pointerdown",
+    (event) => {
+
+        const now =
+            Date.now();
+
+        if (now - lastHeartTime < 180) {
+            return;
+        }
+
+        lastHeartTime = now;
+
+        /*
+         * Don't create these effects when clicking buttons.
+         */
+        if (
+            event.target.closest("button") ||
+            event.target.closest("audio")
+        ) {
+            return;
+        }
+
+        const heart =
+            document.createElement("div");
+
+        heart.textContent =
+            Math.random() > .5
+                ? "♡"
+                : "✦";
+
+        heart.style.position =
+            "fixed";
+
+        heart.style.left =
+            event.clientX + "px";
+
+        heart.style.top =
+            event.clientY + "px";
+
+        heart.style.zIndex =
+            "90";
+
+        heart.style.pointerEvents =
+            "none";
+
+        heart.style.color =
+            "#ff9dcb";
+
+        heart.style.fontSize =
+            "18px";
+
+        heart.style.transition =
+            "transform .9s ease, opacity .9s ease";
+
+        document.body.appendChild(heart);
+
+        requestAnimationFrame(() => {
+
+            heart.style.transform =
+                `translate(
+                    ${Math.random() * 40 - 20}px,
+                    -65px
+                ) scale(1.4)`;
+
+            heart.style.opacity =
+                "0";
+        });
+
+        setTimeout(() => {
+            heart.remove();
+        }, 950);
+    }
+);
+
+
+/* =========================================================
+   INITIAL STATE
+========================================================= */
+
+updateMusicUI();
+
+
+/* =========================================================
+   ERROR PROTECTION
+========================================================= */
+
+window.addEventListener(
+    "error",
+    (event) => {
+
+        console.warn(
+            "Page error:",
+            event.error || event.message
+        );
+
+    }
+);
+
+window.addEventListener(
+    "unhandledrejection",
+    (event) => {
+
+        console.warn(
+            "Unhandled promise:",
+            event.reason
+        );
+
+        /*
+         * Prevent an audio/browser promise problem
+         * from breaking the rest of the page.
+         */
+        event.preventDefault();
+
+    }
+);
 
 </script>
+
+</body>
+</html>
+```
