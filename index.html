@@ -1,200 +1,804 @@
 <!-- =========================
-     ANNIVERSARY MUSIC
+     1 YEAR ANNIVERSARY SECTION
 ========================= -->
 
-<audio id="backgroundMusic" preload="auto" loop>
-    <source src="./Sympre Ikaw Lang - Wellie.mp3" type="audio/mpeg">
-</audio>
+<section class="anniversary">
 
-<audio id="specialMusic" preload="auto">
-    <source src="./Shania Twain - You're Still The One (Lyrics).mp3" type="audio/mpeg">
-</audio>
+```
+<div class="anniversary-stars"></div>
+
+<div class="anniversary-badge">
+    ✦ ONE YEAR ✦
+</div>
+
+<div class="anniversary-number">
+    1
+</div>
+
+<h2>
+    One Year With You
+</h2>
+
+<p class="anniversary-date">
+    365 days • countless memories • one very special person
+</p>
+
+<div class="anniversary-divider">
+    <span>♡</span>
+</div>
+
+<div class="anniversary-letter">
+
+    <p class="letter-greeting">
+        My dearest Jeniesys,
+    </p>
+
+    <p>
+        One year.
+    </p>
+
+    <p>
+        When I think about that, it honestly feels strange how
+        something that can be measured by a number can hold
+        <strong>so many memories.</strong>
+    </p>
+
+    <p>
+        There were happy days, random moments, little arguments,
+        silly conversations, unexpected laughs, and countless
+        moments that probably seemed ordinary at the time.
+    </p>
+
+    <p>
+        But looking back now, I realize something:
+        <strong>
+            those ordinary moments became some of my favorite memories.
+        </strong>
+    </p>
+
+    <p>
+        Thank you for being part of this year of my life.
+        Thank you for the smiles, the patience, the memories,
+        and even the moments that weren't perfect.
+    </p>
+
+    <p>
+        I don't want to pretend that everything will always be
+        perfect. Life isn't like that.
+    </p>
+
+    <p>
+        What I do hope is that whenever life gets difficult,
+        we remember why we started, why we stayed, and why
+        these little moments matter.
+    </p>
+
+    <p class="heart-line">
+        Because if one year can create this many memories...
+    </p>
+
+    <p class="future-line">
+        I can only imagine how beautiful the memories ahead
+        of us could be.
+    </p>
+
+    <p>
+        So here's to the days we've already shared,
+        the lessons we've learned, the laughter we've had,
+        and every little moment that brought us here.
+    </p>
+
+    <p class="big-message">
+        Happy 1st Anniversary, Jeniesys.
+    </p>
+
+    <p>
+        Thank you for being one of the most meaningful parts
+        of my year.
+    </p>
+
+    <p class="final-love">
+        And if I could choose one place to be again,
+        I wouldn't choose a perfect place.
+    </p>
+
+    <p class="final-love">
+        I'd choose another ordinary day with you.
+        ❤️
+    </p>
+
+</div>
+
+<!-- =========================
+     MEMORY CARDS
+========================= -->
+
+<div class="memory-title">
+    <span>✦</span>
+    A year in little moments
+    <span>✦</span>
+</div>
+
+<div class="memory-grid">
+
+    <div class="memory-card">
+        <div class="memory-icon">🌱</div>
+        <h3>Then</h3>
+        <p>
+            The beginning of something we didn't know
+            would become this meaningful.
+        </p>
+    </div>
+
+    <div class="memory-card">
+        <div class="memory-icon">🌷</div>
+        <h3>Along the way</h3>
+        <p>
+            The laughs, the random moments,
+            the memories we collected without noticing.
+        </p>
+    </div>
+
+    <div class="memory-card">
+        <div class="memory-icon">🌙</div>
+        <h3>Now</h3>
+        <p>
+            One year later, we're here —
+            with another chapter waiting to be written.
+        </p>
+    </div>
+
+</div>
+
+<!-- =========================
+     FINAL REVEAL
+========================= -->
+
+<div class="anniversary-final">
+
+    <div class="orbit-heart">
+        ❤️
+    </div>
+
+    <p class="small-final">
+        365 days ago, this story began.
+    </p>
+
+    <h3>
+        Today, I just want to say...
+    </h3>
+
+    <div class="final-word">
+        Thank you.
+    </div>
+
+    <p>
+        For being you.
+    </p>
+
+    <p>
+        Happy 1st Anniversary, Jeniesys.
+    </p>
+
+    <div class="signature">
+        — With all my heart ❤️
+    </div>
+
+</div>
+
+<button
+    type="button"
+    class="anniversary-button"
+    id="anniversaryButton"
+>
+    ✨ Celebrate Our Year
+</button>
+```
+
+</section>
+
+<style>
+
+/* =========================
+   ANNIVERSARY SECTION
+========================= */
+
+.anniversary {
+    position: relative;
+
+    margin-top: 45px;
+    padding: 45px 22px 35px;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    background:
+        radial-gradient(
+            circle at 50% 10%,
+            rgba(255,255,255,.95),
+            rgba(255,226,239,.82)
+        );
+
+    border: 1px solid rgba(255,255,255,.95);
+
+    box-shadow:
+        0 20px 55px rgba(150,55,95,.15);
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.anniversary-badge {
+    display: inline-block;
+
+    padding: 8px 17px;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e9a5bd,
+            #c34f76
+        );
+
+    color: white;
+
+    font-size: .75rem;
+    letter-spacing: 3px;
+
+    box-shadow:
+        0 8px 20px rgba(195,79,118,.2);
+}
+
+/* =========================
+   BIG ONE
+========================= */
+
+.anniversary-number {
+    margin-top: 15px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(5rem,20vw,9rem);
+
+    line-height: .9;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d9678c,
+            #a93460,
+            #e99ab6
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+
+    text-shadow:
+        0 10px 35px rgba(174,48,94,.15);
+
+    animation:
+        anniversaryPulse
+        3s ease-in-out infinite;
+}
+
+@keyframes anniversaryPulse {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+
+}
+
+.anniversary h2 {
+    margin: 10px 0 5px;
+
+    color: #bd476f;
+
+    font-size:
+        clamp(
+            1.8rem,
+            6vw,
+            2.7rem
+        );
+}
+
+.anniversary-date {
+    color: #96707d;
+    font-size: .9rem;
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.anniversary-divider {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 28px 0;
+}
+
+.anniversary-divider::before,
+.anniversary-divider::after {
+    content: "";
+
+    flex: 1;
+    height: 1px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            #dda0b7
+        );
+}
+
+.anniversary-divider::after {
+    background:
+        linear-gradient(
+            to left,
+            transparent,
+            #dda0b7
+        );
+}
+
+.anniversary-divider span {
+    color: #cc5a7d;
+    font-size: 20px;
+}
+
+/* =========================
+   LETTER
+========================= */
+
+.anniversary-letter {
+    text-align: left;
+
+    max-width: 540px;
+
+    margin: auto;
+
+    color: #563640;
+
+    font-size: 1.05rem;
+    line-height: 1.85;
+}
+
+.anniversary-letter p {
+    margin: 20px 0;
+}
+
+.letter-greeting {
+    color: #c24d76;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.anniversary-letter strong {
+    color: #bc456d;
+}
+
+.heart-line {
+    text-align: center;
+
+    color: #c14c74;
+
+    font-style: italic;
+
+    margin-top: 30px !important;
+}
+
+.future-line {
+    text-align: center;
+
+    font-size: 1.15rem;
+
+    color: #b33f68;
+
+    font-weight: bold;
+}
+
+.big-message {
+    text-align: center;
+
+    color: #c04770;
+
+    font-size: 1.55rem;
+
+    font-weight: bold;
+
+    margin-top: 35px !important;
+}
+
+.final-love {
+    text-align: center;
+
+    font-size: 1.08rem;
+}
+
+.memory-title {
+    margin: 45px 0 18px;
+
+    color: #bd4a71;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.memory-title span {
+    margin: 0 8px;
+    opacity: .65;
+}
+
+/* =========================
+   MEMORY CARDS
+========================= */
+
+.memory-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+.memory-card {
+    padding: 20px 12px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,.7);
+
+    border:
+        1px solid #f0c5d4;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.memory-card:hover {
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 15px 30px rgba(172,55,98,.13);
+}
+
+.memory-icon {
+    font-size: 30px;
+}
+
+.memory-card h3 {
+    margin: 9px 0 7px;
+
+    color: #bc476e;
+}
+
+.memory-card p {
+    margin: 0;
+
+    font-size: .82rem;
+    line-height: 1.55;
+
+    color: #896672;
+}
+
+/* =========================
+   FINAL REVEAL
+========================= */
+
+.anniversary-final {
+    position: relative;
+
+    margin-top: 35px;
+    padding: 30px 18px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff,
+            #ffe8f1
+        );
+
+    border: 1px solid #efbfd0;
+
+    overflow: hidden;
+}
+
+.orbit-heart {
+    font-size: 40px;
+
+    animation:
+        anniversaryHeart
+        2s ease-in-out infinite;
+}
+
+@keyframes anniversaryHeart {
+
+    0%,100% {
+        transform:
+            scale(1)
+            rotate(-4deg);
+    }
+
+    50% {
+        transform:
+            scale(1.2)
+            rotate(4deg);
+    }
+
+}
+
+.small-final {
+    margin-top: 15px;
+
+    color: #9b7280;
+    font-size: .85rem;
+}
+
+.anniversary-final h3 {
+    color: #c34e76;
+    margin: 8px 0 15px;
+}
+
+.final-word {
+    font-size: 2.2rem;
+
+    color: #b63e69;
+
+    font-weight: bold;
+}
+
+.anniversary-final p {
+    color: #69434f;
+}
+
+.signature {
+    margin-top: 22px;
+
+    color: #c24b73;
+
+    font-style: italic;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.anniversary-button {
+    margin-top: 25px;
+
+    border: 0;
+
+    border-radius: 999px;
+
+    padding: 14px 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d45d84,
+            #a93460
+        );
+
+    color: white;
+
+    font-family: Georgia, serif;
+    font-size: .95rem;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px rgba(169,52,96,.25);
+
+    transition: .3s ease;
+}
+
+.anniversary-button:hover {
+    transform:
+        translateY(-3px)
+        scale(1.03);
+}
+
+/* =========================
+   CELEBRATION PARTICLES
+========================= */
+
+.anniversary-particle {
+    position: fixed;
+
+    pointer-events: none;
+
+    z-index: 999;
+
+    font-size: 20px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px) {
+
+    .anniversary {
+        padding: 35px 17px 28px;
+    }
+
+    .anniversary-letter {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .memory-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .memory-card {
+        padding: 17px;
+    }
+
+}
+
+</style>
 
 <script>
+
 /* =========================
-   MUSIC CONTROLLER
-   ========================= */
+   ANNIVERSARY CELEBRATION
+========================= */
 
 (function () {
 
-    const backgroundMusic =
-        document.getElementById("backgroundMusic");
-
-    const specialMusic =
-        document.getElementById("specialMusic");
-
-    if (!backgroundMusic || !specialMusic) return;
-
-    let backgroundWasPlaying = false;
-    let musicStarted = false;
-
-    /*
-     * Start background music after the visitor
-     * interacts with the page.
-     */
-    function startBackgroundMusic() {
-
-        if (musicStarted) return;
-
-        musicStarted = true;
-
-        backgroundMusic.play().catch(() => {
-            /*
-             * Browser blocked autoplay.
-             * The next user interaction will retry.
-             */
-            musicStarted = false;
-        });
-    }
-
-    /*
-     * Try to start music after any normal
-     * user interaction.
-     */
-    function userInteraction() {
-
-        if (
-            specialMusic.paused &&
-            backgroundMusic.paused
-        ) {
-            startBackgroundMusic();
-        }
-
-    }
-
-    [
-        "click",
-        "touchstart",
-        "pointerdown",
-        "keydown"
-    ].forEach(eventName => {
-
-        document.addEventListener(
-            eventName,
-            userInteraction,
-            {
-                once: false,
-                passive: true
-            }
+    const button =
+        document.getElementById(
+            "anniversaryButton"
         );
 
-    });
+    if (!button) return;
 
-    /*
-     * SPECIAL SONG STARTS
-     *
-     * Save whether background music was playing,
-     * then immediately pause it.
-     */
-    specialMusic.addEventListener(
-        "play",
-        function () {
-
-            backgroundWasPlaying =
-                !backgroundMusic.paused &&
-                !backgroundMusic.ended;
-
-            backgroundMusic.pause();
-
-        }
+    button.addEventListener(
+        "click",
+        celebrate
     );
 
-    /*
-     * Extra overlap protection.
-     * Even if another script calls specialMusic.play(),
-     * background music will be stopped.
-     */
-    specialMusic.addEventListener(
-        "playing",
-        function () {
+    function celebrate() {
 
-            if (!backgroundMusic.paused) {
-                backgroundWasPlaying = true;
-                backgroundMusic.pause();
-            }
+        const symbols = [
+            "❤️",
+            "💗",
+            "💕",
+            "✨",
+            "♡",
+            "🌸"
+        ];
+
+        for (
+            let i = 0;
+            i < 45;
+            i++
+        ) {
+
+            setTimeout(() => {
+
+                const particle =
+                    document.createElement("div");
+
+                particle.className =
+                    "anniversary-particle";
+
+                particle.textContent =
+                    symbols[
+                        Math.floor(
+                            Math.random() *
+                            symbols.length
+                        )
+                    ];
+
+                particle.style.left =
+                    (35 + Math.random() * 30) +
+                    "vw";
+
+                particle.style.top =
+                    (45 + Math.random() * 15) +
+                    "vh";
+
+                document.body.appendChild(
+                    particle
+                );
+
+                const angle =
+                    Math.random() *
+                    Math.PI *
+                    2;
+
+                const distance =
+                    80 +
+                    Math.random() *
+                    280;
+
+                const x =
+                    Math.cos(angle) *
+                    distance;
+
+                const y =
+                    Math.sin(angle) *
+                    distance;
+
+                particle.animate(
+                    [
+                        {
+                            transform:
+                                "translate(-50%,-50%) scale(.3)",
+                            opacity: 0
+                        },
+                        {
+                            transform:
+                                "translate(-50%,-50%) scale(1)",
+                            opacity: 1,
+                            offset: .15
+                        },
+                        {
+                            transform:
+                                `translate(
+                                    calc(-50% + ${x}px),
+                                    calc(-50% + ${y}px)
+                                )
+                                rotate(${Math.random()*360}deg)
+                                scale(.7)`,
+                            opacity: 0
+                        }
+                    ],
+                    {
+                        duration:
+                            1300 +
+                            Math.random() * 1000,
+
+                        easing:
+                            "cubic-bezier(.15,.75,.3,1)"
+                    }
+                );
+
+                setTimeout(() => {
+                    particle.remove();
+                }, 2500);
+
+            }, i * 25);
 
         }
-    );
 
-    /*
-     * SPECIAL SONG PAUSED
-     *
-     * Resume background at its exact previous
-     * position if it was playing before.
-     */
-    specialMusic.addEventListener(
-        "pause",
-        function () {
+        button.textContent =
+            "❤️ One beautiful year";
 
-            if (
-                !specialMusic.ended &&
-                backgroundWasPlaying
-            ) {
+        setTimeout(() => {
 
-                backgroundMusic
-                    .play()
-                    .catch(() => {});
+            button.textContent =
+                "✨ Celebrate Our Year";
 
-            }
+        }, 3000);
 
-        }
-    );
-
-    /*
-     * SPECIAL SONG FINISHED
-     *
-     * Resume background music without changing
-     * its currentTime.
-     */
-    specialMusic.addEventListener(
-        "ended",
-        function () {
-
-            if (backgroundWasPlaying) {
-
-                backgroundMusic
-                    .play()
-                    .catch(() => {});
-
-            }
-
-            backgroundWasPlaying = false;
-
-        }
-    );
-
-    /*
-     * Public helper functions.
-     * These let your existing buttons control
-     * the special song without creating overlap.
-     */
-
-    window.playSpecialMusic = function () {
-
-        backgroundWasPlaying =
-            !backgroundMusic.paused &&
-            !backgroundMusic.ended;
-
-        backgroundMusic.pause();
-
-        specialMusic
-            .play()
-            .catch(() => {});
-
-    };
-
-    window.pauseSpecialMusic = function () {
-
-        specialMusic.pause();
-
-    };
-
-    window.stopSpecialMusic = function () {
-
-        specialMusic.pause();
-        specialMusic.currentTime = 0;
-
-    };
+    }
 
 })();
+
 </script>
