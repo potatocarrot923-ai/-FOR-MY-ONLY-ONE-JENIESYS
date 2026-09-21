@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -724,33 +723,24 @@ audio {
 ========================= -->
 
 <div class="intro" id="intro">
-
-```
-<div class="intro-content">
-
-    <div class="intro-heart">
-        ❤️
+    <div class="intro-content">
+        <div class="intro-heart">
+            ❤️
+        </div>
+        <h2>
+            For Jeniesys
+        </h2>
+        <p>
+            Some memories deserve their own little world.
+        </p>
+        <button
+            class="enter-button"
+            id="enterButton"
+            type="button"
+        >
+            ✨ Open This
+        </button>
     </div>
-
-    <h2>
-        For Jeniesys
-    </h2>
-
-    <p>
-        Some memories deserve their own little world.
-    </p>
-
-    <button
-        class="enter-button"
-        id="enterButton"
-        type="button"
-    >
-        ✨ Open This
-    </button>
-
-</div>
-```
-
 </div>
 
 <div class="glow one"></div>
@@ -758,306 +748,215 @@ audio {
 
 <main class="container">
 
-```
-<!-- HEADER -->
-
-<div class="small-heart">
-    ❤️
-</div>
-
-<h1>
-    For Jeniesys
-</h1>
-
-<div class="subtitle">
-    A little universe made from memories, words, and music.
-</div>
-
-
-<!-- PHOTO -->
-
-<div class="photo-frame">
-
-    <div class="photo-inner">
-
-        <img
-            src="./f545c7b6-19e5-45b8-897e-a42b3bdd5465.jpg"
-            alt="A beautiful memory"
-            loading="eager"
-        >
-
-    </div>
-
-</div>
-
-
-<div class="memory-counter">
-    ♡
-    <span id="memoryCount">0</span>
-    little reasons to smile
-</div>
-
-
-<div class="divider">
-    <span>♡</span>
-</div>
-
-
-<!-- LETTER -->
-
-<section class="letter">
-
-    <p class="opening">
-        Dearest Jeniesys,
-    </p>
-
-    <p>
-        I don't think there are enough words in the world
-        to completely explain how much you mean to me.
-    </p>
-
-    <p>
-        Somehow, you became one of the most beautiful parts
-        of my days. Your presence can make ordinary moments
-        feel special, and simply knowing that you're there
-        can make everything feel a little brighter.
-    </p>
-
-    <p>
-        Thank you for every smile, every memory, every little
-        moment, and every reason you have given me to be happy.
-
-        <span class="highlight">
-            You are someone I will always treasure.
-        </span>
-    </p>
-
-    <p>
-        If I could give you one thing, I would give you the
-        ability to see yourself through my eyes — just for a
-        moment — so you could understand how incredibly
-        special you are.
-    </p>
-
-    <p>
-        No matter where life takes us, I hope you always
-        remember that you have a special place in my heart.
-    </p>
-
-    <p class="forever">
-        Forever and always. ❤️
-    </p>
-
-</section>
-
-
-<!-- TYPING MESSAGE -->
-
-<div class="typewriter-box">
-
-    <span id="typewriter"></span>
-    <span class="cursor"></span>
-
-</div>
-
-
-<!-- BUTTONS -->
-
-<div class="buttons">
-
-    <button
-        class="action-button"
-        id="secretButton"
-        type="button"
-    >
-        💌 One More Thing...
-    </button>
-
-    <button
-        class="action-button secondary"
-        id="heartButton"
-        type="button"
-    >
-        💗 Make a Wish
-    </button>
-
-</div>
-
-
-<!-- SECRET -->
-
-<div
-    class="secret"
-    id="secret"
->
-
-    <div class="secret-content">
-
-        Jeniesys, this little page may only be made of
-        pictures, words, animations, and music.
-
-        <br><br>
-
-        But behind every part of it is something simple:
-
-        <br><br>
-
-        <strong>
-            You are appreciated.
-            You are cared for.
-            You are remembered.
-            And you are incredibly special. ❤️
-        </strong>
-
-        <br><br>
-
-        I hope whenever you see this page,
-        it reminds you that someone took the time
-        to create something beautiful just to make
-        you smile.
-
-    </div>
-
-</div>
-
-
-<!-- =========================
-     MUSIC
-========================= -->
-
-<div class="music-player">
-
-    <div class="music-title">
-        🎵 Our little soundtrack
-    </div>
-
-
-    <!-- BACKGROUND SONG -->
-
-    <div class="music-section">
-
-        <div class="music-section-title">
-            🌸 Background
-        </div>
-
-        <div class="music-song">
-            Willie Revillame - Syempre (Official Lyric Video).mp3 Revillame — Syempre
-        </div>
-
-        <audio
-            id="backgroundMusic"
-            controls
-            loop
-            preload="auto"
-        >
-
-            <source
-                src="Willie Revillame - Syempre (Official Lyric Video).mp3 Revillame - Syempre (Official Lyric Video).mp3"
-                type="audio/mpeg"
-            >
-
-            Your browser does not support audio.
-
-        </audio>
-
-        <div
-            class="music-status"
-            id="backgroundStatus"
-        >
-            🎵 Background music ready ❤️
-        </div>
-
-    </div>
-
-
-    <!-- SPECIAL SONG -->
-
-    <div class="music-section">
-
-        <div class="music-section-title">
-            💗 Special Song
-        </div>
-
-        <div class="music-song">
-            You're Still The One — Shania Twain
-        </div>
-
-        <audio
-            id="specialMusic"
-            controls
-            preload="auto"
-        >
-
-            <source
-                src="./Shania%20Twain%20-%20You%27re%20Still%20The%20One%20%28Lyrics%29.mp3"
-                type="audio/mpeg"
-            >
-
-            Your browser does not support audio.
-
-        </audio>
-
-        <div
-            class="music-status"
-            id="specialStatus"
-        >
-            Play this when you want the special song. ❤️
-        </div>
-
-    </div>
-
-
-    <div class="music-note">
-
-        🎵 Willie Revillame - Syempre (Official Lyric Video).mp3 Revillame — Syempre plays in the background.
-        Playing the special song automatically pauses the
-        background and resumes it afterward from the same position.
-
-    </div>
-
-</div>
-
-
-<!-- FINAL -->
-
-<section class="final-reveal">
-
-    <div class="final-heart">
+    <!-- HEADER -->
+    <div class="small-heart">
         ❤️
     </div>
 
-    <h2>
-        And if you ever forget...
-    </h2>
+    <h1>
+        For Jeniesys
+    </h1>
 
-    <p>
-        Come back here.
-    </p>
+    <div class="subtitle">
+        A little universe made from memories, words, and music.
+    </div>
 
-    <p>
-        Read the words again.
-        Look at the picture again.
-        Listen to the song again.
-    </p>
+    <!-- PHOTO -->
+    <div class="photo-frame">
+        <div class="photo-inner">
+            <img
+                src="./f545c7b6-19e5-45b8-897e-a42b3bdd5465.jpg"
+                alt="A beautiful memory"
+                loading="eager"
+            >
+        </div>
+    </div>
 
-    <p>
-        And remember that this little page
-        was made especially for you.
-    </p>
+    <div class="memory-counter">
+        ♡ <span id="memoryCount">0</span> little reasons to smile
+    </div>
 
-</section>
+    <div class="divider">
+        <span>♡</span>
+    </div>
 
+    <!-- LETTER -->
+    <section class="letter">
+        <p class="opening">
+            Dearest Jeniesys,
+        </p>
+        <p>
+            I don't think there are enough words in the world
+            to completely explain how much you mean to me.
+        </p>
+        <p>
+            Somehow, you became one of the most beautiful parts
+            of my days. Your presence can make ordinary moments
+            feel special, and simply knowing that you're there
+            can make everything feel a little brighter.
+        </p>
+        <p>
+            Thank you for every smile, every memory, every little
+            moment, and every reason you have given me to be happy.
+            <span class="highlight">
+                You are someone I will always treasure.
+            </span>
+        </p>
+        <p>
+            If I could give you one thing, I would give you the
+            ability to see yourself through my eyes — just for a
+            moment — so you could understand how incredibly
+            special you are.
+        </p>
+        <p>
+            No matter where life takes us, I hope you always
+            remember that you have a special place in my heart.
+        </p>
+        <p class="forever">
+            Forever and always. ❤️
+        </p>
+    </section>
 
-<div class="footer">
+    <!-- TYPING MESSAGE -->
+    <div class="typewriter-box">
+        <span id="typewriter"></span>
+        <span class="cursor"></span>
+    </div>
 
-    Made with ❤️ for Jeniesys
+    <!-- BUTTONS -->
+    <div class="buttons">
+        <button
+            class="action-button"
+            id="secretButton"
+            type="button"
+        >
+            💌 One More Thing...
+        </button>
 
-    <br>
+        <button
+            class="action-button secondary"
+            id="heartButton"
+            type="button"
+        >
+            💗 Make a Wish
+        </button>
+    </div>
 
-    <span id="year"></span>
+    <!-- SECRET -->
+    <div class="secret" id="secret">
+        <div class="secret-content">
+            Jeniesys, this little page may only be made of
+            pictures, words, animations, and music.
+            <br><br>
+            But behind every part of it is something simple:
+            <br><br>
+            <strong>
+                You are appreciated.
+                You are cared for.
+                You are remembered.
+                And you are incredibly special. ❤️
+            </strong>
+            <br><br>
+            I hope whenever you see this page,
+            it reminds you that someone took the time
+            to create something beautiful just to make
+            you smile.
+        </div>
+    </div>
 
-</div>
-```
+    <!-- MUSIC -->
+    <div class="music-player">
+        <div class="music-title">
+            🎵 Our little soundtrack
+        </div>
+
+        <!-- BACKGROUND SONG -->
+        <div class="music-section">
+            <div class="music-section-title">
+                🌸 Background
+            </div>
+            <div class="music-song">
+                Willie Revillame — Syempre
+            </div>
+
+            <audio
+                id="backgroundMusic"
+                controls
+                loop
+                preload="auto"
+            >
+                <source
+                    src="Willie Revillame - Syempre (Official Lyric Video).mp3"
+                    type="audio/mpeg"
+                >
+                Your browser does not support audio.
+            </audio>
+
+            <div class="music-status" id="backgroundStatus">
+                🎵 Background music ready ❤️
+            </div>
+        </div>
+
+        <!-- SPECIAL SONG -->
+        <div class="music-section">
+            <div class="music-section-title">
+                💗 Special Song
+            </div>
+            <div class="music-song">
+                You're Still The One — Shania Twain
+            </div>
+
+            <audio
+                id="specialMusic"
+                controls
+                preload="auto"
+            >
+                <source
+                    src="./Shania%20Twain%20-%20You%27re%20Still%20The%20One%20%28Lyrics%29.mp3"
+                    type="audio/mpeg"
+                >
+                Your browser does not support audio.
+            </audio>
+
+            <div class="music-status" id="specialStatus">
+                Play this when you want the special song. ❤️
+            </div>
+        </div>
+
+        <div class="music-note">
+            🎵 Willie Revillame — Syempre plays in the background.
+            Playing the special song automatically pauses the
+            background and resumes it afterward from the same position.
+        </div>
+    </div>
+
+    <!-- FINAL -->
+    <section class="final-reveal">
+        <div class="final-heart">
+            ❤️
+        </div>
+        <h2>
+            And if you ever forget...
+        </h2>
+        <p>
+            Come back here.
+        </p>
+        <p>
+            Read the words again.
+            Look at the picture again.
+            Listen to the song again.
+        </p>
+        <p>
+            And remember that this little page
+            was made especially for you.
+        </p>
+    </section>
+
+    <div class="footer">
+        Made with ❤️ for Jeniesys
+        <br>
+        <span id="year"></span>
+    </div>
 
 </main>
 
@@ -1068,42 +967,18 @@ document.addEventListener("DOMContentLoaded", () => {
        ELEMENTS
     ========================= */
 
-    const intro =
-        document.getElementById("intro");
-
-    const enterButton =
-        document.getElementById("enterButton");
-
-    const backgroundMusic =
-        document.getElementById("backgroundMusic");
-
-    const specialMusic =
-        document.getElementById("specialMusic");
-
-    const backgroundStatus =
-        document.getElementById("backgroundStatus");
-
-    const specialStatus =
-        document.getElementById("specialStatus");
-
-    const secretButton =
-        document.getElementById("secretButton");
-
-    const secret =
-        document.getElementById("secret");
-
-    const heartButton =
-        document.getElementById("heartButton");
-
-    const typewriter =
-        document.getElementById("typewriter");
-
-    const memoryCount =
-        document.getElementById("memoryCount");
-
-    const year =
-        document.getElementById("year");
-
+    const intro = document.getElementById("intro");
+    const enterButton = document.getElementById("enterButton");
+    const backgroundMusic = document.getElementById("backgroundMusic");
+    const specialMusic = document.getElementById("specialMusic");
+    const backgroundStatus = document.getElementById("backgroundStatus");
+    const specialStatus = document.getElementById("specialStatus");
+    const secretButton = document.getElementById("secretButton");
+    const secret = document.getElementById("secret");
+    const heartButton = document.getElementById("heartButton");
+    const typewriter = document.getElementById("typewriter");
+    const memoryCount = document.getElementById("memoryCount");
+    const year = document.getElementById("year");
 
     /* =========================
        SAFETY CHECK
@@ -1121,138 +996,76 @@ document.addEventListener("DOMContentLoaded", () => {
         !memoryCount ||
         !year
     ) {
-        console.error(
-            "Page initialization failed: required element missing."
-        );
-
+        console.error("Page initialization failed: required element missing.");
         return;
     }
-
 
     /* =========================
        MUSIC STATE
     ========================= */
 
     let backgroundShouldResume = false;
-
     let pageOpened = false;
-
 
     /* =========================
        YEAR
     ========================= */
 
-    year.textContent =
-        "Created with a little bit of magic • " +
-        new Date().getFullYear();
-
+    year.textContent = "Created with a little bit of magic • " + new Date().getFullYear();
 
     /* =========================
        STATUS
     ========================= */
 
     function setBackgroundStatus(message) {
-
         if (backgroundStatus) {
-            backgroundStatus.textContent =
-                message;
+            backgroundStatus.textContent = message;
         }
-
     }
-
 
     function setSpecialStatus(message) {
-
         if (specialStatus) {
-            specialStatus.textContent =
-                message;
+            specialStatus.textContent = message;
         }
-
     }
-
 
     /* =========================
        START BACKGROUND
     ========================= */
 
     async function startBackground() {
-
-        /*
-         * Never start the background while
-         * the special track is playing.
-         */
-        if (
-            !specialMusic.paused &&
-            !specialMusic.ended
-        ) {
+        if (!specialMusic.paused && !specialMusic.ended) {
             return;
         }
 
         try {
-
             await backgroundMusic.play();
-
             backgroundShouldResume = true;
-
-            setBackgroundStatus(
-                "🎵 Syempre is playing ❤️"
-            );
-
+            setBackgroundStatus("🎵 Syempre is playing ❤️");
         } catch (error) {
-
             backgroundShouldResume = true;
-
-            setBackgroundStatus(
-                "Tap play to start Syempre ❤️"
-            );
-
+            setBackgroundStatus("Tap play to start Syempre ❤️");
         }
-
     }
-
 
     /* =========================
        PAUSE BACKGROUND
     ========================= */
 
     function pauseBackgroundForSpecial() {
-
         if (!backgroundMusic.paused) {
-
-            /*
-             * pause() preserves currentTime.
-             *
-             * We intentionally do NOT set:
-             *
-             * backgroundMusic.currentTime = 0
-             */
             backgroundShouldResume = true;
-
             backgroundMusic.pause();
-
-            setBackgroundStatus(
-                "⏸ Syempre paused for the special song."
-            );
-
+            setBackgroundStatus("⏸ Syempre paused for the special song.");
         }
-
     }
-
 
     /* =========================
        RESUME BACKGROUND
     ========================= */
 
     async function resumeBackground() {
-
-        /*
-         * Do not resume while special music
-         * is still playing.
-         */
-        if (
-            !specialMusic.paused &&
-            !specialMusic.ended
-        ) {
+        if (!specialMusic.paused && !specialMusic.ended) {
             return;
         }
 
@@ -1261,587 +1074,275 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         try {
-
             await backgroundMusic.play();
-
-            setBackgroundStatus(
-                "🎵 Syempre resumed ❤️"
-            );
-
+            setBackgroundStatus("🎵 Syempre resumed ❤️");
         } catch (error) {
-
-            setBackgroundStatus(
-                "Tap play to resume Syempre ❤️"
-            );
-
+            setBackgroundStatus("Tap play to resume Syempre ❤️");
         }
-
     }
-
 
     /* =========================
        OPEN EXPERIENCE
     ========================= */
 
-    enterButton.addEventListener(
-        "click",
-        async () => {
-
-            if (pageOpened) {
-                return;
-            }
-
-            pageOpened = true;
-
-            intro.classList.add("hide");
-
-            /*
-             * This is a real user interaction,
-             * so browsers are much more likely
-             * to allow audio playback.
-             */
-            backgroundShouldResume = true;
-
-            await startBackground();
-
-            startTypewriter();
-
-            createSparkleBurst();
-
+    enterButton.addEventListener("click", async () => {
+        if (pageOpened) {
+            return;
         }
-    );
 
+        pageOpened = true;
+        intro.classList.add("hide");
+
+        backgroundShouldResume = true;
+        await startBackground();
+
+        startTypewriter();
+        createSparkleBurst();
+    });
 
     /* =========================
        BACKGROUND PLAY
     ========================= */
 
-    backgroundMusic.addEventListener(
-        "play",
-        () => {
-
-            /*
-             * Absolute overlap protection.
-             */
-            if (
-                !specialMusic.paused &&
-                !specialMusic.ended
-            ) {
-
-                backgroundMusic.pause();
-
-                return;
-            }
-
-            backgroundShouldResume = true;
-
-            setBackgroundStatus(
-                "🎵 Syempre is playing ❤️"
-            );
-
+    backgroundMusic.addEventListener("play", () => {
+        if (!specialMusic.paused && !specialMusic.ended) {
+            backgroundMusic.pause();
+            return;
         }
-    );
 
+        backgroundShouldResume = true;
+        setBackgroundStatus("🎵 Syempre is playing ❤️");
+    });
 
     /* =========================
        BACKGROUND PAUSE
     ========================= */
 
-    backgroundMusic.addEventListener(
-        "pause",
-        () => {
-
-            /*
-             * If special music is active,
-             * this pause was intentional.
-             */
-            if (
-                !specialMusic.paused &&
-                !specialMusic.ended
-            ) {
-                return;
-            }
-
-            if (pageOpened) {
-
-                setBackgroundStatus(
-                    "Syempre is paused."
-                );
-
-            }
-
+    backgroundMusic.addEventListener("pause", () => {
+        if (!specialMusic.paused && !specialMusic.ended) {
+            return;
         }
-    );
 
+        if (pageOpened) {
+            setBackgroundStatus("Syempre is paused.");
+        }
+    });
 
     /* =========================
        SPECIAL PLAY
     ========================= */
 
-    specialMusic.addEventListener(
-        "play",
-        () => {
-
-            /*
-             * Pause background immediately.
-             */
-            pauseBackgroundForSpecial();
-
-            setSpecialStatus(
-                "💗 You're Still The One is playing."
-            );
-
-        }
-    );
-
+    specialMusic.addEventListener("play", () => {
+        pauseBackgroundForSpecial();
+        setSpecialStatus("💗 You're Still The One is playing.");
+    });
 
     /* =========================
        SPECIAL PLAYING
     ========================= */
 
-    specialMusic.addEventListener(
-        "playing",
-        () => {
-
-            /*
-             * Extra overlap protection.
-             */
-            if (!backgroundMusic.paused) {
-                backgroundMusic.pause();
-            }
-
-            setSpecialStatus(
-                "💗 You're Still The One is playing."
-            );
-
+    specialMusic.addEventListener("playing", () => {
+        if (!backgroundMusic.paused) {
+            backgroundMusic.pause();
         }
-    );
-
+        setSpecialStatus("💗 You're Still The One is playing.");
+    });
 
     /* =========================
        SPECIAL PAUSE
     ========================= */
 
-    specialMusic.addEventListener(
-        "pause",
-        () => {
-
-            /*
-             * The ended event handles completion.
-             */
-            if (specialMusic.ended) {
-                return;
-            }
-
-            setSpecialStatus(
-                "You're Still The One is paused."
-            );
-
-            resumeBackground();
-
+    specialMusic.addEventListener("pause", () => {
+        if (specialMusic.ended) {
+            return;
         }
-    );
 
+        setSpecialStatus("You're Still The One is paused.");
+        resumeBackground();
+    });
 
     /* =========================
        SPECIAL ENDED
     ========================= */
 
-    specialMusic.addEventListener(
-        "ended",
-        () => {
-
-            setSpecialStatus(
-                "❤️ You're Still The One finished."
-            );
-
-            /*
-             * Resume Syempre from the exact
-             * position where it stopped.
-             */
-            resumeBackground();
-
-        }
-    );
-
+    specialMusic.addEventListener("ended", () => {
+        setSpecialStatus("❤️ You're Still The One finished.");
+        resumeBackground();
+    });
 
     /* =========================
        SPECIAL ERROR
     ========================= */
 
-    specialMusic.addEventListener(
-        "error",
-        () => {
-
-            setSpecialStatus(
-                "⚠️ Special song could not be loaded. Check the MP3 filename."
-            );
-
-            resumeBackground();
-
-        }
-    );
-
+    specialMusic.addEventListener("error", () => {
+        setSpecialStatus("⚠️ Special song could not be loaded. Check the MP3 filename.");
+        resumeBackground();
+    });
 
     /* =========================
        BACKGROUND ERROR
     ========================= */
 
-    backgroundMusic.addEventListener(
-        "error",
-        () => {
-
-            setBackgroundStatus(
-                "⚠️ Syempre could not be loaded. Check the MP3 filename."
-            );
-
-        }
-    );
-
+    backgroundMusic.addEventListener("error", () => {
+        setBackgroundStatus("⚠️ Syempre could not be loaded. Check the MP3 filename.");
+    });
 
     /* =========================
        SECRET MESSAGE
     ========================= */
 
-    secretButton.addEventListener(
-        "click",
-        () => {
+    secretButton.addEventListener("click", () => {
+        const opened = secret.classList.toggle("show");
+        secretButton.textContent = opened ? "💗 Hide the message" : "💌 One More Thing...";
 
-            const opened =
-                secret.classList.toggle("show");
-
-            secretButton.textContent =
-                opened
-                    ? "💗 Hide the message"
-                    : "💌 One More Thing...";
-
-            if (opened) {
-                createSparkleBurst();
-            }
-
+        if (opened) {
+            createSparkleBurst();
         }
-    );
-
+    });
 
     /* =========================
        HEART / WISH
     ========================= */
 
-    heartButton.addEventListener(
-        "click",
-        () => {
+    heartButton.addEventListener("click", () => {
+        createHeartBurst();
+        heartButton.textContent = "✨ Wish sent";
 
-            createHeartBurst();
-
-            heartButton.textContent =
-                "✨ Wish sent";
-
-            setTimeout(() => {
-
-                heartButton.textContent =
-                    "💗 Make a Wish";
-
-            }, 1800);
-
-        }
-    );
-
+        setTimeout(() => {
+            heartButton.textContent = "💗 Make a Wish";
+        }, 1800);
+    });
 
     /* =========================
        TYPEWRITER
     ========================= */
 
-    const message =
-        "Some people become memories. Some become reasons to smile.";
-
+    const message = "Some people become memories. Some become reasons to smile.";
     let typeStarted = false;
 
-
     function startTypewriter() {
-
         if (typeStarted) {
             return;
         }
 
         typeStarted = true;
-
         let index = 0;
 
-
         function type() {
-
             if (index < message.length) {
-
-                typewriter.textContent +=
-                    message.charAt(index);
-
+                typewriter.textContent += message.charAt(index);
                 index++;
-
-                setTimeout(
-                    type,
-                    48
-                );
-
+                setTimeout(type, 48);
             }
-
         }
 
-
         type();
-
     }
-
 
     /* =========================
        MEMORY COUNTER
     ========================= */
 
     let count = 0;
-
     const target = 100;
 
+    const counterTimer = setInterval(() => {
+        count += 2;
 
-    const counterTimer =
-        setInterval(() => {
+        if (count >= target) {
+            count = target;
+            clearInterval(counterTimer);
+        }
 
-            count += 2;
-
-            if (count >= target) {
-
-                count = target;
-
-                clearInterval(
-                    counterTimer
-                );
-
-            }
-
-            memoryCount.textContent =
-                count;
-
-        }, 35);
-
+        memoryCount.textContent = count;
+    }, 35);
 
     /* =========================
        FLOATING SPARKLES
     ========================= */
 
     function createSparkle() {
+        const sparkle = document.createElement("div");
+        sparkle.className = "sparkle";
 
-        const sparkle =
-            document.createElement("div");
+        const symbols = ["♡", "✦", "♥", "✧", "·"];
+        sparkle.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+        sparkle.style.left = Math.random() * 100 + "vw";
+        sparkle.style.bottom = "-20px";
+        sparkle.style.fontSize = (10 + Math.random() * 18) + "px";
+        sparkle.style.animationDuration = (5 + Math.random() * 5) + "s";
 
-        sparkle.className =
-            "sparkle";
-
-
-        const symbols = [
-            "♡",
-            "✦",
-            "♥",
-            "✧",
-            "·"
-        ];
-
-
-        sparkle.textContent =
-            symbols[
-                Math.floor(
-                    Math.random() *
-                    symbols.length
-                )
-            ];
-
-
-        sparkle.style.left =
-            Math.random() * 100 +
-            "vw";
-
-
-        sparkle.style.bottom =
-            "-20px";
-
-
-        sparkle.style.fontSize =
-            (10 + Math.random() * 18) +
-            "px";
-
-
-        sparkle.style.animationDuration =
-            (5 + Math.random() * 5) +
-            "s";
-
-
-        document.body.appendChild(
-            sparkle
-        );
-
+        document.body.appendChild(sparkle);
 
         setTimeout(() => {
-
             sparkle.remove();
-
         }, 10000);
-
     }
 
-
-    setInterval(
-        createSparkle,
-        850
-    );
-
+    setInterval(createSparkle, 850);
 
     /* =========================
        SPARKLE BURST
     ========================= */
 
     function createSparkleBurst() {
-
-        for (
-            let i = 0;
-            i < 22;
-            i++
-        ) {
-
-            setTimeout(
-                () => {
-                    createSparkle();
-                },
-                i * 35
-            );
-
+        for (let i = 0; i < 22; i++) {
+            setTimeout(() => {
+                createSparkle();
+            }, i * 35);
         }
-
     }
-
 
     /* =========================
        HEART BURST
     ========================= */
 
     function createHeartBurst() {
+        const hearts = ["❤️", "💕", "💗", "♡", "💖"];
 
-        const hearts = [
-            "❤️",
-            "💕",
-            "💗",
-            "♡",
-            "💖"
-        ];
+        for (let i = 0; i < 18; i++) {
+            const heart = document.createElement("div");
+            heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+            heart.style.position = "fixed";
+            heart.style.left = "50%";
+            heart.style.top = "50%";
+            heart.style.zIndex = "50";
+            heart.style.pointerEvents = "none";
+            heart.style.fontSize = (15 + Math.random() * 20) + "px";
 
-
-        for (
-            let i = 0;
-            i < 18;
-            i++
-        ) {
-
-            const heart =
-                document.createElement("div");
-
-
-            heart.textContent =
-                hearts[
-                    Math.floor(
-                        Math.random() *
-                        hearts.length
-                    )
-                ];
-
-
-            heart.style.position =
-                "fixed";
-
-            heart.style.left =
-                "50%";
-
-            heart.style.top =
-                "50%";
-
-            heart.style.zIndex =
-                "50";
-
-            heart.style.pointerEvents =
-                "none";
-
-            heart.style.fontSize =
-                (15 + Math.random() * 20) +
-                "px";
-
-
-            const angle =
-                Math.random() *
-                Math.PI *
-                2;
-
-
-            const distance =
-                80 +
-                Math.random() *
-                220;
-
-
-            const x =
-                Math.cos(angle) *
-                distance;
-
-
-            const y =
-                Math.sin(angle) *
-                distance;
-
+            const angle = Math.random() * Math.PI * 2;
+            const distance = 80 + Math.random() * 220;
+            const x = Math.cos(angle) * distance;
+            const y = Math.sin(angle) * distance;
 
             heart.animate(
                 [
                     {
-                        transform:
-                            "translate(-50%,-50%) scale(.4)",
+                        transform: "translate(-50%,-50%) scale(.4)",
                         opacity: 0
                     },
-
                     {
-                        transform:
-                            "translate(-50%,-50%) scale(1)",
+                        transform: "translate(-50%,-50%) scale(1)",
                         opacity: 1,
                         offset: .15
                     },
-
                     {
-                        transform:
-                            `translate(
-                                calc(-50% + ${x}px),
-                                calc(-50% + ${y}px)
-                            )
-                            scale(.8)`,
+                        transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) scale(.8)`,
                         opacity: 0
                     }
                 ],
                 {
-                    duration:
-                        1200 +
-                        Math.random() *
-                        700,
-
-                    easing:
-                        "cubic-bezier(.2,.8,.3,1)"
+                    duration: 1200 + Math.random() * 700,
+                    easing: "cubic-bezier(.2,.8,.3,1)"
                 }
             );
 
-
-            document.body.appendChild(
-                heart
-            );
-
+            document.body.appendChild(heart);
 
             setTimeout(() => {
-
                 heart.remove();
-
             }, 2200);
-
         }
-
     }
 
 });
