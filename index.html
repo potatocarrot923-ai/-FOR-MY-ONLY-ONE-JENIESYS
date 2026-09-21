@@ -109,6 +109,7 @@
 
 </div>
 
+
 <!-- =========================
      MEMORY CARDS
 ========================= -->
@@ -123,7 +124,9 @@
 
     <div class="memory-card">
         <div class="memory-icon">🌱</div>
+
         <h3>Then</h3>
+
         <p>
             The beginning of something we didn't know
             would become this meaningful.
@@ -132,7 +135,9 @@
 
     <div class="memory-card">
         <div class="memory-icon">🌷</div>
+
         <h3>Along the way</h3>
+
         <p>
             The laughs, the random moments,
             the memories we collected without noticing.
@@ -141,7 +146,9 @@
 
     <div class="memory-card">
         <div class="memory-icon">🌙</div>
+
         <h3>Now</h3>
+
         <p>
             One year later, we're here —
             with another chapter waiting to be written.
@@ -149,6 +156,7 @@
     </div>
 
 </div>
+
 
 <!-- =========================
      FINAL REVEAL
@@ -185,6 +193,40 @@
     </div>
 
 </div>
+
+
+<!-- =========================
+     ANNIVERSARY MUSIC
+========================= -->
+
+<div class="anniversary-music">
+
+    <div class="music-label">
+        🎵 Our Anniversary Music
+    </div>
+
+    <button
+        type="button"
+        class="music-button"
+        id="backgroundMusicButton"
+    >
+        🎵 Background Music
+    </button>
+
+    <button
+        type="button"
+        class="music-button special-music-button"
+        id="specialMusicButton"
+    >
+        💗 You're Still The One
+    </button>
+
+</div>
+
+
+<!-- =========================
+     CELEBRATE BUTTON
+========================= -->
 
 <button
     type="button"
@@ -226,6 +268,7 @@
         0 20px 55px rgba(150,55,95,.15);
 }
 
+
 /* =========================
    BADGE
 ========================= */
@@ -253,6 +296,7 @@
         0 8px 20px rgba(195,79,118,.2);
 }
 
+
 /* =========================
    BIG ONE
 ========================= */
@@ -265,7 +309,12 @@
         "Times New Roman",
         serif;
 
-    font-size: clamp(5rem,20vw,9rem);
+    font-size:
+        clamp(
+            5rem,
+            20vw,
+            9rem
+        );
 
     line-height: .9;
 
@@ -320,6 +369,7 @@
     font-size: .9rem;
 }
 
+
 /* =========================
    DIVIDER
 ========================= */
@@ -361,6 +411,7 @@
     color: #cc5a7d;
     font-size: 20px;
 }
+
 
 /* =========================
    LETTER
@@ -432,6 +483,11 @@
     font-size: 1.08rem;
 }
 
+
+/* =========================
+   MEMORY TITLE
+========================= */
+
 .memory-title {
     margin: 45px 0 18px;
 
@@ -445,6 +501,7 @@
     margin: 0 8px;
     opacity: .65;
 }
+
 
 /* =========================
    MEMORY CARDS
@@ -501,6 +558,7 @@
 
     color: #896672;
 }
+
 
 /* =========================
    FINAL REVEAL
@@ -582,6 +640,92 @@
     font-style: italic;
 }
 
+
+/* =========================
+   MUSIC
+========================= */
+
+.anniversary-music {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,.55);
+
+    border:
+        1px solid rgba(239,191,208,.8);
+}
+
+.music-label {
+    width: 100%;
+
+    margin-bottom: 2px;
+
+    color: #b54b70;
+
+    font-size: .85rem;
+
+    font-weight: bold;
+}
+
+.music-button {
+    border: 1px solid #e8aec3;
+
+    border-radius: 999px;
+
+    padding: 10px 15px;
+
+    background: rgba(255,255,255,.8);
+
+    color: #a83f64;
+
+    font-family: Georgia, serif;
+
+    font-size: .82rem;
+
+    cursor: pointer;
+
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        box-shadow .25s ease;
+}
+
+.music-button:hover {
+    transform: translateY(-2px);
+
+    background: #fff;
+
+    box-shadow:
+        0 7px 18px rgba(172,55,98,.12);
+}
+
+.music-button.active {
+    background:
+        linear-gradient(
+            135deg,
+            #d45d84,
+            #a93460
+        );
+
+    color: white;
+
+    border-color: transparent;
+}
+
+
 /* =========================
    BUTTON
 ========================= */
@@ -605,6 +749,7 @@
     color: white;
 
     font-family: Georgia, serif;
+
     font-size: .95rem;
 
     cursor: pointer;
@@ -621,6 +766,7 @@
         scale(1.03);
 }
 
+
 /* =========================
    CELEBRATION PARTICLES
 ========================= */
@@ -634,6 +780,7 @@
 
     font-size: 20px;
 }
+
 
 /* =========================
    MOBILE
@@ -658,29 +805,603 @@
         padding: 17px;
     }
 
+    .anniversary-music {
+        flex-direction: column;
+    }
+
+    .music-button {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media(prefers-reduced-motion: reduce) {
+
+    .anniversary-number,
+    .orbit-heart {
+        animation: none;
+    }
+
+    .memory-card,
+    .anniversary-button,
+    .music-button {
+        transition: none;
+    }
+
 }
 
 </style>
 
+<!-- =========================
+     MUSIC FILES
+========================= -->
+
+<audio
+id="backgroundMusic"
+preload="auto"
+loop
+
+>
+
+```
+<source
+```
+
+```
+    src="./Sympre Ikaw Lang - Wellie.mp3"
+    type="audio/mpeg"
+>
+```
+
+</audio>
+
+<audio
+id="specialMusic"
+preload="auto"
+
+>
+
+```
+<source
+```
+
+```
+    src="./Shania Twain - You're Still The One (Lyrics).mp3"
+    type="audio/mpeg"
+>
+```
+
+</audio>
+
 <script>
 
 /* =========================
-   ANNIVERSARY CELEBRATION
+   ANNIVERSARY SYSTEM
 ========================= */
 
 (function () {
+
+    "use strict";
+
+
+    /* =========================
+       ELEMENTS
+    ========================= */
 
     const button =
         document.getElementById(
             "anniversaryButton"
         );
 
+    const backgroundMusic =
+        document.getElementById(
+            "backgroundMusic"
+        );
+
+    const specialMusic =
+        document.getElementById(
+            "specialMusic"
+        );
+
+    const backgroundButton =
+        document.getElementById(
+            "backgroundMusicButton"
+        );
+
+    const specialButton =
+        document.getElementById(
+            "specialMusicButton"
+        );
+
+
+    /* =========================
+       SAFETY CHECK
+    ========================= */
+
     if (!button) return;
+
+
+    /* =========================
+       MUSIC STATE
+    ========================= */
+
+    let backgroundWasPlaying = false;
+
+    let backgroundStarted = false;
+
+    let specialSongActive = false;
+
+
+    /* =========================
+       START BACKGROUND
+    ========================= */
+
+    function startBackground() {
+
+        if (
+            !backgroundMusic ||
+            specialSongActive
+        ) {
+            return;
+        }
+
+        backgroundMusic
+            .play()
+            .then(function () {
+
+                backgroundStarted = true;
+
+                updateMusicButtons();
+
+            })
+            .catch(function () {
+
+                /*
+                 * Browser autoplay policy may
+                 * reject playback. This is normal.
+                 * A later user interaction retries it.
+                 */
+
+                backgroundStarted = false;
+
+                updateMusicButtons();
+
+            });
+
+    }
+
+
+    /* =========================
+       USER INTERACTION
+    ========================= */
+
+    function handleFirstInteraction() {
+
+        if (
+            !specialSongActive &&
+            backgroundMusic &&
+            backgroundMusic.paused
+        ) {
+
+            startBackground();
+
+        }
+
+    }
+
+
+    [
+        "pointerdown",
+        "touchstart",
+        "keydown"
+    ].forEach(function (eventName) {
+
+        document.addEventListener(
+            eventName,
+            handleFirstInteraction,
+            {
+                passive: true
+            }
+        );
+
+    });
+
+
+    /* =========================
+       BACKGROUND BUTTON
+    ========================= */
+
+    if (backgroundButton) {
+
+        backgroundButton.addEventListener(
+            "click",
+            function () {
+
+                if (!backgroundMusic) return;
+
+                /*
+                 * Never allow background music
+                 * to play while special music plays.
+                 */
+
+                if (specialSongActive) {
+                    return;
+                }
+
+                if (backgroundMusic.paused) {
+
+                    startBackground();
+
+                } else {
+
+                    backgroundMusic.pause();
+
+                }
+
+                updateMusicButtons();
+
+            }
+        );
+
+    }
+
+
+    /* =========================
+       SPECIAL SONG BUTTON
+    ========================= */
+
+    if (specialButton) {
+
+        specialButton.addEventListener(
+            "click",
+            function () {
+
+                if (!specialMusic) return;
+
+
+                /*
+                 * If special song is already playing,
+                 * clicking again pauses it.
+                 */
+
+                if (
+                    !specialMusic.paused &&
+                    !specialMusic.ended
+                ) {
+
+                    specialMusic.pause();
+
+                    return;
+
+                }
+
+
+                /*
+                 * Remember exactly whether the
+                 * background was playing.
+                 */
+
+                backgroundWasPlaying =
+                    backgroundMusic &&
+                    !backgroundMusic.paused &&
+                    !backgroundMusic.ended;
+
+
+                /*
+                 * Pause background immediately.
+                 */
+
+                if (backgroundMusic) {
+                    backgroundMusic.pause();
+                }
+
+
+                /*
+                 * Mark special song active before
+                 * calling play().
+                 */
+
+                specialSongActive = true;
+
+                specialMusic
+                    .play()
+                    .catch(function () {
+
+                        /*
+                         * If browser rejects playback,
+                         * restore background state.
+                         */
+
+                        specialSongActive = false;
+
+                        if (
+                            backgroundWasPlaying &&
+                            backgroundMusic
+                        ) {
+
+                            backgroundMusic
+                                .play()
+                                .catch(function () {});
+
+                        }
+
+                        backgroundWasPlaying = false;
+
+                        updateMusicButtons();
+
+                    });
+
+                updateMusicButtons();
+
+            }
+        );
+
+    }
+
+
+    /* =========================
+       SPECIAL SONG PLAY
+    ========================= */
+
+    if (specialMusic) {
+
+        specialMusic.addEventListener(
+            "play",
+            function () {
+
+                /*
+                 * Extra protection against
+                 * overlapping audio.
+                 */
+
+                if (backgroundMusic) {
+
+                    if (
+                        !specialSongActive &&
+                        !backgroundMusic.paused
+                    ) {
+
+                        backgroundWasPlaying = true;
+
+                    }
+
+                    backgroundMusic.pause();
+
+                }
+
+                specialSongActive = true;
+
+                updateMusicButtons();
+
+            }
+        );
+
+
+        /* =========================
+           SPECIAL SONG PLAYING
+        ========================= */
+
+        specialMusic.addEventListener(
+            "playing",
+            function () {
+
+                if (backgroundMusic) {
+                    backgroundMusic.pause();
+                }
+
+                specialSongActive = true;
+
+                updateMusicButtons();
+
+            }
+        );
+
+
+        /* =========================
+           SPECIAL SONG PAUSE
+        ========================= */
+
+        specialMusic.addEventListener(
+            "pause",
+            function () {
+
+                /*
+                 * Do NOT resume background if
+                 * the special song has finished.
+                 * The ended event handles that.
+                 */
+
+                if (
+                    !specialMusic.ended &&
+                    backgroundWasPlaying &&
+                    backgroundMusic
+                ) {
+
+                    specialSongActive = false;
+
+                    backgroundMusic
+                        .play()
+                        .catch(function () {});
+
+                }
+
+                updateMusicButtons();
+
+            }
+        );
+
+
+        /* =========================
+           SPECIAL SONG FINISHED
+        ========================= */
+
+        specialMusic.addEventListener(
+            "ended",
+            function () {
+
+                /*
+                 * Background music keeps its
+                 * exact currentTime automatically.
+                 */
+
+                specialSongActive = false;
+
+                if (
+                    backgroundWasPlaying &&
+                    backgroundMusic
+                ) {
+
+                    backgroundMusic
+                        .play()
+                        .catch(function () {});
+
+                }
+
+                backgroundWasPlaying = false;
+
+                updateMusicButtons();
+
+            }
+        );
+
+    }
+
+
+    /* =========================
+       UPDATE MUSIC BUTTONS
+    ========================= */
+
+    function updateMusicButtons() {
+
+        if (
+            backgroundButton &&
+            backgroundMusic
+        ) {
+
+            if (
+                !backgroundMusic.paused &&
+                !specialSongActive
+            ) {
+
+                backgroundButton.textContent =
+                    "⏸ Background Music";
+
+                backgroundButton.classList.add(
+                    "active"
+                );
+
+            } else {
+
+                backgroundButton.textContent =
+                    "🎵 Background Music";
+
+                backgroundButton.classList.remove(
+                    "active"
+                );
+
+            }
+
+        }
+
+
+        if (
+            specialButton &&
+            specialMusic
+        ) {
+
+            if (
+                !specialMusic.paused &&
+                !specialMusic.ended
+            ) {
+
+                specialButton.textContent =
+                    "⏸ You're Still The One";
+
+                specialButton.classList.add(
+                    "active"
+                );
+
+            } else {
+
+                specialButton.textContent =
+                    "💗 You're Still The One";
+
+                specialButton.classList.remove(
+                    "active"
+                );
+
+            }
+
+        }
+
+    }
+
+
+    /* =========================
+       PUBLIC MUSIC CONTROLS
+       Useful if your original page
+       already has music buttons.
+    ========================= */
+
+    window.playSpecialMusic =
+        function () {
+
+            if (!specialMusic) return;
+
+            backgroundWasPlaying =
+                backgroundMusic &&
+                !backgroundMusic.paused &&
+                !backgroundMusic.ended;
+
+            if (backgroundMusic) {
+                backgroundMusic.pause();
+            }
+
+            specialSongActive = true;
+
+            specialMusic
+                .play()
+                .catch(function () {});
+
+        };
+
+
+    window.pauseSpecialMusic =
+        function () {
+
+            if (!specialMusic) return;
+
+            specialMusic.pause();
+
+        };
+
+
+    window.stopSpecialMusic =
+        function () {
+
+            if (!specialMusic) return;
+
+            specialMusic.pause();
+
+            specialMusic.currentTime = 0;
+
+        };
+
+
+    /* =========================
+       ANNIVERSARY CELEBRATION
+    ========================= */
 
     button.addEventListener(
         "click",
         celebrate
     );
+
 
     function celebrate() {
 
@@ -693,112 +1414,158 @@
             "🌸"
         ];
 
+
         for (
             let i = 0;
             i < 45;
             i++
         ) {
 
-            setTimeout(() => {
+            setTimeout(
+                function () {
 
-                const particle =
-                    document.createElement("div");
+                    const particle =
+                        document.createElement(
+                            "div"
+                        );
 
-                particle.className =
-                    "anniversary-particle";
+                    particle.className =
+                        "anniversary-particle";
 
-                particle.textContent =
-                    symbols[
-                        Math.floor(
-                            Math.random() *
-                            symbols.length
-                        )
-                    ];
+                    particle.textContent =
+                        symbols[
+                            Math.floor(
+                                Math.random() *
+                                symbols.length
+                            )
+                        ];
 
-                particle.style.left =
-                    (35 + Math.random() * 30) +
-                    "vw";
+                    particle.style.left =
+                        (
+                            35 +
+                            Math.random() * 30
+                        ) + "vw";
 
-                particle.style.top =
-                    (45 + Math.random() * 15) +
-                    "vh";
+                    particle.style.top =
+                        (
+                            45 +
+                            Math.random() * 15
+                        ) + "vh";
 
-                document.body.appendChild(
-                    particle
-                );
 
-                const angle =
-                    Math.random() *
-                    Math.PI *
-                    2;
+                    document.body.appendChild(
+                        particle
+                    );
 
-                const distance =
-                    80 +
-                    Math.random() *
-                    280;
 
-                const x =
-                    Math.cos(angle) *
-                    distance;
+                    const angle =
+                        Math.random() *
+                        Math.PI *
+                        2;
 
-                const y =
-                    Math.sin(angle) *
-                    distance;
+                    const distance =
+                        80 +
+                        Math.random() *
+                        280;
 
-                particle.animate(
-                    [
+                    const x =
+                        Math.cos(angle) *
+                        distance;
+
+                    const y =
+                        Math.sin(angle) *
+                        distance;
+
+
+                    particle.animate(
+                        [
+                            {
+                                transform:
+                                    "translate(-50%,-50%) scale(.3)",
+
+                                opacity: 0
+                            },
+
+                            {
+                                transform:
+                                    "translate(-50%,-50%) scale(1)",
+
+                                opacity: 1,
+
+                                offset: .15
+                            },
+
+                            {
+                                transform:
+                                    "translate(" +
+                                    "calc(-50% + " +
+                                    x +
+                                    "px), " +
+                                    "calc(-50% + " +
+                                    y +
+                                    "px)" +
+                                    ") " +
+                                    "rotate(" +
+                                    (
+                                        Math.random() *
+                                        360
+                                    ) +
+                                    "deg) " +
+                                    "scale(.7)",
+
+                                opacity: 0
+                            }
+                        ],
                         {
-                            transform:
-                                "translate(-50%,-50%) scale(.3)",
-                            opacity: 0
-                        },
-                        {
-                            transform:
-                                "translate(-50%,-50%) scale(1)",
-                            opacity: 1,
-                            offset: .15
-                        },
-                        {
-                            transform:
-                                `translate(
-                                    calc(-50% + ${x}px),
-                                    calc(-50% + ${y}px)
-                                )
-                                rotate(${Math.random()*360}deg)
-                                scale(.7)`,
-                            opacity: 0
+                            duration:
+                                1300 +
+                                Math.random() *
+                                1000,
+
+                            easing:
+                                "cubic-bezier(.15,.75,.3,1)"
                         }
-                    ],
-                    {
-                        duration:
-                            1300 +
-                            Math.random() * 1000,
+                    );
 
-                        easing:
-                            "cubic-bezier(.15,.75,.3,1)"
-                    }
-                );
 
-                setTimeout(() => {
-                    particle.remove();
-                }, 2500);
+                    setTimeout(
+                        function () {
 
-            }, i * 25);
+                            particle.remove();
+
+                        },
+                        2500
+                    );
+
+                },
+                i * 25
+            );
 
         }
+
 
         button.textContent =
             "❤️ One beautiful year";
 
-        setTimeout(() => {
 
-            button.textContent =
-                "✨ Celebrate Our Year";
+        setTimeout(
+            function () {
 
-        }, 3000);
+                button.textContent =
+                    "✨ Celebrate Our Year";
+
+            },
+            3000
+        );
 
     }
 
-})();
 
+    /*
+     * Initial UI state.
+     */
+
+    updateMusicButtons();
+
+})();
 </script>
