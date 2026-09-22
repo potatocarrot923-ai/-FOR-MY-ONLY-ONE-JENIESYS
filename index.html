@@ -4,1349 +4,572 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#f7b5cd">
-
+<meta name="description" content="A little universe made especially for Jeniesys.">
 <title>For Jeniesys ❤️</title>
 
 <style>
-* {
-    box-sizing: border-box;
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{
+  --pink:#c94f79;--deep:#9f315b;--rose:#e982a7;--soft:#ffe5ef;
+  --cream:#fffafc;--text:#53323e;--muted:#99727f;
+  --glass:rgba(255,255,255,.78);--line:rgba(201,79,121,.18);
+}
+body{
+  margin:0;min-height:100vh;overflow-x:hidden;color:var(--text);
+  font-family:Georgia,"Times New Roman",serif;
+  background:
+    radial-gradient(circle at 8% 8%,rgba(255,255,255,.95),transparent 25%),
+    radial-gradient(circle at 90% 75%,rgba(255,130,175,.35),transparent 28%),
+    linear-gradient(135deg,#f8c9dc,#fff1f6 45%,#f5b3cf);
+  padding:22px 12px 55px;
+}
+button,a{font:inherit}
+button{cursor:pointer}
+::selection{background:#f3b2c9;color:#65263e}
+
+/* ---------- INTRO ---------- */
+.intro{
+  position:fixed;inset:0;z-index:1000;display:grid;place-items:center;
+  background:radial-gradient(circle at center,#fff8fb,#efb0c9);
+  transition:opacity .9s ease,visibility .9s ease;
+}
+.intro.hide{opacity:0;visibility:hidden;pointer-events:none}
+.intro-content{text-align:center;padding:30px;max-width:520px;animation:introIn 1.2s ease}
+.intro-heart{font-size:68px;animation:heartbeat 1.5s infinite}
+.intro h2{margin:15px 0 8px;color:var(--deep);font-size:clamp(2.2rem,8vw,4rem)}
+.intro p{color:#875b6b;margin:0 auto 24px;line-height:1.7}
+.enter-button,.action-button{
+  border:0;border-radius:999px;padding:13px 22px;color:white;
+  background:linear-gradient(135deg,#d85f88,#a93661);
+  box-shadow:0 12px 30px rgba(170,55,99,.24);
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.enter-button:hover,.action-button:hover{transform:translateY(-3px);box-shadow:0 16px 35px rgba(170,55,99,.3)}
+@keyframes introIn{from{opacity:0;transform:translateY(25px) scale(.96)}to{opacity:1;transform:none}}
+
+/* ---------- BACKGROUND ---------- */
+.glow{position:fixed;width:280px;height:280px;border-radius:50%;filter:blur(75px);pointer-events:none;z-index:0}
+.glow.one{background:rgba(255,255,255,.75);top:-110px;left:-90px}
+.glow.two{background:rgba(255,111,168,.25);right:-110px;bottom:-110px}
+.sparkle{position:fixed;pointer-events:none;z-index:2;animation:sparkleFloat linear forwards}
+@keyframes sparkleFloat{
+  0%{opacity:0;transform:translateY(20px) scale(.5) rotate(0)}
+  15%{opacity:.8}100%{opacity:0;transform:translateY(-100vh) scale(1.2) rotate(180deg)}
 }
 
-html {
-    scroll-behavior: smooth;
+/* ---------- MAIN ---------- */
+.container{
+  position:relative;z-index:3;width:min(680px,96vw);margin:12px auto 0;
+  padding:36px 30px 30px;background:var(--glass);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  border:1px solid rgba(255,255,255,.9);border-radius:32px;
+  box-shadow:0 30px 80px rgba(145,45,87,.2),0 5px 20px rgba(145,45,87,.08);
+  text-align:center;animation:cardIn 1s ease;
 }
+@keyframes cardIn{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:none}}
+.small-heart{font-size:29px;animation:heartbeat 1.7s infinite}
+h1{margin:8px 0;font-size:clamp(2.3rem,8vw,3.7rem);line-height:1.05;color:var(--pink);text-shadow:0 4px 18px rgba(201,79,121,.16)}
+.subtitle{color:var(--muted);font-style:italic;margin:0 auto 22px;line-height:1.6}
 
-:root {
-    --pink: #c94f79;
-    --deep-pink: #a93661;
-    --soft-pink: #ffe5ef;
-    --cream: #fffafc;
-    --text: #53323e;
-    --muted: #99727f;
-    --glass: rgba(255,255,255,.76);
+/* ---------- HERO PHOTO ---------- */
+.photo-frame{
+  position:relative;width:min(380px,92%);height:345px;margin:24px auto;
+  padding:8px;border-radius:28px;
+  background:linear-gradient(135deg,#f2a1bd,#fff,#e67fa3,#fff);
+  background-size:300% 300%;animation:photoFloat 4s ease-in-out infinite,gradientMove 6s ease infinite;
+  box-shadow:0 20px 45px rgba(180,65,108,.25),0 0 45px rgba(245,166,194,.35);
 }
+.photo-inner{width:100%;height:100%;overflow:hidden;border-radius:22px;background:#fff0f5}
+.photo-inner img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1s ease}
+.photo-frame:hover img{transform:scale(1.07)}
+@keyframes photoFloat{0%,100%{transform:translateY(0) rotate(-.4deg)}50%{transform:translateY(-7px) rotate(.4deg)}}
+@keyframes gradientMove{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
 
-body {
-    margin: 0;
-    min-height: 100vh;
-    overflow-x: hidden;
-    font-family: Georgia, "Times New Roman", serif;
-    color: var(--text);
-
-    background:
-        radial-gradient(circle at 10% 10%, rgba(255,255,255,.9), transparent 25%),
-        radial-gradient(circle at 90% 80%, rgba(255,153,194,.35), transparent 28%),
-        linear-gradient(135deg,#f8c9dc,#fff0f5 45%,#f6b3cf);
-
-    display: flex;
-    justify-content: center;
-    padding: 25px 12px 50px;
+.memory-counter{
+  display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
+  background:rgba(255,238,245,.85);border:1px solid #f3c4d5;color:var(--pink);font-size:.86rem
 }
+.divider{display:flex;align-items:center;gap:12px;margin:30px 0}
+.divider:before,.divider:after{content:"";height:1px;flex:1;background:linear-gradient(to right,transparent,#dfa0b5)}
+.divider:after{background:linear-gradient(to left,transparent,#dfa0b5)}
+.divider span{color:var(--pink);font-size:20px}
 
-/* =========================
-   OPENING SCREEN
-========================= */
+/* ---------- LETTER ---------- */
+.letter{font-size:1.07rem;line-height:1.85;text-align:left}
+.letter .opening{font-size:1.4rem;color:var(--pink);font-weight:bold;text-align:center}
+.letter p{margin:18px 0}
+.highlight,.forever{color:var(--pink);font-weight:bold}
+.forever{font-size:1.25rem;text-align:center}
 
-.intro {
-    position: fixed;
-    inset: 0;
-    z-index: 100;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background:
-        radial-gradient(circle at center, #fff4f8, #efb1ca);
-
-    transition:
-        opacity 1s ease,
-        visibility 1s ease;
+/* ---------- TYPEWRITER ---------- */
+.typewriter-box{
+  min-height:76px;margin:25px 0;padding:20px;border-radius:20px;
+  background:linear-gradient(135deg,rgba(255,239,246,.96),rgba(255,255,255,.82));
+  border:1px solid #f2c3d2;color:var(--pink);font-style:italic;line-height:1.6;
 }
+.cursor{display:inline-block;width:2px;height:1em;margin-left:3px;background:var(--pink);animation:blink .8s infinite;vertical-align:middle}
+@keyframes blink{50%{opacity:0}}
 
-.intro.hide {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+/* ---------- INTERACTIVE CARDS ---------- */
+.section-title{color:var(--pink);margin:30px 0 8px}
+.section-subtitle{font-size:.85rem;color:var(--muted);margin:0 0 16px}
+.reasons{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;text-align:left}
+.reason{
+  min-height:96px;border:1px solid var(--line);border-radius:18px;padding:15px;
+  background:rgba(255,255,255,.62);color:var(--text);
+  transition:transform .25s ease,background .25s ease;
 }
+.reason:hover{transform:translateY(-4px);background:rgba(255,245,249,.95)}
+.reason strong{display:block;color:var(--pink);margin-bottom:5px}
+.reason span{font-size:.83rem;line-height:1.5;color:#775565}
 
-.intro-content {
-    text-align: center;
-    padding: 30px;
-    animation: introIn 1.4s ease;
+.timeline{text-align:left;margin-top:12px}
+.timeline-item{
+  position:relative;padding:14px 15px 14px 38px;margin:10px 0;
+  border-left:2px solid #e9a4ba;background:rgba(255,255,255,.48);border-radius:0 16px 16px 0;
 }
-
-.intro-heart {
-    font-size: 60px;
-    animation: heartbeat 1.5s infinite;
+.timeline-item:before{
+  content:"♡";position:absolute;left:-12px;top:11px;width:22px;height:22px;
+  display:grid;place-items:center;border-radius:50%;background:#fff0f6;color:var(--pink)
 }
+.timeline-item strong{color:var(--pink);display:block;margin-bottom:4px}
+.timeline-item span{font-size:.86rem;line-height:1.55;color:#775565}
 
-.intro h2 {
-    margin: 18px 0 8px;
-    color: var(--deep-pink);
-    font-size: clamp(2rem,8vw,3.5rem);
+/* ---------- BUTTONS ---------- */
+.buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:25px}
+.action-button.secondary{background:rgba(255,255,255,.8);color:var(--pink);border:1px solid #efbfd0;box-shadow:none}
+.action-button.soft{background:linear-gradient(135deg,#f08db0,#d25c86)}
+
+/* ---------- SECRET ---------- */
+.secret{max-height:0;opacity:0;overflow:hidden;transition:max-height .9s ease,opacity .7s ease,margin .7s ease}
+.secret.show{max-height:650px;opacity:1;margin-top:20px}
+.secret-content{
+  padding:23px;border-radius:22px;background:linear-gradient(135deg,#fff1f7,#fff);
+  border:1px solid #f1bfd0;line-height:1.75
 }
+.envelope{font-size:42px;margin-bottom:8px;animation:gentleFloat 2.4s ease-in-out infinite}
+@keyframes gentleFloat{50%{transform:translateY(-5px)}}
 
-.intro p {
-    color: #875b6b;
-    margin-bottom: 25px;
+/* ---------- WISH MODAL ---------- */
+.modal{
+  position:fixed;inset:0;z-index:500;display:grid;place-items:center;padding:20px;
+  background:rgba(83,50,62,.28);backdrop-filter:blur(8px);
+  opacity:0;visibility:hidden;transition:.3s ease
 }
-
-.enter-button {
-    border: 0;
-    padding: 14px 30px;
-    border-radius: 999px;
-
-    background: linear-gradient(135deg,#d85f88,#ad3763);
-    color: white;
-
-    font: inherit;
-    cursor: pointer;
-
-    box-shadow: 0 12px 30px rgba(170,55,99,.28);
-    transition: .3s ease;
+.modal.show{opacity:1;visibility:visible}
+.modal-card{
+  width:min(460px,94vw);padding:28px;border-radius:28px;text-align:center;
+  background:#fffafd;border:1px solid white;box-shadow:0 25px 70px rgba(80,25,48,.25);
+  transform:translateY(18px) scale(.97);transition:.35s ease
 }
+.modal.show .modal-card{transform:none}
+.modal-card h2{color:var(--pink);margin:0 0 8px}
+.modal-card p{line-height:1.7;color:#775565}
+.close-button{margin-top:10px}
 
-.enter-button:hover {
-    transform: translateY(-3px) scale(1.03);
+/* ---------- MUSIC ---------- */
+.music-player{margin-top:32px;padding:23px 18px;border-radius:24px;background:rgba(255,239,246,.7);border:1px solid #f1c2d2}
+.music-title{color:var(--pink);font-weight:bold;margin-bottom:5px}
+.music-song{color:#89616f;font-size:.86rem;margin-bottom:14px}
+.music-section{margin-top:18px;padding:15px;border-radius:18px;background:rgba(255,255,255,.62);border:1px solid rgba(239,191,208,.85)}
+.music-section-title{color:var(--pink);font-weight:bold;font-size:.9rem;margin-bottom:4px}
+.music-status{min-height:18px;margin-top:7px;color:#99717f;font-size:.76rem}
+audio{width:100%;max-width:390px;height:42px}
+.music-note{color:#a27b87;font-size:.76rem;margin-top:12px;line-height:1.5}
+.background-audio-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;pointer-events:none}
+
+/* ---------- FINAL ---------- */
+.final-reveal{
+  margin-top:28px;padding:27px 18px;border-radius:24px;
+  background:radial-gradient(circle at center,rgba(255,255,255,.92),rgba(255,229,239,.78));
+  border:1px solid #f2c1d2
 }
+.final-heart{font-size:42px;animation:heartbeat 1.6s infinite}
+.final-reveal h2{color:var(--pink);margin:7px 0 10px}
+.final-reveal p{line-height:1.7}
+.signature{margin-top:22px;color:var(--pink);font-style:italic;font-size:1.05rem}
+.footer{margin-top:30px;color:#a47783;font-size:.8rem;line-height:1.6}
+@keyframes heartbeat{0%,100%{transform:scale(1)}15%{transform:scale(1.18)}30%{transform:scale(1)}45%{transform:scale(1.1)}}
 
-@keyframes introIn {
-    from {
-        opacity: 0;
-        transform: translateY(25px) scale(.96);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:560px){
+  body{padding:9px 7px 35px}
+  .container{padding:27px 17px 24px;border-radius:26px}
+  .photo-frame{height:285px}
+  .letter{font-size:1rem;line-height:1.75}
+  h1{font-size:2.35rem}
+  .action-button{width:100%}
+  .reasons{grid-template-columns:1fr}
+  .timeline-item{padding-left:34px}
 }
-
-/* =========================
-   BACKGROUND EFFECTS
-========================= */
-
-.glow {
-    position: fixed;
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    filter: blur(70px);
-    pointer-events: none;
-    z-index: 0;
-}
-
-.glow.one {
-    background: rgba(255,255,255,.8);
-    top: -100px;
-    left: -90px;
-}
-
-.glow.two {
-    background: rgba(255,111,168,.3);
-    right: -100px;
-    bottom: -100px;
-}
-
-.sparkle {
-    position: fixed;
-    pointer-events: none;
-    z-index: 1;
-    animation: sparkleFloat linear forwards;
-}
-
-@keyframes sparkleFloat {
-    0% {
-        opacity: 0;
-        transform: translateY(20px) scale(.5) rotate(0);
-    }
-
-    15% {
-        opacity: .8;
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(-100vh) scale(1.2) rotate(180deg);
-    }
-}
-
-/* =========================
-   MAIN CARD
-========================= */
-
-.container {
-    position: relative;
-    z-index: 3;
-
-    width: min(620px,96vw);
-
-    margin-top: 15px;
-
-    padding: 38px 30px 30px;
-
-    background: var(--glass);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-
-    border: 1px solid rgba(255,255,255,.9);
-    border-radius: 32px;
-
-    box-shadow:
-        0 30px 80px rgba(145,45,87,.20),
-        0 5px 20px rgba(145,45,87,.08);
-
-    text-align: center;
-
-    animation: cardIn 1.2s ease;
-}
-
-@keyframes cardIn {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* =========================
-   HEADER
-========================= */
-
-.small-heart {
-    font-size: 30px;
-    animation: heartbeat 1.7s infinite;
-}
-
-h1 {
-    margin: 8px 0;
-
-    font-size: clamp(2.2rem,8vw,3.5rem);
-    line-height: 1.1;
-
-    color: var(--pink);
-
-    text-shadow:
-        0 4px 18px rgba(201,79,121,.16);
-}
-
-.subtitle {
-    color: var(--muted);
-    font-style: italic;
-    margin-bottom: 25px;
-}
-
-/* =========================
-   PHOTO
-========================= */
-
-.photo-frame {
-    position: relative;
-
-    width: min(360px,92%);
-    height: 330px;
-
-    margin: 25px auto;
-
-    padding: 8px;
-
-    border-radius: 26px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #f2a1bd,
-            white,
-            #e67fa3,
-            white
-        );
-
-    background-size: 300% 300%;
-
-    animation:
-        photoFloat 4s ease-in-out infinite,
-        gradientMove 6s ease infinite;
-
-    box-shadow:
-        0 20px 45px rgba(180,65,108,.25),
-        0 0 45px rgba(245,166,194,.35);
-}
-
-.photo-inner {
-    width: 100%;
-    height: 100%;
-
-    overflow: hidden;
-    border-radius: 20px;
-
-    background: #fff0f5;
-}
-
-.photo-inner img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-    transition: transform 1s ease;
-}
-
-.photo-frame:hover img {
-    transform: scale(1.07);
-}
-
-@keyframes photoFloat {
-    0%,100% {
-        transform: translateY(0) rotate(-.4deg);
-    }
-
-    50% {
-        transform: translateY(-7px) rotate(.4deg);
-    }
-}
-
-@keyframes gradientMove {
-    0%,100% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-}
-
-/* =========================
-   MEMORY COUNTER
-========================= */
-
-.memory-counter {
-    margin: 18px auto 8px;
-
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-
-    padding: 9px 15px;
-
-    border-radius: 999px;
-
-    background: rgba(255,238,245,.8);
-    border: 1px solid #f3c4d5;
-
-    color: var(--pink);
-    font-size: .86rem;
-}
-
-/* =========================
-   DIVIDER
-========================= */
-
-.divider {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 30px 0;
-}
-
-.divider::before,
-.divider::after {
-    content: "";
-    height: 1px;
-    flex: 1;
-    background:
-        linear-gradient(
-            to right,
-            transparent,
-            #dfa0b5
-        );
-}
-
-.divider::after {
-    background:
-        linear-gradient(
-            to left,
-            transparent,
-            #dfa0b5
-        );
-}
-
-.divider span {
-    color: var(--pink);
-    font-size: 20px;
-}
-
-/* =========================
-   LETTER
-========================= */
-
-.letter {
-    font-size: 1.08rem;
-    line-height: 1.85;
-    color: var(--text);
-}
-
-.letter .opening {
-    font-size: 1.35rem;
-    color: var(--pink);
-    font-weight: bold;
-}
-
-.letter p {
-    margin: 18px 0;
-}
-
-.highlight {
-    color: var(--pink);
-    font-weight: bold;
-}
-
-.forever {
-    color: var(--pink);
-    font-weight: bold;
-    font-size: 1.25rem;
-}
-
-/* =========================
-   TYPING MESSAGE
-========================= */
-
-.typewriter-box {
-    min-height: 72px;
-
-    margin: 25px 0;
-    padding: 20px;
-
-    border-radius: 20px;
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(255,239,246,.95),
-            rgba(255,255,255,.8)
-        );
-
-    border: 1px solid #f2c3d2;
-
-    color: var(--pink);
-    font-style: italic;
-}
-
-.cursor {
-    display: inline-block;
-    width: 2px;
-    height: 1em;
-    margin-left: 3px;
-
-    background: var(--pink);
-
-    animation: blink .8s infinite;
-    vertical-align: middle;
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
-
-/* =========================
-   INTERACTIVE BUTTONS
-========================= */
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-
-    margin-top: 25px;
-}
-
-.action-button {
-    border: 0;
-    border-radius: 999px;
-
-    padding: 12px 20px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #d45b83,
-            #b33c68
-        );
-
-    color: white;
-
-    font-family: Georgia,serif;
-    font-size: .95rem;
-
-    cursor: pointer;
-
-    box-shadow:
-        0 8px 20px rgba(179,60,104,.22);
-
-    transition: .3s ease;
-}
-
-.action-button:hover {
-    transform: translateY(-3px);
-}
-
-.action-button.secondary {
-    background: rgba(255,255,255,.8);
-    color: var(--pink);
-    border: 1px solid #efbfd0;
-}
-
-/* =========================
-   SECRET MESSAGE
-========================= */
-
-.secret {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-
-    transition:
-        max-height .9s ease,
-        opacity .7s ease,
-        margin .7s ease;
-}
-
-.secret.show {
-    max-height: 400px;
-    opacity: 1;
-    margin-top: 20px;
-}
-
-.secret-content {
-    padding: 23px;
-
-    border-radius: 22px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #fff1f7,
-            #ffffff
-        );
-
-    border: 1px solid #f1bfd0;
-
-    line-height: 1.75;
-}
-
-/* =========================
-   MUSIC
-========================= */
-
-.music-player {
-    margin-top: 32px;
-    padding: 23px 18px;
-
-    border-radius: 24px;
-
-    background: rgba(255,239,246,.7);
-    border: 1px solid #f1c2d2;
-}
-
-.music-title {
-    color: var(--pink);
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.music-song {
-    color: #89616f;
-    font-size: .86rem;
-    margin-bottom: 14px;
-}
-
-.music-section {
-    margin-top: 18px;
-    padding: 15px;
-
-    border-radius: 18px;
-
-    background: rgba(255,255,255,.62);
-    border: 1px solid rgba(239,191,208,.85);
-}
-
-.music-section-title {
-    color: var(--pink);
-    font-weight: bold;
-    font-size: .9rem;
-    margin-bottom: 4px;
-}
-
-.music-status {
-    min-height: 18px;
-    margin-top: 7px;
-
-    color: #99717f;
-    font-size: .76rem;
-}
-
-audio {
-    width: 100%;
-    max-width: 390px;
-    height: 42px;
-}
-
-.music-note {
-    color: #a27b87;
-    font-size: .76rem;
-    margin-top: 12px;
-    line-height: 1.5;
-}
-
-/* =========================
-   FINAL REVEAL
-========================= */
-
-.final-reveal {
-    margin-top: 28px;
-    padding: 24px 18px;
-
-    border-radius: 24px;
-
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(255,255,255,.9),
-            rgba(255,229,239,.75)
-        );
-
-    border: 1px solid #f2c1d2;
-}
-
-.final-reveal h2 {
-    color: var(--pink);
-    margin-top: 0;
-}
-
-.final-heart {
-    font-size: 38px;
-    animation: heartbeat 1.6s infinite;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-.footer {
-    margin-top: 30px;
-
-    color: #a47783;
-    font-size: .8rem;
-}
-
-@keyframes heartbeat {
-    0%,100% {
-        transform: scale(1);
-    }
-
-    15% {
-        transform: scale(1.18);
-    }
-
-    30% {
-        transform: scale(1);
-    }
-
-    45% {
-        transform: scale(1.1);
-    }
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:520px) {
-
-    body {
-        padding: 10px 8px 35px;
-    }
-
-    .container {
-        padding: 28px 18px 24px;
-        border-radius: 26px;
-    }
-
-    .photo-frame {
-        height: 285px;
-    }
-
-    .letter {
-        font-size: 1rem;
-        line-height: 1.75;
-    }
-
-    h1 {
-        font-size: 2.35rem;
-    }
-
-    .action-button {
-        width: 100%;
-    }
-}
-
-/* Respect reduced-motion preferences */
-
-@media(prefers-reduced-motion:reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: .01ms !important;
-    }
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
 }
 </style>
-
 </head>
 
 <body>
-
-<!-- =========================
-     INTRO
-========================= -->
-
 <div class="intro" id="intro">
-    <div class="intro-content">
-        <div class="intro-heart">
-            ❤️
-        </div>
-        <h2>
-            For Jeniesys
-        </h2>
-        <p>
-            Some memories deserve their own little world.
-        </p>
-        <button
-            class="enter-button"
-            id="enterButton"
-            type="button"
-        >
-            ✨ Open This
-        </button>
-    </div>
+  <div class="intro-content">
+    <div class="intro-heart">❤️</div>
+    <h2>For Jeniesys</h2>
+    <p>I made a tiny corner of the internet for one very special person.</p>
+    <button class="enter-button" id="enterButton" type="button">✨ Open Your Little World</button>
+  </div>
 </div>
 
 <div class="glow one"></div>
 <div class="glow two"></div>
 
 <main class="container">
+  <div class="small-heart">❤️</div>
+  <h1>For Jeniesys</h1>
+  <div class="subtitle">Not just a webpage — a collection of little feelings, memories, and reasons to smile.</div>
 
-    <!-- HEADER -->
-    <div class="small-heart">
-        ❤️
+  <div class="photo-frame">
+    <div class="photo-inner">
+      <img src="./f545c7b6-19e5-45b8-897e-a42b3bdd5465.jpg" alt="A beautiful memory" loading="eager">
+    </div>
+  </div>
+
+  <div class="memory-counter">♡ <span id="memoryCount">0</span> little reasons to smile</div>
+
+  <div class="divider"><span>♡</span></div>
+
+  <section class="letter">
+    <p class="opening">Dearest Jeniesys,</p>
+    <p>I don't think there are enough words in the world to completely explain how much you mean to me.</p>
+    <p>Somehow, you became one of those people who can make an ordinary day feel different. A simple conversation can become a memory. A smile can stay in my mind longer than it probably should. And somehow, just knowing you're there can make a normal day feel a little brighter.</p>
+    <p>Thank you for the little things — the laughs, the random moments, the conversations, the memories, and even the moments that didn't seem important at the time. Sometimes those are the moments I end up remembering the most.</p>
+    <p><span class="highlight">If I could give you one gift, it would be the chance to see yourself through my eyes for just one moment.</span> Maybe then you'd understand why you are so easy to appreciate, why your presence matters, and why someone would take the time to make a whole little world like this just for you.</p>
+    <p>I can't promise that every day will be perfect. Nobody can. But I can promise that the good memories we make are worth keeping, and the people who matter are worth appreciating.</p>
+    <p>So whenever you come back to this page, I hope you don't just see code, pictures, buttons, and animations.</p>
+    <p>I hope you see the time, thought, and feeling behind every little detail.</p>
+    <p class="forever">You are someone I will always treasure. ❤️</p>
+  </section>
+
+  <div class="typewriter-box">
+    <span id="typewriter"></span><span class="cursor"></span>
+  </div>
+
+  <h2 class="section-title">💗 A Few Little Things I Appreciate</h2>
+  <p class="section-subtitle">Tap or hover over them. There are more feelings hidden in the small details.</p>
+
+  <section class="reasons">
+    <div class="reason"><strong>🌷 Your presence</strong><span>Some people don't need to do anything extraordinary. Just being there already makes a difference.</span></div>
+    <div class="reason"><strong>✨ The little moments</strong><span>The random conversations and tiny memories often become the ones worth keeping.</span></div>
+    <div class="reason"><strong>😊 Your smile</strong><span>One of those simple things that can quietly turn a bad or boring day into a better one.</span></div>
+    <div class="reason"><strong>🫶 Being you</strong><span>You don't have to be perfect to be important. You only have to be yourself.</span></div>
+  </section>
+
+  <h2 class="section-title">📖 Little Memory Lane</h2>
+  <p class="section-subtitle">No dates needed. The best memories are remembered by how they felt.</p>
+
+  <section class="timeline">
+    <div class="timeline-item"><strong>The first little moment</strong><span>A moment that seemed ordinary, but somehow became the beginning of something worth remembering.</span></div>
+    <div class="timeline-item"><strong>The unexpected laughs</strong><span>The kind of laughter that appears out of nowhere and stays in your memory longer than expected.</span></div>
+    <div class="timeline-item"><strong>The quiet moments</strong><span>Sometimes you don't need a big adventure. A peaceful moment with someone special is enough.</span></div>
+    <div class="timeline-item"><strong>This page</strong><span>A small reminder that someone thought, “I want to make her smile,” and actually did something about it.</span></div>
+  </section>
+
+  <div class="buttons">
+    <button class="action-button" id="secretButton" type="button">💌 Open One More Thing</button>
+    <button class="action-button secondary" id="heartButton" type="button">💗 Make a Wish</button>
+  </div>
+
+  <div class="secret" id="secret">
+    <div class="secret-content">
+      <div class="envelope">💌</div>
+      <strong>Okay... this part is just for you.</strong>
+      <br><br>
+      Jeniesys, this page may be made from HTML, CSS, JavaScript, pictures, and music — but the reason behind it is much simpler.
+      <br><br>
+      <strong>
+        You are appreciated.<br>
+        You are cared for.<br>
+        You are remembered.<br>
+        You are worth celebrating.<br>
+        And you are genuinely special. ❤️
+      </strong>
+      <br><br>
+      If this page ever makes you smile, even for a few seconds, then every line of code was worth writing.
+    </div>
+  </div>
+
+  <div class="music-player">
+    <div class="music-title">🎵 Our Little Soundtrack</div>
+    <div class="music-song">A song can turn a memory into something you can feel again.</div>
+
+    <div class="background-audio-hidden" aria-hidden="true">
+      <audio id="backgroundMusic" loop preload="metadata">
+        <source src="./Willie Revillame - Syempre (Official Lyric Video).mp3" type="audio/mpeg">
+      </audio>
     </div>
 
-    <h1>
-        For Jeniesys
-    </h1>
-
-    <div class="subtitle">
-        A little universe made from memories, words, and music.
+    <div class="music-section">
+      <div class="music-section-title">💗 Special Song</div>
+      <div class="music-song">You're Still The One — Shania Twain</div>
+      <audio id="specialMusic" controls preload="metadata">
+        <source src="./Shania%20Twain%20-%20You%27re%20Still%20The%20One%20%28Lyrics%29.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+      <div class="music-status" id="specialStatus">Play this whenever you want a different little moment. ❤️</div>
     </div>
 
-    <!-- PHOTO -->
-    <div class="photo-frame">
-        <div class="photo-inner">
-            <img
-                src="./f545c7b6-19e5-45b8-897e-a42b3bdd5465.jpg"
-                alt="A beautiful memory"
-                loading="eager"
-            >
-        </div>
-    </div>
+    <div class="music-note">💗 This song is the little soundtrack for this page. The special song above is the only music player shown.</div>
+  </div>
 
-    <div class="memory-counter">
-        ♡ <span id="memoryCount">0</span> little reasons to smile
-    </div>
+  <section class="final-reveal">
+    <div class="final-heart">❤️</div>
+    <h2>And if you ever forget...</h2>
+    <p>Come back here.</p>
+    <p>Read the words again. Look at the picture again. Listen to the song again.</p>
+    <p>And remember that this little corner of the internet was made especially for you — not because a webpage can say everything, but because sometimes trying is the best way to say, “You matter to me.”</p>
+    <div class="signature">With all the little things that words couldn't quite say. ❤️</div>
+  </section>
 
-    <div class="divider">
-        <span>♡</span>
-    </div>
-
-    <!-- LETTER -->
-    <section class="letter">
-        <p class="opening">
-            Dearest Jeniesys,
-        </p>
-        <p>
-            I don't think there are enough words in the world
-            to completely explain how much you mean to me.
-        </p>
-        <p>
-            Somehow, you became one of the most beautiful parts
-            of my days. Your presence can make ordinary moments
-            feel special, and simply knowing that you're there
-            can make everything feel a little brighter.
-        </p>
-        <p>
-            Thank you for every smile, every memory, every little
-            moment, and every reason you have given me to be happy.
-            <span class="highlight">
-                You are someone I will always treasure.
-            </span>
-        </p>
-        <p>
-            If I could give you one thing, I would give you the
-            ability to see yourself through my eyes — just for a
-            moment — so you could understand how incredibly
-            special you are.
-        </p>
-        <p>
-            No matter where life takes us, I hope you always
-            remember that you have a special place in my heart.
-        </p>
-        <p class="forever">
-            Forever and always. ❤️
-        </p>
-    </section>
-
-    <!-- TYPING MESSAGE -->
-    <div class="typewriter-box">
-        <span id="typewriter"></span>
-        <span class="cursor"></span>
-    </div>
-
-    <!-- BUTTONS -->
-    <div class="buttons">
-        <button
-            class="action-button"
-            id="secretButton"
-            type="button"
-        >
-            💌 One More Thing...
-        </button>
-
-        <button
-            class="action-button secondary"
-            id="heartButton"
-            type="button"
-        >
-            💗 Make a Wish
-        </button>
-    </div>
-
-    <!-- SECRET -->
-    <div class="secret" id="secret">
-        <div class="secret-content">
-            Jeniesys, this little page may only be made of
-            pictures, words, animations, and music.
-            <br><br>
-            But behind every part of it is something simple:
-            <br><br>
-            <strong>
-                You are appreciated.
-                You are cared for.
-                You are remembered.
-                And you are incredibly special. ❤️
-            </strong>
-            <br><br>
-            I hope whenever you see this page,
-            it reminds you that someone took the time
-            to create something beautiful just to make
-            you smile.
-        </div>
-    </div>
-
-    <!-- MUSIC -->
-    <div class="music-player">
-        <div class="music-title">
-            🎵 Our little soundtrack
-        </div>
-
-        <!-- BACKGROUND SONG -->
-        <div class="music-section">
-            <div class="music-section-title">
-                🌸 Background
-            </div>
-            <div class="music-song">
-                Willie Revillame — Syempre
-            </div>
-
-            <audio
-                id="backgroundMusic"
-                controls
-                loop
-                preload="auto"
-            >
-                <source
-                    src="./Willie Revillame - Syempre.mp3"
-                    type="audio/mpeg"
-                >
-                Your browser does not support audio.
-            </audio>
-
-            <div class="music-status" id="backgroundStatus">
-                🎵 Background music ready ❤️
-            </div>
-        </div>
-
-        <!-- SPECIAL SONG -->
-        <div class="music-section">
-            <div class="music-section-title">
-                💗 Special Song
-            </div>
-            <div class="music-song">
-                You're Still The One — Shania Twain
-            </div>
-
-            <audio
-                id="specialMusic"
-                controls
-                preload="auto"
-            >
-                <source
-                    src="./Shania%20Twain%20-%20You%27re%20Still%20The%20One%20%28Lyrics%29.mp3"
-                    type="audio/mpeg"
-                >
-                Your browser does not support audio.
-            </audio>
-
-            <div class="music-status" id="specialStatus">
-                Play this when you want the special song. ❤️
-            </div>
-        </div>
-
-        <div class="music-note">
-            🎵 Willie Revillame — Syempre plays in the background.
-            Playing the special song automatically pauses the
-            background and resumes it afterward from the same position.
-        </div>
-    </div>
-
-    <!-- FINAL -->
-    <section class="final-reveal">
-        <div class="final-heart">
-            ❤️
-        </div>
-        <h2>
-            And if you ever forget...
-        </h2>
-        <p>
-            Come back here.
-        </p>
-        <p>
-            Read the words again.
-            Look at the picture again.
-            Listen to the song again.
-        </p>
-        <p>
-            And remember that this little page
-            was made especially for you.
-        </p>
-    </section>
-
-    <div class="footer">
-        Made with ❤️ for Jeniesys
-        <br>
-        <span id="year"></span>
-    </div>
-
+  <div class="footer">
+    Made with ❤️ for Jeniesys
+    <br><span id="year"></span>
+  </div>
 </main>
+
+<div class="modal" id="wishModal" aria-hidden="true">
+  <div class="modal-card">
+    <div style="font-size:46px">🌙✨</div>
+    <h2>Make a quiet wish</h2>
+    <p>Close your eyes for a second, think of something that makes you happy, and make your wish.</p>
+    <p>Maybe the universe will listen. Maybe this page will at least make you smile while you wait. ❤️</p>
+    <button class="action-button close-button" id="closeWish" type="button">💗 Wish Sent</button>
+  </div>
+</div>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
+  const $ = id => document.getElementById(id);
 
-    /* =========================
-       ELEMENTS
-    ========================= */
+  const intro = $("intro");
+  const enterButton = $("enterButton");
+  const backgroundMusic = $("backgroundMusic");
+  const specialMusic = $("specialMusic");
+  const backgroundStatus = $("backgroundStatus");
+  const specialStatus = $("specialStatus");
+  const secretButton = $("secretButton");
+  const secret = $("secret");
+  const heartButton = $("heartButton");
+  const wishModal = $("wishModal");
+  const closeWish = $("closeWish");
+  const typewriter = $("typewriter");
+  const memoryCount = $("memoryCount");
+  const year = $("year");
 
-    const intro = document.getElementById("intro");
-    const enterButton = document.getElementById("enterButton");
-    const backgroundMusic = document.getElementById("backgroundMusic");
-    const specialMusic = document.getElementById("specialMusic");
-    const backgroundStatus = document.getElementById("backgroundStatus");
-    const specialStatus = document.getElementById("specialStatus");
-    const secretButton = document.getElementById("secretButton");
-    const secret = document.getElementById("secret");
-    const heartButton = document.getElementById("heartButton");
-    const typewriter = document.getElementById("typewriter");
-    const memoryCount = document.getElementById("memoryCount");
-    const year = document.getElementById("year");
+  const required = [
+    intro, enterButton, backgroundMusic, specialMusic, secretButton,
+    secret, heartButton, wishModal, closeWish, typewriter, memoryCount, year
+  ];
 
-    /* =========================
-       SAFETY CHECK
-    ========================= */
+  if (required.some(el => !el)) {
+    console.error("Initialization stopped: a required element is missing.");
+    return;
+  }
 
-    if (
-        !intro ||
-        !enterButton ||
-        !backgroundMusic ||
-        !specialMusic ||
-        !secretButton ||
-        !secret ||
-        !heartButton ||
-        !typewriter ||
-        !memoryCount ||
-        !year
-    ) {
-        console.error("Page initialization failed: required element missing.");
-        return;
+  let pageOpened = false;
+  let backgroundShouldResume = false;
+  let backgroundWasPlaying = false;
+
+  year.textContent = "Created with a little bit of magic • " + new Date().getFullYear();
+
+  const setBg = msg => { if (backgroundStatus) backgroundStatus.textContent = msg; };
+  const setSpecial = msg => { if (specialStatus) specialStatus.textContent = msg; };
+
+  async function startBackground() {
+    if (!specialMusic.paused && !specialMusic.ended) return;
+    try {
+      await backgroundMusic.play();
+      backgroundShouldResume = true;
+      setBg("🎵 Syempre is playing ❤️");
+    } catch {
+      backgroundShouldResume = true;
+      setBg("🎵 Tap play to start Syempre ❤️");
     }
+  }
 
-    /* =========================
-       MUSIC STATE
-    ========================= */
-
-    let backgroundShouldResume = false;
-    let pageOpened = false;
-
-    /* =========================
-       YEAR
-    ========================= */
-
-    year.textContent = "Created with a little bit of magic • " + new Date().getFullYear();
-
-    /* =========================
-       STATUS
-    ========================= */
-
-    function setBackgroundStatus(message) {
-        if (backgroundStatus) {
-            backgroundStatus.textContent = message;
-        }
+  async function resumeBackground() {
+    if (!backgroundShouldResume || (!specialMusic.paused && !specialMusic.ended)) return;
+    try {
+      await backgroundMusic.play();
+      setBg("🎵 Syempre resumed ❤️");
+    } catch {
+      setBg("🎵 Tap play to resume Syempre ❤️");
     }
+  }
 
-    function setSpecialStatus(message) {
-        if (specialStatus) {
-            specialStatus.textContent = message;
-        }
+  enterButton.addEventListener("click", async () => {
+    if (pageOpened) return;
+    pageOpened = true;
+    intro.classList.add("hide");
+    backgroundShouldResume = true;
+    await startBackground();
+    startTypewriter();
+    createSparkleBurst();
+  });
+
+  backgroundMusic.addEventListener("play", () => {
+    backgroundWasPlaying = true;
+    if (!specialMusic.paused && !specialMusic.ended) {
+      backgroundMusic.pause();
+      return;
     }
+    backgroundShouldResume = true;
+    setBg("🎵 Syempre is playing ❤️");
+  });
 
-    /* =========================
-       START BACKGROUND
-    ========================= */
-
-    async function startBackground() {
-        if (!specialMusic.paused && !specialMusic.ended) {
-            return;
-        }
-
-        try {
-            await backgroundMusic.play();
-            backgroundShouldResume = true;
-            setBackgroundStatus("🎵 Syempre is playing ❤️");
-        } catch (error) {
-            backgroundShouldResume = true;
-            setBackgroundStatus("Tap play to start Syempre ❤️");
-        }
+  backgroundMusic.addEventListener("pause", () => {
+    backgroundWasPlaying = false;
+    if (specialMusic.paused || specialMusic.ended) {
+      if (pageOpened) setBg("Syempre is paused.");
     }
+  });
 
-    /* =========================
-       PAUSE BACKGROUND
-    ========================= */
+  specialMusic.addEventListener("play", () => {
+    backgroundWasPlaying = !backgroundMusic.paused;
+    if (backgroundWasPlaying) backgroundMusic.pause();
+    backgroundShouldResume = backgroundShouldResume || backgroundWasPlaying;
+    setSpecial("💗 You're Still The One is playing.");
+  });
 
-    function pauseBackgroundForSpecial() {
-        if (!backgroundMusic.paused) {
-            backgroundShouldResume = true;
-            backgroundMusic.pause();
-            setBackgroundStatus("⏸ Syempre paused for the special song.");
-        }
+  specialMusic.addEventListener("pause", () => {
+    if (specialMusic.ended) return;
+    setSpecial("You're Still The One is paused.");
+    if (backgroundShouldResume) resumeBackground();
+  });
+
+  specialMusic.addEventListener("ended", () => {
+    setSpecial("❤️ You're Still The One finished.");
+    resumeBackground();
+  });
+
+  specialMusic.addEventListener("error", () => {
+    setSpecial("⚠️ Special song could not be loaded. Check that the MP3 file is beside this HTML file.");
+    if (backgroundShouldResume) resumeBackground();
+  });
+
+  backgroundMusic.addEventListener("error", () => {
+    setBg("⚠️ Syempre could not be loaded. Check the exact MP3 filename.");
+  });
+
+  secretButton.addEventListener("click", () => {
+    const opened = secret.classList.toggle("show");
+    secretButton.textContent = opened ? "💗 Hide the little secret" : "💌 Open One More Thing";
+    if (opened) {
+      createSparkleBurst();
+      secret.scrollIntoView({behavior:"smooth", block:"center"});
     }
+  });
 
-    /* =========================
-       RESUME BACKGROUND
-    ========================= */
+  heartButton.addEventListener("click", () => {
+    wishModal.classList.add("show");
+    wishModal.setAttribute("aria-hidden","false");
+    createHeartBurst();
+  });
 
-    async function resumeBackground() {
-        if (!specialMusic.paused && !specialMusic.ended) {
-            return;
-        }
+  function closeWishModal() {
+    wishModal.classList.remove("show");
+    wishModal.setAttribute("aria-hidden","true");
+    heartButton.textContent = "✨ Wish Sent";
+    setTimeout(() => heartButton.textContent = "💗 Make a Wish", 1800);
+  }
 
-        if (!backgroundShouldResume) {
-            return;
-        }
+  closeWish.addEventListener("click", closeWishModal);
+  wishModal.addEventListener("click", e => {
+    if (e.target === wishModal) closeWishModal();
+  });
 
-        try {
-            await backgroundMusic.play();
-            setBackgroundStatus("🎵 Syempre resumed ❤️");
-        } catch (error) {
-            setBackgroundStatus("Tap play to resume Syempre ❤️");
-        }
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") closeWishModal();
+  });
+
+  const message =
+    "Some people become memories. Some become reasons to smile. And some quietly become a little bit of both.";
+  let typeStarted = false;
+
+  function startTypewriter() {
+    if (typeStarted) return;
+    typeStarted = true;
+    let index = 0;
+    const type = () => {
+      if (index < message.length) {
+        typewriter.textContent += message.charAt(index++);
+        setTimeout(type, 38);
+      }
+    };
+    type();
+  }
+
+  let count = 0;
+  const target = 100;
+  const counterTimer = setInterval(() => {
+    count += 2;
+    if (count >= target) {
+      count = target;
+      clearInterval(counterTimer);
     }
+    memoryCount.textContent = count;
+  }, 30);
 
-    /* =========================
-       OPEN EXPERIENCE
-    ========================= */
+  function createSparkle() {
+    const sparkle = document.createElement("div");
+    sparkle.className = "sparkle";
+    const symbols = ["♡","✦","♥","✧","·"];
+    sparkle.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+    sparkle.style.left = Math.random() * 100 + "vw";
+    sparkle.style.bottom = "-20px";
+    sparkle.style.fontSize = (10 + Math.random() * 18) + "px";
+    sparkle.style.animationDuration = (5 + Math.random() * 5) + "s";
+    document.body.appendChild(sparkle);
+    setTimeout(() => sparkle.remove(), 10000);
+  }
 
-    enterButton.addEventListener("click", async () => {
-        if (pageOpened) {
-            return;
-        }
+  setInterval(createSparkle, 850);
 
-        pageOpened = true;
-        intro.classList.add("hide");
-
-        backgroundShouldResume = true;
-        await startBackground();
-
-        startTypewriter();
-        createSparkleBurst();
-    });
-
-    /* =========================
-       BACKGROUND PLAY
-    ========================= */
-
-    backgroundMusic.addEventListener("play", () => {
-        if (!specialMusic.paused && !specialMusic.ended) {
-            backgroundMusic.pause();
-            return;
-        }
-
-        backgroundShouldResume = true;
-        setBackgroundStatus("🎵 Syempre is playing ❤️");
-    });
-
-    /* =========================
-       BACKGROUND PAUSE
-    ========================= */
-
-    backgroundMusic.addEventListener("pause", () => {
-        if (!specialMusic.paused && !specialMusic.ended) {
-            return;
-        }
-
-        if (pageOpened) {
-            setBackgroundStatus("Syempre is paused.");
-        }
-    });
-
-    /* =========================
-       SPECIAL PLAY
-    ========================= */
-
-    specialMusic.addEventListener("play", () => {
-        pauseBackgroundForSpecial();
-        setSpecialStatus("💗 You're Still The One is playing.");
-    });
-
-    /* =========================
-       SPECIAL PLAYING
-    ========================= */
-
-    specialMusic.addEventListener("playing", () => {
-        if (!backgroundMusic.paused) {
-            backgroundMusic.pause();
-        }
-        setSpecialStatus("💗 You're Still The One is playing.");
-    });
-
-    /* =========================
-       SPECIAL PAUSE
-    ========================= */
-
-    specialMusic.addEventListener("pause", () => {
-        if (specialMusic.ended) {
-            return;
-        }
-
-        setSpecialStatus("You're Still The One is paused.");
-        resumeBackground();
-    });
-
-    /* =========================
-       SPECIAL ENDED
-    ========================= */
-
-    specialMusic.addEventListener("ended", () => {
-        setSpecialStatus("❤️ You're Still The One finished.");
-        resumeBackground();
-    });
-
-    /* =========================
-       SPECIAL ERROR
-    ========================= */
-
-    specialMusic.addEventListener("error", () => {
-        setSpecialStatus("⚠️ Special song could not be loaded. Check the MP3 filename.");
-        resumeBackground();
-    });
-
-    /* =========================
-       BACKGROUND ERROR
-    ========================= */
-
-    backgroundMusic.addEventListener("error", () => {
-        setBackgroundStatus("⚠️ Syempre could not be loaded. Check the MP3 filename.");
-    });
-
-    /* =========================
-       SECRET MESSAGE
-    ========================= */
-
-    secretButton.addEventListener("click", () => {
-        const opened = secret.classList.toggle("show");
-        secretButton.textContent = opened ? "💗 Hide the message" : "💌 One More Thing...";
-
-        if (opened) {
-            createSparkleBurst();
-        }
-    });
-
-    /* =========================
-       HEART / WISH
-    ========================= */
-
-    heartButton.addEventListener("click", () => {
-        createHeartBurst();
-        heartButton.textContent = "✨ Wish sent";
-
-        setTimeout(() => {
-            heartButton.textContent = "💗 Make a Wish";
-        }, 1800);
-    });
-
-    /* =========================
-       TYPEWRITER
-    ========================= */
-
-    const message = "Some people become memories. Some become reasons to smile.";
-    let typeStarted = false;
-
-    function startTypewriter() {
-        if (typeStarted) {
-            return;
-        }
-
-        typeStarted = true;
-        let index = 0;
-
-        function type() {
-            if (index < message.length) {
-                typewriter.textContent += message.charAt(index);
-                index++;
-                setTimeout(type, 48);
-            }
-        }
-
-        type();
+  function createSparkleBurst() {
+    for (let i = 0; i < 22; i++) {
+      setTimeout(createSparkle, i * 35);
     }
+  }
 
-    /* =========================
-       MEMORY COUNTER
-    ========================= */
+  function createHeartBurst() {
+    const hearts = ["❤️","💕","💗","♡","💖"];
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement("div");
+      heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+      heart.style.position = "fixed";
+      heart.style.left = "50%";
+      heart.style.top = "50%";
+      heart.style.zIndex = "900";
+      heart.style.pointerEvents = "none";
+      heart.style.fontSize = (15 + Math.random() * 20) + "px";
 
-    let count = 0;
-    const target = 100;
+      const angle = Math.random() * Math.PI * 2;
+      const distance = 80 + Math.random() * 240;
+      const x = Math.cos(angle) * distance;
+      const y = Math.sin(angle) * distance;
 
-    const counterTimer = setInterval(() => {
-        count += 2;
+      heart.animate([
+        {transform:"translate(-50%,-50%) scale(.3)",opacity:0},
+        {transform:"translate(-50%,-50%) scale(1)",opacity:1,offset:.15},
+        {transform:`translate(calc(-50% + ${x}px),calc(-50% + ${y}px)) scale(.8)`,opacity:0}
+      ],{
+        duration:1200 + Math.random() * 700,
+        easing:"cubic-bezier(.2,.8,.3,1)"
+      });
 
-        if (count >= target) {
-            count = target;
-            clearInterval(counterTimer);
-        }
-
-        memoryCount.textContent = count;
-    }, 35);
-
-    /* =========================
-       FLOATING SPARKLES
-    ========================= */
-
-    function createSparkle() {
-        const sparkle = document.createElement("div");
-        sparkle.className = "sparkle";
-
-        const symbols = ["♡", "✦", "♥", "✧", "·"];
-        sparkle.textContent = symbols[Math.floor(Math.random() * symbols.length)];
-        sparkle.style.left = Math.random() * 100 + "vw";
-        sparkle.style.bottom = "-20px";
-        sparkle.style.fontSize = (10 + Math.random() * 18) + "px";
-        sparkle.style.animationDuration = (5 + Math.random() * 5) + "s";
-
-        document.body.appendChild(sparkle);
-
-        setTimeout(() => {
-            sparkle.remove();
-        }, 10000);
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 2200);
     }
-
-    setInterval(createSparkle, 850);
-
-    /* =========================
-       SPARKLE BURST
-    ========================= */
-
-    function createSparkleBurst() {
-        for (let i = 0; i < 22; i++) {
-            setTimeout(() => {
-                createSparkle();
-            }, i * 35);
-        }
-    }
-
-    /* =========================
-       HEART BURST
-    ========================= */
-
-    function createHeartBurst() {
-        const hearts = ["❤️", "💕", "💗", "♡", "💖"];
-
-        for (let i = 0; i < 18; i++) {
-            const heart = document.createElement("div");
-            heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
-            heart.style.position = "fixed";
-            heart.style.left = "50%";
-            heart.style.top = "50%";
-            heart.style.zIndex = "50";
-            heart.style.pointerEvents = "none";
-            heart.style.fontSize = (15 + Math.random() * 20) + "px";
-
-            const angle = Math.random() * Math.PI * 2;
-            const distance = 80 + Math.random() * 220;
-            const x = Math.cos(angle) * distance;
-            const y = Math.sin(angle) * distance;
-
-            heart.animate(
-                [
-                    {
-                        transform: "translate(-50%,-50%) scale(.4)",
-                        opacity: 0
-                    },
-                    {
-                        transform: "translate(-50%,-50%) scale(1)",
-                        opacity: 1,
-                        offset: .15
-                    },
-                    {
-                        transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) scale(.8)`,
-                        opacity: 0
-                    }
-                ],
-                {
-                    duration: 1200 + Math.random() * 700,
-                    easing: "cubic-bezier(.2,.8,.3,1)"
-                }
-            );
-
-            document.body.appendChild(heart);
-
-            setTimeout(() => {
-                heart.remove();
-            }, 2200);
-        }
-    }
-
+  }
 });
 </script>
-
 </body>
 </html>
