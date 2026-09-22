@@ -1,4 +1,4 @@
-```html
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1651,19 +1651,34 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   );
 
+
   /* =========================
      TYPEWRITER
   ========================= */
 
   const message =
-    "Some people become memories. Some become reasons to smile. And some quietly become a little bit of both.";
+`Some people become memories. Some become reasons to smile. And some quietly become a little bit of both. For me, you became something more—you became someone I don’t want to lose.
+
+I know I’m not perfect. I’ve made a lot of mistakes, and I know there were times when I hurt you deeply. I’m not going to make excuses for that. I know saying “sorry” isn’t enough to erase what I’ve done.
+
+But despite all my mistakes, one thing I know for sure is that choosing you was never a mistake.
+
+Being with you made me realize that I still have a lot to change about myself. I want to work on my bad habits, my attitude, and the parts of me that need to grow—not just because I’m afraid of losing you, but because you made me want to become a better person.
+
+I want to put effort into this relationship. I want to learn from my mistakes instead of repeating them. I want to show you through my actions, not just through words, that I’m serious about us.
+
+You know me. When I love, I don’t want to keep looking for someone else. I want one girl, one woman, and I want that person to be you.
+
+I know I hurt you deeply, and I understand if it’s hard for you to trust me again. I’m not asking you to forget everything overnight. I’m only asking you to give me the chance to prove, little by little, that I can change and that I can love you the way you deserve to be loved.
+
+Please don’t give up on us yet. Let me prove through my actions that choosing me wasn’t the wrong choice.
+
+I can’t promise that I’ll suddenly become perfect, but I can promise that I’ll keep trying, keep learning, and keep choosing you every day. ❤️`;
 
   function startTypewriter(){
 
     if(typewriterStarted){
-
       return;
-
     }
 
     typewriterStarted = true;
@@ -1673,26 +1688,20 @@ document.addEventListener("DOMContentLoaded", () => {
     function type(){
 
       if(index >= message.length){
-
         return;
-
       }
 
-      typewriter.textContent +=
-        message.charAt(index);
+      typewriter.textContent += message.charAt(index);
 
       index++;
 
-      setTimeout(
-        type,
-        38
-      );
-
+      setTimeout(type, 38);
     }
 
     type();
-
   }
+ 
+
 
   /* =========================
      MEMORY COUNTER
@@ -1923,4 +1932,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
-```
+ 
